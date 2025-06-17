@@ -1,18 +1,33 @@
 nav {
-  background-color: #ff521f;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
 }
 
 .nav-left {
   font-weight: bold;
   font-size: 1.25rem;
-  color: #111827;
+  color: #fff;
 }
 
 .nav-right {
   display: flex;
   gap: 1.5rem;
+}
+
+.nav-left,
+.nav-right a {
+  color: #686de0;
+  text-decoration: none;
+}
+
+.nav-right a:hover {
+  background-color: #30336b;
 }

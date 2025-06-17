@@ -8,7 +8,7 @@ main.home {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: blue;
+  background-color: #130f40;
   height: 100vh;
 }
 
