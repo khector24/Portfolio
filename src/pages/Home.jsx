@@ -22,18 +22,14 @@ export default function Home() {
           className="profile-pic"
         />
         <div className="intro-text">
-          <h2 className="hero-intro">Hi,</h2>
           <h1 className="name-heading">
-            I'm <span className="name-placeholder">Kenny</span> Welcome
+            Hi, I'm <span className="name-placeholder">Kenny Hector</span>
           </h1>
           <p className="subtitle">
-            A passionate developer crafting innovative solutions.
+            Full-Stack Developer · AWS Certified · React · Node.js · DynamoDB
           </p>
         </div>
 
-        <p className="subtitle">
-          Full-Stack Developer | AWS Certified | React | Node.js | DynamoDB
-        </p>
         <div className="contact-links">
           <a
             href="https://github.com/khector24"
@@ -43,6 +39,7 @@ export default function Home() {
             GitHub
           </a>
         </div>
+
         <div className="home-buttons">
           <Link to="/portfolio" className="cta-button">
             View My Work
@@ -54,35 +51,23 @@ export default function Home() {
             Download Resume
           </a>
         </div>
+
         {/* <p className="zen-joke">{zenQuote}</p> */}
       </section>
 
-      <section>
-        <h2 className="section-title">About Me</h2>
-        <p className="about-text">
-          I am a full-stack developer with a passion for building scalable web
-          applications. My expertise lies in React, Node.js, and AWS services,
-          allowing me to create efficient and robust solutions.
+      <section className="who-am-i-section" data-aos="fade-right">
+        <h2 className="section-heading">Who Am I</h2>
+        <p>
+          I’m Kenny Hector — a full-stack developer who thrives on building
+          efficient, secure, and scalable web applications. My expertise spans
+          React, Node.js, and AWS, and I’ve used them to power both internal
+          tools and client-facing platforms.
         </p>
-        <p className="about-text">
-          With a strong foundation in both front-end and back-end technologies,
-          I enjoy tackling complex challenges and delivering high-quality code.
-          Whether it's developing user-friendly interfaces or optimizing server
-          performance, I strive to create seamless user experiences.
+        <p>
+          Whether crafting intuitive user interfaces or architecting robust
+          back-end systems, I bring a passion for problem-solving, clean code,
+          and creating real-world impact through technology.
         </p>
-      </section>
-
-      <section className="what-i-do-section" data-aos="fade-right">
-        <div className="what-i-do">
-          <h2 className="section-heading">What I Do</h2>
-          <p>
-            I build fast, scalable, and secure web applications — from
-            responsive front-end interfaces with React to AWS-backed cloud
-            solutions. Whether it's automating internal tools or launching
-            client-facing platforms, I deliver full-stack solutions that solve
-            real problems.
-          </p>
-        </div>
       </section>
 
       <section className="tech-logos-section" data-aos="fade-left">
