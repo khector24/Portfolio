@@ -1,0 +1,30 @@
+/* === Hero Section === */
+.hero-content {
+  display: flex;
+}
+
+.hero-content img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+}
+
+/* === who-am-i-section === */
+
+/* === Skills Section === */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.logo-grid img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-grid img:hover {
+  transform: scale(1.05);
+}

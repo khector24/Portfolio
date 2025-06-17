@@ -14,53 +14,52 @@ import expressLogo from "../assets/logos/express.svg";
 
 export default function Home() {
   return (
-    <main>
-      <section className="home-hero-content">
+    <main className="home">
+      <section className="hero-content">
         <img
           src="/src/assets/images/profile-pic.jpeg"
           alt="Kenny Hector"
           className="profile-pic"
         />
-        <div className="intro-text">
-          <h1 className="name-heading">
-            Hi, I'm <span className="name-placeholder">Kenny Hector</span>
-          </h1>
-          <p className="subtitle">
-            Full-Stack Developer · AWS Certified · React · Node.js · DynamoDB
-          </p>
-        </div>
+        <div className="header-content">
+          <div className="intro-text">
+            <h1 className="name-heading">
+              Hi, I'm <span className="name-placeholder">Kenny Hector</span>
+            </h1>
+            <p className="subtitle">
+              Full-Stack Developer · AWS Certified · React · Node.js · DynamoDB
+            </p>
+          </div>
 
-        <div className="contact-links">
-          <a
-            href="https://github.com/khector24"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-        </div>
-
-        <div className="home-buttons">
-          <Link to="/portfolio" className="cta-button">
-            View My Work
-          </Link>
-          <Link to="/contact" className="cta-button">
-            Contact Me
-          </Link>
-          <a
-            href={resumePDF}
-            target="_blank"
-            rel="noreferrer"
-            className="cta-button"
-          >
-            View Resume
-          </a>
+          <div className="links">
+            <Link to="/portfolio" className="cta-button">
+              View My Work
+            </Link>
+            <Link to="/contact" className="cta-button">
+              Contact Me
+            </Link>
+            <a
+              href={resumePDF}
+              target="_blank"
+              rel="noreferrer"
+              className="cta-button"
+            >
+              View Resume
+            </a>
+            <a
+              href="https://github.com/khector24"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
 
         {/* <p className="zen-joke">{zenQuote}</p> */}
       </section>
 
-      <section className="who-am-i-section" data-aos="fade-right">
+      <section className="who-am-i-section">
         <h2 className="section-heading">Who Am I</h2>
         <p>
           I’m Kenny Hector — a full-stack developer who thrives on building
@@ -75,7 +74,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="tech-logos-section" data-aos="fade-left">
+      <section className="tech-logos-section">
         <div className="tech-logos">
           <h2 className="section-heading">Tech I Use</h2>
           <div className="logo-grid">
