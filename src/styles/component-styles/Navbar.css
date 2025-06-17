@@ -1,5 +1,18 @@
 nav {
+  background-color: #ff521f;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.nav-left {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
 }
