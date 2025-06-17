@@ -1,16 +1,9 @@
 footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: #00e348;
-}
-
-footer {
   margin-top: 3rem;
   padding: 1rem 0;
   /* background-color: #f1f5f9; */
+  background: #00e348;
   text-align: center;
   font-size: 0.9rem;
   color: #64748b;
-  /* border-top: 1px solid #e2e8f0; */
 }
