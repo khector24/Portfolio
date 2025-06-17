@@ -1,12 +1,27 @@
+/* ===  === */
+main.home {
+}
+
 /* === Hero Section === */
 .hero-content {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  height: 100vh;
 }
 
 .hero-content img {
   height: 160px;
   width: 160px;
   border-radius: 50%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* === who-am-i-section === */
