@@ -47,8 +47,13 @@ export default function Home() {
           <Link to="/contact" className="cta-button">
             Contact Me
           </Link>
-          <a href={resumePDF} download className="cta-button">
-            Download Resume
+          <a
+            href={resumePDF}
+            target="_blank"
+            rel="noreferrer"
+            className="cta-button"
+          >
+            View Resume
           </a>
         </div>
 
