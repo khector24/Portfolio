@@ -25,7 +25,7 @@ nav {
 
 .nav-left,
 .nav-right a {
-  color: #686de0;
+  color: var(--text-link);
   text-decoration: none;
 }
 

@@ -11,3 +11,13 @@ body {
   height: 100%;
   width: 100%;
 }
+
+/* Set default colors variable */
+:root {
+  --bg-primary: #130f40;
+  --accent: #9980fa;
+  --accent-hover: #6c5ce7;
+  --text-link: #686de0;
+  --footer-bg: #2d1e61;
+  --text-muted: #dcdde1;
+}

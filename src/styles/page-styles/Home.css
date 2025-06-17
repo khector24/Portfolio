@@ -8,7 +8,7 @@ main.home {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #130f40;
+  background-color: var(--bg-primary);
   height: 100vh;
 }
 
@@ -31,7 +31,7 @@ main.home {
 }
 
 .hero-links a {
-  background-color: #9980fa;
+  background-color: var(--accent);
   border-radius: 3px;
   padding: 0.5rem;
   text-decoration: none;
@@ -40,7 +40,7 @@ main.home {
 }
 
 .hero-links a:hover {
-  background-color: #6c5ce7;
+  background-color: var(--accent-hover);
 }
 /* === who-am-i-section === */
 
