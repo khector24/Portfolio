@@ -13,8 +13,8 @@ main.home {
 }
 
 .hero-content img {
-  height: 160px;
-  width: 160px;
+  height: 240px;
+  width: 240px;
   border-radius: 50%;
 }
 
@@ -24,6 +24,24 @@ main.home {
   justify-content: center;
 }
 
+.hero-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.hero-links a {
+  background-color: #9980fa;
+  border-radius: 3px;
+  padding: 0.5rem;
+  text-decoration: none;
+  min-width: 125px;
+  text-align: center;
+}
+
+.hero-links a:hover {
+  background-color: #6c5ce7;
+}
 /* === who-am-i-section === */
 
 /* === Skills Section === */

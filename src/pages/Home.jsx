@@ -30,8 +30,19 @@ export default function Home() {
               Full-Stack Developer · AWS Certified · React · Node.js · DynamoDB
             </p>
           </div>
+          <div className="contact-links">
+            <a href="mailto:kennyhector24@gmail.com">kennyhector24@gmail.com</a>{" "}
+            |{" "}
+            <a
+              href="https://github.com/khector24"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
 
-          <div className="links">
+          <div className="hero-links">
             <Link to="/portfolio" className="cta-button">
               View My Work
             </Link>
@@ -45,13 +56,6 @@ export default function Home() {
               className="cta-button"
             >
               View Resume
-            </a>
-            <a
-              href="https://github.com/khector24"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
             </a>
           </div>
         </div>
