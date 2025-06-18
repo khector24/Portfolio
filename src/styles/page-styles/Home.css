@@ -114,18 +114,51 @@ main.home {
 .what-i-do-section {
   display: flex;
   flex-direction: row;
+  padding: 50px 6rem;
 }
 
 .do-card {
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  padding: 20px;
-  border: 1px solid var(--accent);
+  margin: 5rem 0;
+  padding: 2rem;
+  background: #30336b;
+}
+
+/* Right border for left card */
+.left-card::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 0;
+  height: 70%;
+  width: 1px;
+  background-color: var(--accent);
+  opacity: 0.4;
+}
+
+/* Left border for right card */
+.right-card::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 0;
+  height: 70%;
+  width: 1px;
+  background-color: var(--accent);
+  opacity: 0.4;
+}
+
+/* Align text */
+.left-card,
+.left-card h3 {
+  text-align: left;
+}
+.right-card,
+.right-card h3 {
+  text-align: right;
 }
 
 /* === How I Work Section === */

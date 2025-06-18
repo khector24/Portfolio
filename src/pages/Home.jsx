@@ -82,14 +82,14 @@ export default function Home() {
       </section>
 
       <section className="what-i-do-section section-full-height bg-dark">
-        <div className="do-card">
+        <div className="do-card left-card">
           <h3>I Build</h3>
           <p>
             Scalable systems, portfolio sites, internal dashboards, and
             real-time tools that solve real-world problems.
           </p>
         </div>
-        <div className="do-card">
+        <div className="do-card right-card">
           <h3>I Design</h3>
           <p>
             Interfaces with clarity and purpose — intuitive for users, flexible
