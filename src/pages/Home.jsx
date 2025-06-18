@@ -63,7 +63,7 @@ export default function Home() {
         {/* <p className="zen-joke">{zenQuote}</p> */}
       </section>
 
-      <section className="who-am-i-section section-full-height ">
+      <section className="who-am-i-section section-full-height bg-light">
         <div className="i-am">
           <h2 className="section-heading">Who I Am</h2>
           <p>
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="what-i-do-section section-full-height ">
+      <section className="what-i-do-section section-full-height bg-dark">
         <div className="do-card">
           <h3>I Build</h3>
           <p>
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="how-i-work section-full-height ">
+      <section className="how-i-work section-full-height bg-light">
         <h2 className="section-heading">How I Work</h2>
         <p>
           I believe in shipping fast, refactoring often, and learning always.
@@ -111,7 +111,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="skills-section section-full-height">
+      <section className="skills-section section-full-height bg-dark">
         <div className="tech-logos">
           <h2 className="section-heading">Tech I Use</h2>
           <div className="logo-grid">
