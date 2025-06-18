@@ -169,12 +169,12 @@ export default function Home() {
               <span>Bootstrap</span>
             </div>
             <div className="tech-item">
-              <img src={postmanLogo} alt="Git" />
-              <span>Git</span>
+              <img src={postmanLogo} alt="Postman" />
+              <span>Postman</span>
             </div>
             <div className="tech-item">
-              <img src={visualStudioLogo} alt="Git" />
-              <span>Git</span>
+              <img src={visualStudioLogo} alt="Visual Studio Code" />
+              <span>VS Code</span>
             </div>
           </div>
         </div>
