@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/page-styles/Home.css";
+import Typewriter from "typewriter-effect";
+
 import resumePDF from "../assets/documents/resume.pdf";
 
 import reactLogo from "../assets/logos/react.svg";
@@ -27,7 +29,12 @@ export default function Home() {
         <div className="header-content">
           <div className="intro-text">
             <h1 className="name-heading">
-              Hi, I'm <span className="name-placeholder">Kenny</span>
+              Hi, I'm{" "}
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter.typeString("Kenny").start();
+                }}
+              />
             </h1>
             <p className="subtitle">
               Full-Stack Developer · AWS Certified · React · Node.js · DynamoDB
