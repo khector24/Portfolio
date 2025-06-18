@@ -191,6 +191,34 @@ main.home {
   color: var(--bg-primary);
 }
 
+.sub-cta {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.9;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.sub-cta::after {
+  content: "→";
+  font-size: 1.1rem;
+  transition: transform 0.25s ease;
+}
+
+.sub-cta:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.sub-cta:hover::after {
+  transform: translateX(4px);
+}
+
 /* === Skills Section === */
 .skills-section {
   display: flex;
