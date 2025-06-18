@@ -24,7 +24,7 @@ export default function Home() {
         <div className="header-content">
           <div className="intro-text">
             <h1 className="name-heading">
-              Hi, I'm <span className="name-placeholder">Kenny Hector</span>
+              Hi, I'm <span className="name-placeholder">Kenny</span>
             </h1>
             <p className="subtitle">
               Full-Stack Developer · AWS Certified · React · Node.js · DynamoDB

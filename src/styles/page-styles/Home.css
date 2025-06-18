@@ -73,7 +73,7 @@ main.home {
 .how-i-work {
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 /* === Skills Section === */
