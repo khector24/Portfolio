@@ -64,21 +64,35 @@ export default function Home() {
       </section>
 
       <section className="who-am-i-section">
-        <h2 className="section-heading">Who Am I</h2>
-        <p>
-          I’m Kenny Hector — a full-stack developer who thrives on building
-          efficient, secure, and scalable web applications. My expertise spans
-          React, Node.js, and AWS, and I’ve used them to power both internal
-          tools and client-facing platforms.
-        </p>
-        <p>
-          Whether crafting intuitive user interfaces or architecting robust
-          back-end systems, I bring a passion for problem-solving, clean code,
-          and creating real-world impact through technology.
-        </p>
+        <div className="i-am">
+          <h2 className="section-heading">Who Am I</h2>
+          <p>
+            I’m Kenny Hector — a full-stack developer who thrives on building
+            efficient, secure, and scalable web applications. My expertise spans
+            React, Node.js, and AWS, and I’ve used them to power both internal
+            tools and client-facing platforms.
+          </p>
+          <p>
+            Whether crafting intuitive user interfaces or architecting robust
+            back-end systems, I bring a passion for problem-solving, clean code,
+            and creating real-world impact through technology.
+          </p>
+        </div>
+        <div className="i-do">
+          <div className="do-card">
+            <h3>I Build</h3>
+            <p>
+              Web apps, portfolio sites, internal tools, and scalable systems.
+            </p>
+          </div>
+          <div className="do-card">
+            <h3>I Design</h3>
+            <p>Interfaces that are simple, clean, and focused on clarity.</p>
+          </div>
+        </div>
       </section>
 
-      <section className="tech-logos-section">
+      <section className="skills-section">
         <div className="tech-logos">
           <h2 className="section-heading">Tech I Use</h2>
           <div className="logo-grid">

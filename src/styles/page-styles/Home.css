@@ -43,8 +43,38 @@ main.home {
   background-color: var(--accent-hover);
 }
 /* === who-am-i-section === */
+.who-am-i-section {
+  height: 100vh;
+  color: var(--bg-primary);
+  display: flex;
+  flex-direction: row;
+}
+
+.i-am {
+  flex: 1;
+}
+
+.i-do {
+  flex: 1;
+}
+
+.i-am,
+.i-do {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 20px;
+  border: 1px solid var(--accent);
+}
 
 /* === Skills Section === */
+.skills-section {
+  height: 100vh;
+  background-color: var(--bg-primary);
+}
 .logo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
