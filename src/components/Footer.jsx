@@ -15,16 +15,15 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             GitHub
-          </a>
-          ,{" "}
+          </a>{" "}
+          |{" "}
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/kennyhector"
             target="_blank"
             rel="noopener noreferrer"
           >
             LinkedIn
           </a>
-          .
         </p>
         <p>
           Icons by{" "}

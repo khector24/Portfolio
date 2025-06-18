@@ -1,8 +1,26 @@
-footer {
-  padding: 1rem 0;
-  /* background-color: #f1f5f9; */
-  background: #00e348;
+.footer {
+  background-color: var(--bg-primary); /* Match the dark theme */
+  color: var(--text-muted);
+  padding: 1.5rem 2rem;
   text-align: center;
-  font-size: 0.9rem;
-  color: #64748b;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05); /* subtle divider */
+}
+
+.footer {
+  border-top: 1px solid var(--accent);
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 0.4rem 0;
 }
