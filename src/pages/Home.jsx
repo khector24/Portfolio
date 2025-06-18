@@ -118,18 +118,49 @@ export default function Home() {
       </section>
 
       <section className="skills-section section-full-height bg-dark">
-        <div className="tech-logos">
+        <div className="tech-stack-container">
           <h2 className="section-heading">Tech I Use</h2>
+          <p className="tech-subtitle">
+            Tools and technologies I rely on to build secure, scalable, and
+            responsive applications.
+          </p>
           <div className="logo-grid">
-            <img src={reactLogo} alt="React" />
-            <img src={nodeLogo} alt="Node.js" />
-            <img src={awsLogo} alt="AWS" />
-            <img src={javaLogo} alt="Java" />
-            <img src={mysqlLogo} alt="MySQL" />
-            <img src={htmlLogo} alt="HTML" />
-            <img src={cssLogo} alt="CSS" />
-            <img src={gitLogo} alt="Git" />
-            <img src={expressLogo} alt="Express.js" />
+            <div className="tech-item">
+              <img src={reactLogo} alt="React" />
+              <span>React</span>
+            </div>
+            <div className="tech-item">
+              <img src={nodeLogo} alt="Node.js" />
+              <span>Node.js</span>
+            </div>
+            <div className="tech-item">
+              <img src={expressLogo} alt="Express.js" />
+              <span>Express</span>
+            </div>
+            <div className="tech-item">
+              <img src={awsLogo} alt="AWS" />
+              <span>AWS</span>
+            </div>
+            <div className="tech-item">
+              <img src={javaLogo} alt="Java" />
+              <span>Java</span>
+            </div>
+            <div className="tech-item">
+              <img src={mysqlLogo} alt="MySQL" />
+              <span>MySQL</span>
+            </div>
+            <div className="tech-item">
+              <img src={htmlLogo} alt="HTML" />
+              <span>HTML5</span>
+            </div>
+            <div className="tech-item">
+              <img src={cssLogo} alt="CSS" />
+              <span>CSS3</span>
+            </div>
+            <div className="tech-item">
+              <img src={gitLogo} alt="Git" />
+              <span>Git</span>
+            </div>
           </div>
         </div>
       </section>
