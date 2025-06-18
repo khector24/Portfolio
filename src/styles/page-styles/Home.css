@@ -50,16 +50,16 @@ main.home {
   flex-direction: row;
 }
 
-.i-am {
-  flex: 1;
+/* === what-i-bring-section === */
+.what-i-bring-section {
+  height: 100vh;
+  color: var(--bg-primary);
+  display: flex;
+  flex-direction: row;
 }
 
-.i-do {
+.do-card {
   flex: 1;
-}
-
-.i-am,
-.i-do {
   display: flex;
   flex-direction: column;
   justify-content: center;
