@@ -10,38 +10,83 @@ main.home {
   justify-content: center;
   background-color: var(--bg-primary);
   height: 100vh;
+  padding: 2rem;
+  gap: 4rem;
+  flex-wrap: wrap;
 }
 
-.hero-content img {
-  height: 240px;
-  width: 240px;
+.profile-pic {
+  height: 260px;
+  width: 260px;
   border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.03);
 }
 
 .header-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 600px;
+  animation: fadeIn 1s ease-in;
+}
+
+.name-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.contact-links {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-link);
+}
+
+.contact-links a {
+  color: var(--text-link);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
 }
 
 .hero-links {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.hero-links a {
+.cta-button {
   background-color: var(--accent);
-  border-radius: 3px;
-  padding: 0.5rem;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
   text-decoration: none;
-  min-width: 125px;
+  transition: background-color 0.3s ease;
+  min-width: 130px;
   text-align: center;
 }
 
-.hero-links a:hover {
+.cta-button:hover {
   background-color: var(--accent-hover);
 }
+
 /* === who-am-i-section === */
 .who-am-i-section {
   display: flex;
