@@ -10,7 +10,10 @@ import mysqlLogo from "../assets/logos/mysql.svg";
 import htmlLogo from "../assets/logos/html.svg";
 import cssLogo from "../assets/logos/css.svg";
 import gitLogo from "../assets/logos/git.svg";
-import expressLogo from "../assets/logos/express.svg";
+import expressLogo from "../assets/logos/express-js.svg";
+import bootstrapLogo from "../assets/logos/bootstrap.svg";
+import postmanLogo from "../assets/logos/postman.svg";
+import visualStudioLogo from "../assets/logos/visual-studio-code.svg";
 
 export default function Home() {
   return (
@@ -159,6 +162,18 @@ export default function Home() {
             </div>
             <div className="tech-item">
               <img src={gitLogo} alt="Git" />
+              <span>Git</span>
+            </div>
+            <div className="tech-item">
+              <img src={bootstrapLogo} alt="Git" />
+              <span>Bootstrap</span>
+            </div>
+            <div className="tech-item">
+              <img src={postmanLogo} alt="Git" />
+              <span>Git</span>
+            </div>
+            <div className="tech-item">
+              <img src={visualStudioLogo} alt="Git" />
               <span>Git</span>
             </div>
           </div>
