@@ -63,48 +63,55 @@ export default function Home() {
         {/* <p className="zen-joke">{zenQuote}</p> */}
       </section>
 
-      <section className="who-am-i-section">
+      <section className="who-am-i-section section-full-height ">
         <div className="i-am">
           <h2 className="section-heading">Who I Am</h2>
           <p>
-            I’m Kenny Hector — a full-stack developer passionate about crafting
-            secure, scalable, and efficient web applications. My stack spans
-            React, Node.js, and AWS, which I’ve used to power internal tools and
-            customer-facing platforms.
+            I’m Kenny Hector — a full-stack developer focused on building
+            efficient, secure, and scalable web applications. My experience
+            spans both internal tools and customer-facing platforms, powered by
+            React, Node.js, and AWS.
+          </p>
+          <p>
+            I’m not just a builder — I’m a learner, a leader, and a teammate.
+            Whether I’m designing clean interfaces or architecting backend
+            logic, I bring strong communication, leadership, and a commitment to
+            getting things done.
           </p>
         </div>
       </section>
 
-      <section className="what-i-bring-section">
+      <section className="what-i-do-section section-full-height ">
         <div className="do-card">
-          <h3>What I Build</h3>
+          <h3>I Build</h3>
           <p>
-            I develop systems that are not only functional but built for
-            performance and longevity — from tools that automate internal
-            workflows to customer-facing apps that scale.
+            Scalable systems, portfolio sites, internal dashboards, and
+            real-time tools that solve real-world problems.
           </p>
         </div>
         <div className="do-card">
-          <h3>How I Design</h3>
+          <h3>I Design</h3>
           <p>
-            I prioritize clarity, simplicity, and purpose. Whether architecting
-            APIs or crafting UI components, my goal is always a seamless,
-            intuitive user experience.
+            Interfaces with clarity and purpose — intuitive for users, flexible
+            for teams, and clean under the hood.
           </p>
         </div>
       </section>
 
-      <section className="how-i-work">
+      <section className="how-i-work section-full-height ">
         <h2 className="section-heading">How I Work</h2>
         <p>
-          I'm focused on building for scale, clarity, and maintainability.
-          Whether working solo or as part of a team, I rely on clean code, clear
-          communication, and efficient dev workflows to deliver solutions that
-          last.
+          I believe in shipping fast, refactoring often, and learning always.
+          I'm adaptable, proactive, and collaborative — unafraid to lead when
+          needed, always ready to pitch in where it counts.
+        </p>
+        <p>
+          Whether flying solo or working cross-functionally, I rely on clean
+          code, strong fundamentals, and a constant drive to improve.
         </p>
       </section>
 
-      <section className="skills-section">
+      <section className="skills-section section-full-height">
         <div className="tech-logos">
           <h2 className="section-heading">Tech I Use</h2>
           <div className="logo-grid">
