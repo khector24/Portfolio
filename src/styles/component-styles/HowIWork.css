@@ -91,10 +91,28 @@
 
 .svg-decor.vertical-dots {
   width: 100px;
-  bottom: 0;
+  bottom: -150px;
   right: 100px;
   opacity: 0.08;
   z-index: 0;
+}
+
+.svg-decor.horizontal-dots1 {
+  width: 90px;
+  top: -100px;
+  left: 100px;
+  opacity: 0.08;
+  z-index: 0;
+  transform: rotate(90deg);
+}
+
+.svg-decor.horizontal-dots2 {
+  width: 90px;
+  top: -70px;
+  left: 125px;
+  opacity: 0.08;
+  z-index: 0;
+  transform: rotate(90deg);
 }
 
 /* Mobile Adjustments */

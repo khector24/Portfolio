@@ -36,6 +36,18 @@ export default function HowIWork() {
           className="svg-decor vertical-dots"
         />
 
+        <img
+          src="/src/assets/illustrations/vertical-dots.svg"
+          alt="horizontal dots"
+          className="svg-decor horizontal-dots1"
+        />
+
+        <img
+          src="/src/assets/illustrations/vertical-dots.svg"
+          alt="horizontal dots"
+          className="svg-decor horizontal-dots2"
+        />
+
         <div className="how-i-work-image">
           <img
             src="/src/assets/illustrations/undraw_programming_65t2.svg"
