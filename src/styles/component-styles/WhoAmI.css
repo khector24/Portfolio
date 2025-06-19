@@ -1,38 +1,61 @@
 .who-am-i-section {
+  position: relative;
+  overflow: hidden;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 4rem 2rem;
+}
+
+.who-am-i-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 1;
+}
+
+.blob-image {
+  position: absolute;
+  width: 300px;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.blob-image.top-left {
+  top: -60px;
+  left: -100px;
+}
+
+.blob-image.bottom-right {
+  bottom: -80px;
+  right: -120px;
 }
 
 .i-am {
   flex: 1;
+  padding: 1rem;
   max-width: 800px;
-  margin: 0 auto;
   animation: fadeIn 0.8s ease-in;
 }
 
 .i-am p {
-  font-size: 1.125rem;
-  line-height: 1.8;
   margin-bottom: 1rem;
-  color: var(--bg-primary);
+  font-size: 1.2rem;
 }
 
 .who-am-i-image {
   flex: 1;
+  padding: 1rem;
 }
 
-.who-am-i-image img {
+.who-image {
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.i-am,
-.who-am-i-image {
-  padding: 1rem;
 }
