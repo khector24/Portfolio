@@ -32,8 +32,8 @@ export default function HowIWork() {
 
         <img
           src="/src/assets/illustrations/vertical-dots.svg"
-          alt="decorative blob"
-          className="svg-decor big-blob"
+          alt="vertical dots"
+          className="svg-decor vertical-dots"
         />
 
         <div className="how-i-work-image">

@@ -82,9 +82,17 @@
 }
 
 .svg-decor.big-blob {
+  bottom: -200px;
   width: 350px;
-  top: 0;
-  left: -100px;
+  right: 100px;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.svg-decor.vertical-dots {
+  width: 100px;
+  bottom: 0;
+  right: 100px;
   opacity: 0.08;
   z-index: 0;
 }
