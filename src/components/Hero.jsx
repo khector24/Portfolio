@@ -19,7 +19,7 @@ export default function Hero() {
               <span className="name-placeholder">
                 <Typewriter
                   onInit={(typewriter) =>
-                    typewriter.typeString("I'm Kenny").start()
+                    typewriter.pauseFor(1000).typeString("I'm Kenny").start()
                   }
                 />
               </span>
