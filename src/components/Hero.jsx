@@ -15,10 +15,14 @@ export default function Hero() {
         <div className="header-content">
           <div className="intro-text">
             <h1 className="name-heading">
-              Hi, I'm{" "}
-              <Typewriter
-                onInit={(typewriter) => typewriter.typeString("Kenny").start()}
-              />
+              Hi,{" "}
+              <span className="name-placeholder">
+                <Typewriter
+                  onInit={(typewriter) =>
+                    typewriter.typeString("I'm Kenny").start()
+                  }
+                />
+              </span>
             </h1>
             <p className="subtitle">
               Full-Stack Developer · AWS Certified · React · Node.js · DynamoDB

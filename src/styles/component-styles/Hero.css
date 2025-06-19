@@ -68,6 +68,10 @@
   margin-bottom: 0.5rem;
 }
 
+.name-heading .name-placeholder {
+  display: inline-block;
+}
+
 .subtitle {
   font-size: 1.25rem;
   color: var(--text-muted);
