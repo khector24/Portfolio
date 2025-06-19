@@ -45,24 +45,80 @@
 }
 
 /* Decorative SVG styles */
+/* Extra SVG Decor */
 .svg-decor {
   position: absolute;
   opacity: 0.15;
   z-index: 0;
   pointer-events: none;
+  fill: var(--accent);
 }
 
 .svg-decor.lightning {
   width: 100px;
   transform: rotate(-135deg);
-  bottom: -100px;
-  left: 100px;
+  bottom: -80px;
+  left: 80px;
 }
 
 .svg-decor.circles {
-  width: 200px;
+  width: 180px;
   top: -60px;
-  right: -60px;
+  right: -50px;
+}
+
+.svg-decor.plus {
+  width: 40px;
+  top: 20px;
+  left: 20px;
+  opacity: 0.2;
+}
+
+.svg-decor.triangle {
+  width: 30px;
+  bottom: 40px;
+  right: 60px;
+  opacity: 0.2;
+}
+
+.svg-decor.big-blob {
+  width: 350px;
+  top: 0;
+  left: -100px;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .how-i-work-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .how-i-work-text {
+    text-align: center;
+  }
+
+  .svg-decor.lightning {
+    left: 10px;
+    bottom: -60px;
+  }
+
+  .svg-decor.circles {
+    right: 10px;
+    top: -40px;
+  }
+
+  .svg-decor.plus,
+  .svg-decor.triangle {
+    display: none;
+  }
+
+  .svg-decor.big-blob {
+    left: -150px;
+    top: 40px;
+  }
 }
 
 /* Responsive layout */

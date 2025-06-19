@@ -1,9 +1,13 @@
 import "../styles/component-styles/HowIWork.css";
 
+import plus from "/src/assets/illustrations/plus.svg";
+import triangle from "/src/assets/illustrations/triangle.svg";
+
 export default function HowIWork() {
   return (
     <section className="how-i-work section-full-height bg-light">
       <div className="how-i-work-wrapper">
+        {/* Decorative SVGs */}
         <img
           src="/src/assets/illustrations/lightning-svgrepo-com.svg"
           alt="decorative lightning"
@@ -13,6 +17,23 @@ export default function HowIWork() {
           src="/src/assets/illustrations/five-circles.svg"
           alt="decorative circles"
           className="svg-decor circles"
+        />
+        <img src={plus} alt="decorative plus" className="svg-decor plus" />
+        <img
+          src={triangle}
+          alt="decorative triangle"
+          className="svg-decor triangle"
+        />
+        <img
+          src="/src/assets/illustrations/blob2.svg"
+          alt="decorative blob"
+          className="svg-decor big-blob"
+        />
+
+        <img
+          src="/src/assets/illustrations/vertical-dots.svg"
+          alt="decorative blob"
+          className="svg-decor big-blob"
         />
 
         <div className="how-i-work-image">
