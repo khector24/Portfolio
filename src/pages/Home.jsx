@@ -172,7 +172,7 @@ export default function Home() {
               <span>Git</span>
             </div>
             <div className="tech-item">
-              <img src={bootstrapLogo} alt="Git" />
+              <img src={bootstrapLogo} alt="Bootstrap" />
               <span>Bootstrap</span>
             </div>
             <div className="tech-item">
