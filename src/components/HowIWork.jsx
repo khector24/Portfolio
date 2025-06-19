@@ -6,14 +6,15 @@ export default function HowIWork() {
       <div className="how-i-work-wrapper">
         <img
           src="/src/assets/illustrations/lightning-svgrepo-com.svg"
-          alt="decorative blob"
-          className="blob-image top-left"
+          alt="decorative lightning"
+          className="svg-decor lightning"
         />
         <img
           src="/src/assets/illustrations/five-circles.svg"
-          alt="decorative blob"
-          className="blob-image bottom-right"
+          alt="decorative circles"
+          className="svg-decor circles"
         />
+
         <div className="how-i-work-image">
           <img
             src="/src/assets/illustrations/undraw_programming_65t2.svg"
