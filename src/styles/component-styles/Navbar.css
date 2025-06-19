@@ -1,34 +1,47 @@
+/* === Navbar Container === */
 nav {
   width: 100%;
   top: 0;
   left: 0;
-  background: transparent;
   position: absolute;
+  background: transparent;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   z-index: 10;
 }
 
+/* === Left Side Branding === */
 .nav-left {
   font-weight: bold;
-  font-size: 1.25rem;
-  color: #fff;
+  font-size: 1.5rem; /* increased from 1.25rem */
+  color: var(--text-link);
 }
 
+/* === Navigation Links Container === */
 .nav-right {
   display: flex;
   gap: 1.5rem;
 }
 
+/* === Shared Styles for Both Sides === */
 .nav-left,
 .nav-right a {
   color: var(--text-link);
   text-decoration: none;
 }
 
-.nav-right a:hover {
+/* === Navigation Links === */
+.nav-link {
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0.25rem 0.4rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* === Hover Effect === */
+.nav-link:hover {
   background-color: #30336b;
 }
