@@ -18,6 +18,11 @@ export default function WhoAmI() {
           things done.
         </p>
       </div>
+      <img
+        src="/src/assets/illustrations/undraw_static-website_x3tn.svg"
+        alt="Developer working on static website"
+        className="who-image"
+      />
     </section>
   );
 }
