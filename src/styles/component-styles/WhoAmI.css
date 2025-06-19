@@ -60,3 +60,22 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+  .who-am-i-wrapper {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .blob-image.top-left {
+    top: -40px;
+    left: -60px;
+    width: 200px;
+  }
+
+  .blob-image.bottom-right {
+    bottom: -60px;
+    right: -80px;
+    width: 200px;
+  }
+}

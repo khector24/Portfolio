@@ -5,12 +5,12 @@ export default function WhoAmI() {
     <section className="who-am-i-section section-full-height bg-light">
       <div className="who-am-i-wrapper">
         <img
-          src="/src/assets/illustrations/blob.svg"
+          src="/src/assets/illustrations/blob1.svg"
           alt="decorative blob"
           className="blob-image top-left"
         />
         <img
-          src="/src/assets/illustrations/blob.svg"
+          src="/src/assets/illustrations/blob2.svg"
           alt="decorative blob"
           className="blob-image bottom-right"
         />
