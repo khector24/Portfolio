@@ -115,38 +115,6 @@
   transform: rotate(90deg);
 }
 
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-  .how-i-work-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .how-i-work-text {
-    text-align: center;
-  }
-
-  .svg-decor.lightning {
-    left: 10px;
-    bottom: -60px;
-  }
-
-  .svg-decor.circles {
-    right: 10px;
-    top: -40px;
-  }
-
-  .svg-decor.plus,
-  .svg-decor.triangle {
-    display: none;
-  }
-
-  .svg-decor.big-blob {
-    left: -150px;
-    top: 40px;
-  }
-}
-
 /* Responsive layout */
 @media (max-width: 768px) {
   .how-i-work-wrapper {
