@@ -15,7 +15,7 @@ export default function WhoAmI() {
           className="blob-image bottom-right"
         />
 
-        <div className="i-am">
+        <div className="i-am" data-aos="fade-up-right">
           <h2 className="section-heading">Who I Am</h2>
           <p>
             I’m Kenny Hector — a full-stack developer focused on building
@@ -31,7 +31,7 @@ export default function WhoAmI() {
           </p>
         </div>
 
-        <div className="who-am-i-image">
+        <div className="who-am-i-image" data-aos="fade-up-left">
           <img
             src="/src/assets/illustrations/undraw_static-website_x3tn.svg"
             alt="Developer working on static website"

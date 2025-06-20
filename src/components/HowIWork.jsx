@@ -1,5 +1,4 @@
 import "../styles/component-styles/HowIWork.css";
-
 import plus from "/src/assets/illustrations/plus.svg";
 import triangle from "/src/assets/illustrations/triangle.svg";
 
@@ -10,45 +9,38 @@ export default function HowIWork() {
         {/* Decorative SVGs */}
         <img
           src="/src/assets/illustrations/lightning-svgrepo-com.svg"
-          alt="decorative lightning"
+          alt=""
           className="svg-decor lightning"
         />
         <img
           src="/src/assets/illustrations/five-circles.svg"
-          alt="decorative circles"
+          alt=""
           className="svg-decor circles"
         />
-        <img src={plus} alt="decorative plus" className="svg-decor plus" />
-        <img
-          src={triangle}
-          alt="decorative triangle"
-          className="svg-decor triangle"
-        />
+        <img src={plus} alt="" className="svg-decor plus" />
+        <img src={triangle} alt="" className="svg-decor triangle" />
         <img
           src="/src/assets/illustrations/blob2.svg"
-          alt="decorative blob"
+          alt=""
           className="svg-decor big-blob"
         />
-
         <img
           src="/src/assets/illustrations/vertical-dots.svg"
-          alt="vertical dots"
+          alt=""
           className="svg-decor vertical-dots"
         />
-
         <img
           src="/src/assets/illustrations/vertical-dots.svg"
-          alt="horizontal dots"
+          alt=""
           className="svg-decor horizontal-dots1"
         />
-
         <img
           src="/src/assets/illustrations/vertical-dots.svg"
-          alt="horizontal dots"
+          alt=""
           className="svg-decor horizontal-dots2"
         />
 
-        <div className="how-i-work-image">
+        <div className="how-i-work-image" data-aos="zoom-in">
           <img
             src="/src/assets/illustrations/undraw_programming_65t2.svg"
             alt="Person coding illustration"
@@ -56,7 +48,7 @@ export default function HowIWork() {
           />
         </div>
 
-        <div className="how-i-work-text">
+        <div className="how-i-work-text" data-aos="fade-left">
           <h2 className="section-heading">How I Work</h2>
           <p>
             I believe in shipping fast, refactoring often, and learning always.

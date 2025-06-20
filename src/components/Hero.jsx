@@ -6,20 +6,21 @@ import "../styles/component-styles/Hero.css";
 export default function Hero() {
   return (
     <section className="hero-content">
-      <div className="hero">
+      <div className="hero" data-aos="fade-up">
         <img
           src="/src/assets/images/profile-pic.jpeg"
           alt="Kenny Hector"
           className="profile-pic"
+          data-aos="zoom-in"
         />
         <div className="header-content">
-          <div className="intro-text">
+          <div className="intro-text" data-aos="fade-right">
             <h1 className="name-heading">
               Hi,{" "}
               <span className="name-placeholder">
                 <Typewriter
                   onInit={(typewriter) =>
-                    typewriter.pauseFor(1000).typeString("I'm Kenny").start()
+                    typewriter.pauseFor(1500).typeString("I'm Kenny").start()
                   }
                 />
               </span>
@@ -28,7 +29,7 @@ export default function Hero() {
               Full-Stack Developer · AWS Certified · React · Node.js · DynamoDB
             </p>
           </div>
-          <div className="contact-links">
+          <div className="contact-links" data-aos="fade-up">
             <a href="mailto:kennyhector24@gmail.com">kennyhector24@gmail.com</a>{" "}
             |{" "}
             <a
@@ -39,7 +40,7 @@ export default function Hero() {
               GitHub
             </a>
           </div>
-          <div className="hero-links">
+          <div className="hero-links" data-aos="fade-up" data-aos-delay="200">
             <Link to="/portfolio" className="cta-button">
               View My Work
             </Link>

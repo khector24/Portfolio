@@ -32,14 +32,21 @@ export default function TechStack() {
   return (
     <section className="skills-section section-full-height bg-dark">
       <div className="tech-stack-container">
-        <h2 className="section-heading">Tech I Use</h2>
-        <p className="tech-subtitle">
+        <h2 className="section-heading" data-aos="fade-up">
+          Tech I Use
+        </h2>
+        <p className="tech-subtitle" data-aos="fade-up" data-aos-delay="100">
           Tools and technologies I rely on to build secure, scalable, and
           responsive applications.
         </p>
         <div className="logo-grid">
-          {techItems.map(({ logo, label }) => (
-            <div key={label} className="tech-item">
+          {techItems.map(({ logo, label }, index) => (
+            <div
+              key={label}
+              className="tech-item"
+              data-aos="zoom-in"
+              data-aos-delay={index * 50}
+            >
               <img src={logo} alt={label} />
               <span>{label}</span>
             </div>
