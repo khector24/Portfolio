@@ -1,4 +1,4 @@
-import "../styles/component-styles/Skills.css";
+import "../styles/component-styles/SkillsAndTech.css";
 
 import reactLogo from "../assets/logos/react.svg";
 import nodeLogo from "../assets/logos/nodejs.svg";

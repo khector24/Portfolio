@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import WhoAmI from "../components/WhoAmI";
 import WhatIDo from "../components/WhatIDo";
 import HowIWork from "../components/HowIWork";
-import TechStack from "../components/TechStack";
+import SkillsAndTech from "../components/SkillsAndTech";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <WhoAmI />
       <WhatIDo />
       <HowIWork />
-      <TechStack />
+      <SkillsAndTech />
     </main>
   );
 }
