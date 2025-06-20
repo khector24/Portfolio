@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../styles/page-styles/Home.css";
 import Hero from "../components/Hero";
 import WhoAmI from "../components/WhoAmI";
