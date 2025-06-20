@@ -1,19 +1,24 @@
+import { useEffect } from "react";
+import "../styles/page-styles/About.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import Story from "../components/about-sections/Story.jsx";
+import Achievements from "../components/about-sections/Acheivements.jsx";
+import Skills from "../components/about-sections/Skills.jsx";
+import FAQ from "../components/about-sections/FAQ.jsx";
+
 export default function About() {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <div className="about">
-      <h1>About Me</h1>
-      <p>
-        I am a passionate web developer with a focus on creating dynamic and
-        responsive web applications. My journey in web development started with
-        a curiosity for how websites work, and it has grown into a full-fledged
-        career.
-      </p>
-      <p>
-        I enjoy working with modern technologies and frameworks, and I am always
-        eager to learn new skills and improve my craft. In my free time, I like
-        to contribute to open-source projects and explore new programming
-        languages.
-      </p>
-    </div>
+    <main className="about-container">
+      <Story />
+      <Achievements />
+      <Skills />
+      <FAQ />
+    </main>
   );
 }

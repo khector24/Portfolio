@@ -1,0 +1,7 @@
+.about-container {
+  color: var(--bg-primary);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  line-height: 1.8;
+}
