@@ -11,14 +11,11 @@ export default function Navbar() {
         <Link to="/" className="nav-link">
           Home
         </Link>
-        <Link to="/portfolio" className="nav-link">
-          Portfolio
-        </Link>
-        <Link to="/testimonials" className="nav-link">
-          Testimonials
-        </Link>
         <Link to="/about" className="nav-link">
           About
+        </Link>
+        <Link to="/portfolio" className="nav-link">
+          Portfolio
         </Link>
         <Link to="/contact" className="nav-link">
           Contact
