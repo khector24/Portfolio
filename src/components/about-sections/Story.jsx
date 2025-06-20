@@ -1,9 +1,9 @@
 import resumePDF from "../../assets/documents/resume.pdf";
 
-export default function About() {
+export default function Story() {
   return (
-    <section className="about">
-      <h2 data-aos="fade-down">About Me</h2>
+    <section className="story">
+      <h2 data-aos="fade-down">My Story</h2>
 
       <p data-aos="fade-up">
         Hi, I'm <strong>Kenny Hector</strong> — a multilingual full-stack
