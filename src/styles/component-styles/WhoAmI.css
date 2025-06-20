@@ -44,9 +44,10 @@
 }
 
 .i-am p {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem; /* reduced from 1.2rem */
+  line-height: 1.6;
+  color: var(--text-primary); /* optional: for theme consistency */
 }
 
 .who-am-i-image {
@@ -77,5 +78,9 @@
     bottom: -60px;
     right: -80px;
     width: 200px;
+  }
+
+  .i-am p {
+    font-size: 0.95rem;
   }
 }
