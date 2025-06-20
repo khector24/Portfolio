@@ -1,4 +1,9 @@
 .footer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--bg-primary); /* Match the dark theme */
   color: var(--text-muted);
   padding: 1.5rem 2rem;
@@ -21,6 +26,18 @@
   text-decoration: underline;
 }
 
-.footer-content p {
+.middle-content {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 1rem 0;
+}
+
+.bottom-content p {
   margin: 0.4rem 0;
 }
