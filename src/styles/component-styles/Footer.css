@@ -5,8 +5,9 @@
   justify-content: space-between;
   background-color: var(--bg-primary);
   color: var(--text-muted);
-  padding: 3rem 2rem;
+  padding: 12rem 6rem;
   font-size: 0.95rem;
+  border-top: 2px solid var(--accent);
 }
 
 .footer a {
@@ -25,6 +26,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .footer-left {
