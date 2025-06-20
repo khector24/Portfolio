@@ -1,4 +1,4 @@
-import "../styles/component-styles/TechStack.css";
+import "../styles/component-styles/Skills.css";
 
 import reactLogo from "../assets/logos/react.svg";
 import nodeLogo from "../assets/logos/nodejs.svg";
@@ -17,7 +17,7 @@ export default function SkillsAndTech() {
     { logo: reactLogo, label: "React" },
     { logo: nodeLogo, label: "Node.js" },
     { logo: expressLogo, label: "Express" },
-    { logo: awsLogo, label: "AWS (Lambda, S3, DynamoDB, SES)" },
+    { logo: awsLogo, label: "AWS" },
     { logo: javaLogo, label: "Java" },
     { logo: mysqlLogo, label: "MySQL" },
     { logo: htmlLogo, label: "HTML5" },
@@ -30,16 +30,19 @@ export default function SkillsAndTech() {
   return (
     <section className="skills-section section-full-height bg-dark">
       <div className="tech-stack-container">
-        <h2 className="section-heading" data-aos="fade-up">
-          Skills & Technologies
-        </h2>
-        <p className="tech-subtitle" data-aos="fade-up" data-aos-delay="100">
-          From frontend to backend, here's what I use to build responsive,
-          scalable, and impactful applications.
-        </p>
-
         <div className="skills-content">
           <div className="logo-grid">
+            <h2 className="section-heading" data-aos="fade-up">
+              Skills & Technologies
+            </h2>
+            <p
+              className="tech-subtitle"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              From frontend to backend, here's what I use to build responsive,
+              scalable, and impactful applications.
+            </p>
             {techItems.map(({ logo, label }, index) => (
               <div
                 key={label}
