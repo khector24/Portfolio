@@ -22,54 +22,37 @@ export default function SkillsAndTech() {
     { logo: mysqlLogo, label: "MySQL" },
     { logo: htmlLogo, label: "HTML5" },
     { logo: cssLogo, label: "CSS3" },
-    { logo: gitLogo, label: "Git & GitHub" },
+    { logo: gitLogo, label: "Git" },
     { logo: postmanLogo, label: "Postman" },
     { logo: visualStudioLogo, label: "VS Code" },
   ];
 
   return (
-    <section className="skills-section section-full-height bg-dark">
-      <div className="tech-stack-container">
-        <div className="skills-content">
-          <div className="logo-grid">
-            <h2 className="section-heading" data-aos="fade-up">
-              Skills & Technologies
-            </h2>
-            <p
-              className="tech-subtitle"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              From frontend to backend, here's what I use to build responsive,
-              scalable, and impactful applications.
-            </p>
-            {techItems.map(({ logo, label }, index) => (
-              <div
-                key={label}
-                className="tech-item"
-                data-aos="zoom-in"
-                data-aos-delay={index * 50}
-              >
-                <img src={logo} alt={label} />
-                <span>{label}</span>
-              </div>
-            ))}
-          </div>
-
-          <div
-            className="skill-category"
-            data-aos="fade-left"
-            data-aos-delay="600"
-          >
-            <h3>Leadership & Collaboration</h3>
-            <ul className="skill-list">
-              <li>Team Leadership (25+ staff)</li>
-              <li>Client Collaboration</li>
-              <li>Project Management</li>
-              <li>Retail & Operations Optimization</li>
-            </ul>
-          </div>
+    <section className="skills-tech-section section-full-height bg-dark">
+      <div className="tech-container">
+        <h2 className="section-sub-heading">Skills & Technologies</h2>
+        <p className="tech-subtitle">
+          From frontend to backend, here's what I use to build responsive,
+          scalable, and impactful applications.
+        </p>
+        <div className="logo-grid">
+          {techItems.map(({ logo, label }) => (
+            <div key={label} className="tech-item">
+              <img src={logo} alt={label} />
+              <span>{label}</span>
+            </div>
+          ))}
         </div>
+      </div>
+
+      <div className="skills-container">
+        <h2 className="section-sub-heading">Leadership & Collaboration</h2>
+        <ul className="skill-list">
+          <li>Team Leadership (25+ staff)</li>
+          <li>Client Collaboration</li>
+          <li>Project Management</li>
+          <li>Retail & Operations Optimization</li>
+        </ul>
       </div>
     </section>
   );
