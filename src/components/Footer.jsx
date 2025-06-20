@@ -36,8 +36,8 @@ export default function Footer() {
       <hr />
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Kenny Hector</p>
-        <p>
+        <span>&copy; {new Date().getFullYear()} Kenny Hector</span>
+        <span>
           Icons by{" "}
           <a
             href="https://icons8.com"
@@ -46,7 +46,7 @@ export default function Footer() {
           >
             Icons8
           </a>
-        </p>
+        </span>
       </div>
     </footer>
   );
