@@ -48,10 +48,29 @@ export default function SkillsAndTech() {
       <div className="skills-container">
         <h2 className="section-sub-heading">Leadership & Collaboration</h2>
         <ul className="skill-list">
-          <li>Team Leadership (25+ staff)</li>
-          <li>Client Collaboration</li>
-          <li>Project Management</li>
-          <li>Retail & Operations Optimization</li>
+          <li>
+            Led a 25+ person team while overseeing day-to-day store operations
+          </li>
+          <li>Delivered hands-on mentorship and onboarding for new hires</li>
+          <li>Provided excellent customer support and issue resolution</li>
+          <li>
+            Identified operational inefficiencies and built internal apps to
+            solve them
+          </li>
+          <li>
+            Collaborated with stakeholders to design custom software solutions
+          </li>
+          <li>
+            Balanced technical project execution with retail management duties
+          </li>
+          <li>
+            Demonstrated initiative in launching client-facing and internal
+            tools
+          </li>
+          <li>
+            Maintained a culture of learning, innovation, and customer-first
+            service
+          </li>
         </ul>
       </div>
     </section>
