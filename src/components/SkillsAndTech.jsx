@@ -49,7 +49,7 @@ export default function SkillsAndTech() {
   return (
     <section className="skills-tech-section section-full-height bg-dark">
       <div className="tech-container" data-aos="fade-right">
-        <h2 className="section-sub-heading">Skills & Technologies</h2>
+        <h2 className="section-sub-heading">Technologies</h2>
         <p className="tech-subtitle">
           From frontend to backend, here's what I use to build responsive,
           scalable, and impactful applications.
