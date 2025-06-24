@@ -14,7 +14,7 @@ import gitLogo from "../assets/logos/git.svg";
 import expressLogo from "../assets/logos/express-js.svg";
 import postmanLogo from "../assets/logos/postman.svg";
 import visualStudioLogo from "../assets/logos/visual-studio-code.svg";
-import checkIcon from "../assets/icons/check.svg"; // Add a simple check icon
+import checkIcon from "../assets/icons/check.svg";
 
 export default function SkillsAndTech() {
   useEffect(() => {
@@ -68,7 +68,7 @@ export default function SkillsAndTech() {
         <h2 className="section-sub-heading">Leadership & Collaboration</h2>
         <ul className="skill-list">
           {leadershipPoints.map((text, i) => (
-            <li key={i} className="skill-list-item" data-aos="fade-up">
+            <li key={i} className="skill-list-item">
               <img src={checkIcon} alt="check" className="check-icon" />
               {text}
             </li>
