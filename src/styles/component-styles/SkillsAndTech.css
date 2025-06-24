@@ -6,9 +6,6 @@
   padding: 4rem 2rem;
   gap: 4rem;
   position: relative;
-
-  /* Optional diagonal background */
-  /* clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%); */
 }
 
 .section-sub-heading {
@@ -16,6 +13,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .tech-subtitle {
