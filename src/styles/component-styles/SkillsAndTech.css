@@ -22,6 +22,7 @@
   margin-bottom: 2rem;
   max-width: 700px;
   margin-inline: auto;
+  text-align: center;
 }
 
 .tech-container,
@@ -35,30 +36,6 @@
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   gap: 1.5rem;
   justify-items: center;
-}
-
-.tech-card {
-  background-color: rgba(255, 255, 255, 0.03);
-  padding: 1rem;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.tech-card:hover {
-  transform: scale(1.05);
-}
-
-.tech-card img {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 0.5rem;
-}
-
-.tech-card span {
-  font-size: 0.9rem;
-  color: var(--text-muted);
 }
 
 .skills-container {
