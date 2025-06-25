@@ -28,6 +28,7 @@
 .skills-container {
   flex: 1;
   min-width: 320px;
+  padding: 3rem;
 }
 
 .logo-grid {
