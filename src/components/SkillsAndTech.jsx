@@ -8,6 +8,13 @@ import { leadershipPoints, techItems } from "../assets/data";
 
 import checkIcon from "../assets/icons/check.svg";
 
+// Decorative SVGs as components
+import PlusIcon from "../assets/illustrations/plus.svg?react";
+import TriangleIcon from "../assets/illustrations/triangle.svg?react";
+import Blob2Icon from "../assets/illustrations/blob2.svg?react";
+import VerticalDotsIcon from "../assets/illustrations/vertical-dots.svg?react";
+import LightningIcon from "../assets/illustrations/lightning-svgrepo-com.svg?react";
+
 export default function SkillsAndTech() {
   useEffect(() => {
     AOS.init({ once: true });
@@ -15,6 +22,13 @@ export default function SkillsAndTech() {
 
   return (
     <section className="skills-tech-section section-full-height bg-dark">
+      {/* Decorative SVGs */}
+      <PlusIcon className="svg-decor plus" />
+      <TriangleIcon className="svg-decor triangle" />
+      <Blob2Icon className="svg-decor big-blob" />
+      <VerticalDotsIcon className="svg-decor vertical-dots" />
+      <LightningIcon className="svg-decor lightning" />
+
       <div className="tech-container" data-aos="fade-right">
         <h2 className="section-sub-heading">Technologies</h2>
         <p className="container-subtitle">

@@ -40,6 +40,8 @@
   height: 100%;
   background-color: rgba(255, 255, 255, 0.02);
   box-shadow: 0 0 10px rgba(108, 92, 231, 0.15);
+  position: relative;
+  z-index: 1;
 }
 
 .logo-grid {
@@ -76,4 +78,51 @@
   height: 16px;
   margin-right: 0.75rem;
   margin-top: 0.25rem;
+}
+
+/* Decorative SVGs */
+.svg-decor {
+  position: absolute;
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+  fill: white;
+  stroke: white;
+  filter: brightness(2);
+}
+
+.svg-decor.plus {
+  top: 30px;
+  left: 20px;
+  width: 40px;
+  opacity: 0.15;
+}
+
+.svg-decor.triangle {
+  bottom: 40px;
+  right: 40px;
+  width: 30px;
+  opacity: 0.15;
+}
+
+.svg-decor.big-blob {
+  bottom: -180px;
+  right: 80px;
+  width: 300px;
+  opacity: 0.05;
+}
+
+.svg-decor.vertical-dots {
+  bottom: -120px;
+  left: 100px;
+  width: 80px;
+  opacity: 0.06;
+}
+
+.svg-decor.lightning {
+  top: -50px;
+  right: 60px;
+  width: 100px;
+  transform: rotate(-135deg);
+  opacity: 0.1;
 }
