@@ -113,8 +113,15 @@
 }
 
 .svg-decor.vertical-dots {
-  bottom: -120px;
+  bottom: -320px;
   left: 100px;
+  width: 80px;
+  opacity: 0.06;
+}
+
+.svg-decor.vertical-dots1 {
+  bottom: -345px;
+  left: 80px;
   width: 80px;
   opacity: 0.06;
 }
