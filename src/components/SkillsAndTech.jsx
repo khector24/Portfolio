@@ -17,7 +17,7 @@ export default function SkillsAndTech() {
     <section className="skills-tech-section section-full-height bg-dark">
       <div className="tech-container" data-aos="fade-right">
         <h2 className="section-sub-heading">Technologies</h2>
-        <p className="tech-subtitle">
+        <p className="container-subtitle">
           From frontend to backend, here's what I use to build responsive,
           scalable, and impactful applications.
         </p>
@@ -30,6 +30,11 @@ export default function SkillsAndTech() {
 
       <div className="skills-container" data-aos="fade-left">
         <h2 className="section-sub-heading">Leadership & Collaboration</h2>
+        <p className="container-subtitle">
+          Beyond the code, I lead teams, mentor talent, and build solutions that
+          align people, process, and product.
+        </p>
+
         <ul className="skill-list">
           {leadershipPoints.map((text, i) => (
             <li key={i} className="skill-list-item">
