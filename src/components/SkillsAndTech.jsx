@@ -14,6 +14,9 @@ import TriangleIcon from "../assets/illustrations/triangle.svg?react";
 import Blob2Icon from "../assets/illustrations/blob2.svg?react";
 import VerticalDotsIcon from "../assets/illustrations/vertical-dots.svg?react";
 import LightningIcon from "../assets/illustrations/lightning-svgrepo-com.svg?react";
+import VerticalDotsIcon2 from "../assets/illustrations/vertical-dots.svg?react";
+import VerticalDotsIcon3 from "../assets/illustrations/vertical-dots.svg?react";
+import VerticalDotsIcon4 from "../assets/illustrations/vertical-dots.svg?react";
 
 export default function SkillsAndTech() {
   useEffect(() => {
@@ -28,6 +31,9 @@ export default function SkillsAndTech() {
       <Blob2Icon className="svg-decor big-blob" />
       <VerticalDotsIcon className="svg-decor vertical-dots" />
       <LightningIcon className="svg-decor lightning" />
+      <VerticalDotsIcon2 className="svg-decor horizontal-dots1" />
+      <VerticalDotsIcon3 className="svg-decor horizontal-dots2" />
+      <VerticalDotsIcon4 className="svg-decor horizontal-dots3" />
 
       <div className="tech-container" data-aos="fade-right">
         <h2 className="section-sub-heading">Technologies</h2>
