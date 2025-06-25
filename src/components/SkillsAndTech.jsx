@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import TechItem from "./TechItem";
 import { leadershipPoints, techItems } from "../assets/data";
 
-import checkIcon from "../assets/icons/check.svg";
+import CheckIcon from "../assets/icons/check.svg?react";
 
 // Decorative SVGs as components
 import PlusIcon from "../assets/illustrations/plus.svg?react";
@@ -60,7 +60,7 @@ export default function SkillsAndTech() {
         <ul className="skill-list">
           {leadershipPoints.map((text, i) => (
             <li key={i} className="skill-list-item">
-              <img src={checkIcon} alt="check" className="check-icon" />
+              <CheckIcon className="check-icon" />
               {text}
             </li>
           ))}
