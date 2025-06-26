@@ -22,7 +22,7 @@ export default function Navbar() {
       <img
         src={MenuBar}
         alt="Menu Bar"
-        className={`menu-bar ${showMenu ? "rotate" : ""}`}
+        className={`menu-bar ${showMenu ? "" : "rotate"}`}
         onClick={toggleMenu}
       />
 
