@@ -40,7 +40,9 @@ export default function Navbar() {
           <Link to="/contact" className="nav-link">
             Contact
           </Link>
+
           <hr />
+
           <div className="nav-icons">
             <a href="mailto:kennyhector24@gmail.com">
               <img src={EmailIcon} alt="Email" />
