@@ -16,13 +16,7 @@ nav {
 .nav-left {
   font-weight: bold;
   font-size: 1.5rem; /* increased from 1.25rem */
-  color: var(--text-link);
-}
-
-/* === Shared Styles for Both Sides === */
-.nav-left,
-.nav-right a {
-  color: var(--text-link);
+  color: var(--text-muted);
   text-decoration: none;
 }
 
@@ -54,6 +48,11 @@ nav {
   gap: 1.2rem;
   z-index: 999;
   min-width: 180px;
+}
+
+.nav-right a {
+  color: var(--text-link);
+  text-decoration: none;
 }
 
 /* === Navigation Links === */
