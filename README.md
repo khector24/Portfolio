@@ -34,17 +34,19 @@ Welcome to my developer portfolio! I'm Kenny, a **Full-Stack Developer** with a 
 
 ## 📁 Folder Structure
 
-📦 portfolio/
-├── public/
+```
+portfolio/
+├── public/                  # Static files
 ├── src/
-│ ├── assets/ # Icons, images, SVGs
-│ ├── components/ # Reusable components (Navbar, Footer, etc.)
-│ ├── pages/ # Page components (Home, About, Portfolio...)
-│ ├── styles/ # CSS modules and global styles
-│ ├── data/ # JSON and data-driven configs
-│ └── App.jsx # Root app file and routing
-├── package.json
-└── README.md
+│   ├── assets/              # Icons, images, SVGs
+│   ├── components/          # Reusable UI components (Navbar, Footer, etc.)
+│   ├── pages/               # Page components (Home, About, Portfolio...)
+│   ├── styles/              # Global and component-specific CSS
+│   ├── data/                # Data files and config JSON
+│   └── App.jsx              # Root component and routing
+├── package.json             # Project metadata and scripts
+└── README.md                # Project documentation
+```
 
 ---
 
