@@ -34,6 +34,7 @@ export default function ContactForm() {
         id="name"
         value={formData.name}
         onChange={handleChange}
+        required
       />
 
       <label htmlFor="email">Email:</label>
@@ -44,17 +45,18 @@ export default function ContactForm() {
         id="email"
         value={formData.email}
         onChange={handleChange}
+        required
       />
 
       <label htmlFor="message">Message:</label>
       <textarea
-        type="text"
         placeholder="Your message"
         name="message"
         id="message"
         rows={6}
         value={formData.message}
         onChange={handleChange}
+        required
       ></textarea>
 
       <button type="submit">Submit</button>
