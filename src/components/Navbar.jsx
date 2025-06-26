@@ -15,12 +15,14 @@ export default function Navbar() {
       <div className="nav-left">
         <span>Kenny H.</span>
       </div>
+
       <img
         src={MenuBar}
         alt="Menu Bar"
-        className="menu-bar"
+        className={`menu-bar ${showMenu ? "rotate" : ""}`}
         onClick={toggleMenu}
       />
+
       {showMenu && (
         <div className="nav-right">
           <Link to="/" className="nav-link">

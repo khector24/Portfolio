@@ -19,13 +19,6 @@ nav {
   color: var(--text-link);
 }
 
-/* === Navigation Links Container === */
-.nav-right {
-  display: flex;
-  gap: 1.5rem;
-  border: 1px solid white;
-}
-
 /* === Shared Styles for Both Sides === */
 .nav-left,
 .nav-right a {
@@ -33,9 +26,26 @@ nav {
   text-decoration: none;
 }
 
+/* === Menu Bar Icon === */
 .menu-bar {
-  color: var(--text-muted);
-  height: 2rem;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  filter: brightness(1.4);
+}
+
+/* Rotate 90 degrees when active */
+.menu-bar.rotate {
+  transform: rotate(90deg);
+}
+
+/* === Navigation Links Container === */
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+  border: 1px solid white;
+  background-color: var(--text-muted);
 }
 
 /* === Navigation Links === */
