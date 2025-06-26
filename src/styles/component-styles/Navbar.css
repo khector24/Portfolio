@@ -16,7 +16,7 @@ nav {
 .nav-left {
   font-weight: bold;
   font-size: 2rem; /* increased from 1.25rem */
-  color: var(--text-muted);
+  color: var(--text-link);
   text-decoration: none;
 }
 
