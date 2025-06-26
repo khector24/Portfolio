@@ -17,6 +17,8 @@ export default function ContactForm() {
     });
   };
 
+  const handleSubmit = () => {};
+
   return (
     <form className="contact-form">
       <label htmlFor="name">Name:</label>
@@ -45,9 +47,14 @@ export default function ContactForm() {
         placeholder="Your message"
         name="message"
         id="message"
+        rows={6}
         value={formData.message}
         onChange={handleChange}
       ></textarea>
+
+      <button type="submit" onSubmit={handleSubmit}>
+        Submit
+      </button>
     </form>
   );
 }
