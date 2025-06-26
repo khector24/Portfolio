@@ -17,10 +17,15 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(
+      `Sudmitted ${formData.name} ${formData.email} ${formData.message}`
+    );
+  };
 
   return (
-    <form className="contact-form">
+    <form className="contact-form" onSubmit={handleSubmit}>
       <label htmlFor="name">Name:</label>
       <input
         type="text"
@@ -52,9 +57,7 @@ export default function ContactForm() {
         onChange={handleChange}
       ></textarea>
 
-      <button type="submit" onSubmit={handleSubmit}>
-        Submit
-      </button>
+      <button type="submit">Submit</button>
     </form>
   );
 }
