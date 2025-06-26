@@ -8,22 +8,22 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 2rem 2.5rem;
   z-index: 10;
 }
 
 /* === Left Side Branding === */
 .nav-left {
   font-weight: bold;
-  font-size: 1.5rem; /* increased from 1.25rem */
+  font-size: 2rem; /* increased from 1.25rem */
   color: var(--text-muted);
   text-decoration: none;
 }
 
 /* === Menu Bar Icon === */
 .menu-bar {
-  width: 28px;
-  height: 28px;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
   transition: transform 0.3s ease;
   filter: brightness(1.4);
