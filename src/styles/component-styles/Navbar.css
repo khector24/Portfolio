@@ -69,12 +69,29 @@ nav {
   background-color: #30336b;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--bg-primary);
+  margin: 0.5rem 0;
+}
+
 /* === Active Link Icons === */
 .nav-icons {
   display: flex;
-  gap: 1rem;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-  max-width: 10px;
-  max-height: 10px;
+.nav-icons img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(1.2);
+  transition: transform 0.2s ease;
+}
+
+.nav-icons img:hover {
+  transform: scale(1.1);
 }
