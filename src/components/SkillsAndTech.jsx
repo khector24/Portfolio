@@ -59,7 +59,12 @@ export default function SkillsAndTech() {
 
         <ul className="skill-list">
           {leadershipPoints.map((text, i) => (
-            <li key={i} className="skill-list-item">
+            <li
+              key={i}
+              className="skill-list-item"
+              data-aos="fade-up"
+              data-aos-delay={i * 100}
+            >
               <CheckIcon className="check-icon" />
               {text}
             </li>
