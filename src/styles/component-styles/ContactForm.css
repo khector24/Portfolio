@@ -1,0 +1,7 @@
+.contact-form {
+  border: 1px solid black;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
