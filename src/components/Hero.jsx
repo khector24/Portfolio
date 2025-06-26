@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="header-content">
           <div className="intro-text" data-aos="fade-right">
             <h1 className="name-heading">
-              Hi,{" "}
+              Hi!{" "}
               <span className="name-placeholder">
                 <Typewriter
                   onInit={(typewriter) =>
