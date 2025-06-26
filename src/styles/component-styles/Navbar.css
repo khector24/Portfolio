@@ -23,6 +23,7 @@ nav {
 .nav-right {
   display: flex;
   gap: 1.5rem;
+  border: 1px solid white;
 }
 
 /* === Shared Styles for Both Sides === */
@@ -30,6 +31,11 @@ nav {
 .nav-right a {
   color: var(--text-link);
   text-decoration: none;
+}
+
+.menu-bar {
+  color: var(--text-muted);
+  height: 2rem;
 }
 
 /* === Navigation Links === */
