@@ -40,14 +40,14 @@ export default function ContactForm() {
       />
 
       <label htmlFor="message">Message:</label>
-      <input
+      <textarea
         type="text"
         placeholder="Your message"
         name="message"
         id="message"
         value={formData.message}
         onChange={handleChange}
-      />
+      ></textarea>
     </form>
   );
 }
