@@ -41,19 +41,19 @@ export default function Navbar() {
             Contact
           </Link>
           <hr />
-          <div>
+          <div className="nav-icons">
             <a href="mailto:kennyhector24@gmail.com">
-              <img src={<EmailIcon />} alt="" />
+              <img src={EmailIcon} alt="Email" />
             </a>
             <a href="" className="nav-link">
-              <img src={<ResumeIcon />} alt="" />
+              <img src={ResumeIcon} alt="Resume" />
             </a>
             <a
               href="https://github.com/khector24"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={<GitHubIcon />} alt="" />
+              <img src={GitHubIcon} alt="GitHub" />
             </a>
           </div>
         </div>

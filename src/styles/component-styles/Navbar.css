@@ -68,3 +68,13 @@ nav {
 .nav-link:hover {
   background-color: #30336b;
 }
+
+/* === Active Link Icons === */
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+
+  max-width: 10px;
+  max-height: 10px;
+}
