@@ -37,6 +37,13 @@ export default function Navbar() {
           <Link to="/contact" className="nav-link">
             Contact
           </Link>
+          <hr />
+          <div>
+            <a href="mailto:kennyhector24@gmail.com">kennyhector24@gmail.com</a>
+            <a href="" className="nav-link">
+              Resume
+            </a>
+          </div>
         </div>
       )}
     </nav>
