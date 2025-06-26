@@ -1,12 +1,67 @@
-# React + Vite
+# 🧑‍💻 Kenny Hector — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my developer portfolio! I'm Kenny, a **Full-Stack Developer** with a passion for building scalable web apps using **React**, **Node.js**, and **AWS**. This site showcases my work, skills, and professional experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React, JavaScript (ES6+), Vite, HTML5, CSS3, Material UI
+- **Backend**: Node.js, Express.js
+- **Database**: DynamoDB, MongoDB
+- **Cloud**: AWS Lambda, API Gateway, S3, SES, Resend API
+- **Other Tools**: Git, GitHub, Postman, Figma, VS Code
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Key Features
+
+- ⚡ Blazing-fast performance with Vite
+- 🌗 Dark/Light theme toggle
+- 🎯 Project filtering by tech stack
+- 📬 Contact form powered by Resend API
+- 🧠 Scroll-triggered animations (AOS)
+- 🧩 Modular, scalable React components
+- 🖼️ Custom SVG backgrounds & illustrations
+
+---
+
+## 🔗 Live Preview
+
+**🌐 Coming soon:** [https://kennyhector.com](https://kennyhector.com)
+
+---
+
+## 📁 Folder Structure
+
+📦 portfolio/
+├── public/
+├── src/
+│ ├── assets/ # Icons, images, SVGs
+│ ├── components/ # Reusable components (Navbar, Footer, etc.)
+│ ├── pages/ # Page components (Home, About, Portfolio...)
+│ ├── styles/ # CSS modules and global styles
+│ ├── data/ # JSON and data-driven configs
+│ └── App.jsx # Root app file and routing
+├── package.json
+└── README.md
+
+---
+
+## 🛠️ Getting Started
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/khector24/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+## 📬 Contact Me
+
+```bash
+Email: kennyhector24@gmail.com
+GitHub: @khector24
+```
