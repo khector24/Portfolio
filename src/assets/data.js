@@ -250,4 +250,16 @@ export const resumeData = [
     ],
     tech: ["React", "Node.js", "Express", "DynamoDB"],
   },
+  {
+    type: "education",
+    title: "Bachelor of Science in Computer Science",
+    company: "St. Thomas Aquinas College",
+    location: "Sparkill, NY",
+    dateRange: "2016 – 2020",
+    bullets: [
+      "Focused on software development, algorithms, and data structures.",
+      "Completed projects in Java, SQL, and C#.",
+    ],
+    tech: ["C#", "Java", "SQL"],
+  },
 ];

@@ -7,9 +7,10 @@ export default function CareerCard({
   dateRange,
   bullets,
   tech,
+  type,
 }) {
   return (
-    <div className="career-card">
+    <div className={`career-card ${type === "education" ? "education" : ""}`}>
       <div className="career-card-header">
         <h3>
           {title} · <span className="company">{company}</span>
