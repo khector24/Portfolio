@@ -26,7 +26,6 @@ export default function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
       <input
         type="text"
         placeholder="Your name"
@@ -35,9 +34,9 @@ export default function ContactForm() {
         value={formData.name}
         onChange={handleChange}
         required
+        aria-label="Name"
       />
 
-      <label htmlFor="email">Email:</label>
       <input
         type="email"
         placeholder="Your email"
@@ -46,9 +45,9 @@ export default function ContactForm() {
         value={formData.email}
         onChange={handleChange}
         required
+        aria-label="Email"
       />
 
-      <label htmlFor="message">Message:</label>
       <textarea
         placeholder="Your message"
         name="message"
@@ -57,6 +56,7 @@ export default function ContactForm() {
         value={formData.message}
         onChange={handleChange}
         required
+        aria-label="Message"
       ></textarea>
 
       <button type="submit">Submit</button>
