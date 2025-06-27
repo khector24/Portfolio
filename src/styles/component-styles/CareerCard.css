@@ -1,16 +1,23 @@
 .career-card {
-  background-color: var(--bg-muted);
-  color: var(--text-muted);
-  border-left: 3px solid var(--accent-color);
-  padding: 1.5rem 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 12px;
+  margin: 0 3rem;
+  padding: 3rem 4rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  background: linear-gradient(to bottom right, var(--bg-muted), #1c1f3b);
+  color: var(--text-primary);
 }
 
 .career-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
 }
 
 .career-card-header {
@@ -24,7 +31,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
-  color: var(--text-primary);
+  color: var(--accent);
 }
 
 .career-card .company {
@@ -34,20 +41,21 @@
 
 .date-range {
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .location {
   font-size: 0.95rem;
   font-weight: 500;
   margin: 0.5rem 0 1rem;
-  color: var(--text-secondary);
+  color: var(--text-link);
 }
 
 .bullet-points {
   list-style-type: disc;
   padding-left: 1.25rem;
   margin-bottom: 1rem;
+  color: var(--text-muted);
 }
 
 .bullet-points li {
@@ -64,17 +72,13 @@
 }
 
 .tag {
-  background-color: var(--accent-color);
-  color: white;
-  padding: 0.3rem 0.6rem;
-  border-radius: 6px;
+  background-color: var(--accent-hover, #9a6aff);
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 600;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-}
-
-.tag:hover {
-  opacity: 0.85;
-  transform: scale(1.05);
-  transition: all 0.2s ease-in-out;
+  transition: 0.3s ease;
 }

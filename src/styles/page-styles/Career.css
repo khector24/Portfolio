@@ -1,7 +1,9 @@
 .career-container {
   background: var(--bg-primary);
-  padding: 4rem 2rem 8rem;
+  padding: 4rem 2rem;
   color: var(--text-primary);
+  min-height: 100vh; /* ensures the container stretches at least the full viewport height */
+  box-sizing: border-box;
 }
 
 .career-container h1 {
