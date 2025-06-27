@@ -31,8 +31,11 @@ export default function Navbar() {
           <Link to="/" className="nav-link">
             Home
           </Link>
-          <Link to="/about" className="nav-link">
+          {/* <Link to="/about" className="nav-link">
             About
+          </Link> */}
+          <Link to="/career" className="nav-link">
+            Career
           </Link>
           <Link to="/portfolio" className="nav-link">
             Portfolio
