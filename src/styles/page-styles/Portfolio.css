@@ -1,0 +1,20 @@
+.portfolio {
+  background: var(--bg-primary);
+  padding: 4rem 2rem;
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+.portfolio h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-link);
+  margin-bottom: 1rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}

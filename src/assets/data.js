@@ -263,3 +263,54 @@ export const resumeData = [
     tech: ["C#", "Java", "SQL"],
   },
 ];
+
+export const featuredProjects = [
+  {
+    title: "Splash Zone Aquatics Website",
+    tech: "React, Material UI, AWS S3, Lambda, DynamoDB",
+    description:
+      "Responsive, customer-focused site featuring instructor profiles, FAQs, and AWS-powered newsletter automation. Drove 13+ early signups before launch.",
+    link: "https://github.com/khector24/swim-aquatics",
+    tags: ["react", "aws", "lambda", "dynamodb", "material-ui"],
+  },
+  {
+    title: "Theft Tracker Application",
+    tech: "React, Material UI, AWS S3, Lambda, DynamoDB",
+    description:
+      "Incident reporting system with media uploads and DynamoDB logging. Used in-store to reduce police reporting time by 33%.",
+    link: "https://github.com/khector24/theft-tracker",
+    tags: ["react", "aws", "lambda", "file-upload", "material-ui"],
+  },
+  {
+    title: "Delivery Management App",
+    tech: "React, Node.js, Express, DynamoDB",
+    description:
+      "Internal delivery scheduling platform with real-time tracking, custom permissions, and SMS notifications. Helped reduce delivery errors to near-zero.",
+    link: "https://github.com/khector24/delivery-manager",
+    tags: ["react", "node", "express", "dynamodb", "auth"],
+  },
+  {
+    title: "Weather Project",
+    tech: "Node.js, Express, EJS, CSS",
+    description:
+      "Simple weather app using OpenWeatherMap API. Accepts city input and displays live weather data using EJS templating.",
+    link: "https://github.com/khector24/weather-project",
+    tags: ["node", "ejs", "express", "api"],
+  },
+  {
+    title: "Simple To-Do List",
+    tech: "Node.js, EJS, CSS, JavaScript",
+    description:
+      "Clean and interactive to-do list app using EJS templates and route-based task management.",
+    link: "https://github.com/khector24/simple-to-do-list",
+    tags: ["node", "ejs", "express", "todo"],
+  },
+  {
+    title: "Simon Says Game",
+    tech: "JavaScript, HTML, CSS",
+    description:
+      "Interactive memory game built from scratch with custom sounds and animations. Fun demonstration of game logic.",
+    link: "https://github.com/khector24/simon-says-game",
+    tags: ["javascript", "game", "html", "css"],
+  },
+];

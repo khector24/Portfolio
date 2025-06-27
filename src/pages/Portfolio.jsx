@@ -1,16 +1,17 @@
+import "../styles/page-styles/Portfolio.css";
+import { featuredProjects } from "../assets/data";
+import PortfolioCard from "../components/PortfolioCard";
+
 export default function Portfolio() {
   return (
     <div className="portfolio">
       <h1>My Portfolio</h1>
-      <p>
-        Welcome to my portfolio page! Here you can find a selection of my
-        projects, showcasing my skills and expertise in web development.
-      </p>
-      <p>
-        Feel free to explore the projects below to see what I've been working
-        on.
-      </p>
-      <div className="projects">{/* Add your project components here */}</div>
+      <p>Here are a few of my most impactful full-stack projects:</p>
+      <div className="projects">
+        {featuredProjects.map((proj, i) => (
+          <PortfolioCard key={i} {...proj} />
+        ))}
+      </div>
     </div>
   );
 }
