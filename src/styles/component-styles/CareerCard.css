@@ -1,0 +1,80 @@
+.career-card {
+  background-color: var(--bg-muted);
+  color: var(--text-muted);
+  border-left: 3px solid var(--accent-color);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  background: linear-gradient(to bottom right, var(--bg-muted), #1c1f3b);
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+}
+
+.career-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.career-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.career-card .company {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.date-range {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.location {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0.5rem 0 1rem;
+  color: var(--text-secondary);
+}
+
+.bullet-points {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.bullet-points li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tag:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}

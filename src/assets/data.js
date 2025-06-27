@@ -199,3 +199,55 @@ export const techItems = [
   { logo: visualStudioLogo, title: "VS Code" },
   { logo: bootstrapLogo, title: "Bootstrap" },
 ];
+
+export const resumeData = [
+  {
+    title: "Assistant Manager / Technical Analyst",
+    company: "Rainbow Ace Hardware",
+    location: "Suffern, NY",
+    dateRange: "May 2021 – Sep 2024",
+    bullets: [
+      "Led and supervised a team of 25+ employees to ensure smooth daily operations.",
+      "Built a custom delivery tracking system reducing order errors.",
+      "Integrated image/code saving into the POS, improving checkout speed by 47%.",
+      "Provided tech support and upgraded register systems.",
+    ],
+    tech: ["Java", "JavaFX", "MySQL"],
+  },
+  {
+    title: "Full-Stack Developer (Contract)",
+    company: "Splash Zone Aquatics Website",
+    location: "Remote",
+    dateRange: "Oct 2024 – May 2025",
+    bullets: [
+      "Built a responsive site with React and Material UI.",
+      "Integrated newsletter flow and automated emails via AWS Lambda + Resend.",
+      "Improved UX with a styled FAQ section and navigation components.",
+    ],
+    tech: ["React", "AWS", "Resend API"],
+  },
+  {
+    title: "Developer",
+    company: "Theft Tracker App",
+    location: "Remote",
+    dateRange: "Jan 2025 – Present",
+    bullets: [
+      "Built a theft reporting app with file uploads via pre-signed S3 URLs.",
+      "Used React hooks for conditional dynamic form sections.",
+      "Enabled report viewing with async fetch & modular components.",
+    ],
+    tech: ["React", "AWS S3", "Lambda", "DynamoDB"],
+  },
+  {
+    title: "Developer",
+    company: "Delivery Management App",
+    location: "Remote",
+    dateRange: "Jan 2025 – Present",
+    bullets: [
+      "Created a delivery tracker with real-time updates & driver views.",
+      "Implemented JWT login + secure CRUD APIs.",
+      "Reduced delivery creation time by ~38% and automated alerts.",
+    ],
+    tech: ["React", "Node.js", "Express", "DynamoDB"],
+  },
+];
