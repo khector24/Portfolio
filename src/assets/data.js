@@ -264,6 +264,17 @@ export const resumeData = [
   },
 ];
 
+// Portfolio Imports
+import splashHome from "../assets/portfolio-pics/Splash-Zone-Pics/Home.png";
+import splashFAQ from "../assets/portfolio-pics/Splash-Zone-Pics/faq.png";
+import splashNewsletter from "../assets/portfolio-pics/Splash-Zone-Pics/newsletter.png";
+import splashModal from "../assets/portfolio-pics/Splash-Zone-Pics/contact-modal.png";
+import splashReceive from "../assets/portfolio-pics/Splash-Zone-Pics/students-receive.png";
+import weatherType from "../assets/portfolio-pics/WeatherAppPics/type-city.png";
+import weatherSuccess from "../assets/portfolio-pics/WeatherAppPics/success.png";
+import weatherError from "../assets/portfolio-pics/WeatherAppPics/error.png";
+import placeholder from "../assets/portfolio-pics/black.jpg";
+
 export const featuredProjects = [
   {
     title: "Splash Zone Aquatics Website",
@@ -273,11 +284,11 @@ export const featuredProjects = [
     link: "https://github.com/khector24/swim-aquatics",
     tags: ["react", "aws", "lambda", "dynamodb", "material-ui"],
     images: [
-      "/assets/portfolio-pics/Splash-Zone-Pics/Home.png",
-      "/assets/portfolio-pics/Splash-Zone-Pics/faq.png",
-      "/assets/portfolio-pics/Splash-Zone-Pics/newsletter.png",
-      "/assets/portfolio-pics/Splash-Zone-Pics/contact-modal.png",
-      "/assets/portfolio-pics/Splash-Zone-Pics/students-receive.png",
+      splashHome,
+      splashFAQ,
+      splashNewsletter,
+      splashModal,
+      splashReceive,
     ],
   },
   {
@@ -287,7 +298,7 @@ export const featuredProjects = [
       "Incident reporting system with media uploads and DynamoDB logging. Used in-store to reduce police reporting time by 33%.",
     link: "https://github.com/khector24/theft-tracker",
     tags: ["react", "aws", "lambda", "file-upload", "material-ui"],
-    images: ["/assets/portfolio-pics/black.jpg"],
+    images: [placeholder],
   },
   {
     title: "Delivery Management App",
@@ -296,7 +307,7 @@ export const featuredProjects = [
       "Internal delivery scheduling platform with real-time tracking, custom permissions, and SMS notifications. Helped reduce delivery errors to near-zero.",
     link: "https://github.com/khector24/delivery-manager",
     tags: ["react", "node", "express", "dynamodb", "auth"],
-    images: ["/assets/portfolio-pics/black.jpg"],
+    images: [placeholder],
   },
   {
     title: "Weather Project",
@@ -305,11 +316,7 @@ export const featuredProjects = [
       "Simple weather app using OpenWeatherMap API. Accepts city input and displays live weather data using EJS templating.",
     link: "https://github.com/khector24/weather-project",
     tags: ["node", "ejs", "express", "api"],
-    images: [
-      "/assets/portfolio-pics/WeatherAppPics/type-city.png",
-      "/assets/portfolio-pics/WeatherAppPics/success.png",
-      "/assets/portfolio-pics/WeatherAppPics/error.png",
-    ],
+    images: [weatherType, weatherSuccess, weatherError],
   },
   {
     title: "Simple To-Do List",
@@ -318,7 +325,7 @@ export const featuredProjects = [
       "Clean and interactive to-do list app using EJS templates and route-based task management.",
     link: "https://github.com/khector24/simple-to-do-list",
     tags: ["node", "ejs", "express", "todo"],
-    images: ["/assets/portfolio-pics/black.jpg"],
+    images: [placeholder],
   },
   {
     title: "Simon Says Game",
@@ -327,6 +334,6 @@ export const featuredProjects = [
       "Interactive memory game built from scratch with custom sounds and animations. Fun demonstration of game logic.",
     link: "https://github.com/khector24/simon-says-game",
     tags: ["javascript", "game", "html", "css"],
-    images: ["/assets/portfolio-pics/black.jpg"],
+    images: [placeholder],
   },
 ];
