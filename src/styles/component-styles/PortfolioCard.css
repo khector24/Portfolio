@@ -80,3 +80,47 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  max-width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 6px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.arrow.left {
+  left: 1rem;
+}
+
+.arrow.right {
+  right: 1rem;
+}
