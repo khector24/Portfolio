@@ -62,25 +62,6 @@
   text-transform: uppercase;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 0.5rem;
-  background: var(--light-bg);
-  color: var(--bg-primary);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: var(--accent-hover);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-
 .carousel-wrapper {
   position: relative;
   width: 100%;
@@ -124,4 +105,28 @@
 
 .arrow.right {
   right: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: var(--light-bg);
+  color: var(--bg-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }

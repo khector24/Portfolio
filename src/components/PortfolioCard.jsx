@@ -8,6 +8,8 @@ export default function PortfolioCard({
   link,
   tags,
   images,
+  hasLiveLink,
+  liveLink,
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -48,9 +50,26 @@ export default function PortfolioCard({
           </span>
         ))}
       </div>
-      <a href={link} className="btn" target="_blank" rel="noopener noreferrer">
-        View Code
-      </a>
+      <div className="links">
+        <a
+          href={link}
+          className="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Code
+        </a>
+        {hasLiveLink && (
+          <a
+            className="btn"
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Link
+          </a>
+        )}
+      </div>
     </div>
   );
 }

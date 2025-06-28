@@ -290,6 +290,8 @@ export const featuredProjects = [
       splashModal,
       splashReceive,
     ],
+    hasLiveLink: true,
+    liveLink: "https://splashzoneaquatics.com/",
   },
   {
     title: "Theft Tracker Application",
@@ -299,6 +301,8 @@ export const featuredProjects = [
     link: "https://github.com/khector24/theft-tracker",
     tags: ["react", "aws", "lambda", "file-upload", "material-ui"],
     images: [placeholder],
+    hasLiveLink: false,
+    liveLink: "",
   },
   {
     title: "Delivery Management App",
@@ -308,6 +312,8 @@ export const featuredProjects = [
     link: "https://github.com/khector24/delivery-manager",
     tags: ["react", "node", "express", "dynamodb", "auth"],
     images: [placeholder],
+    hasLiveLink: false,
+    liveLink: "",
   },
   {
     title: "Weather Project",
@@ -317,6 +323,8 @@ export const featuredProjects = [
     link: "https://github.com/khector24/weather-project",
     tags: ["node", "ejs", "express", "api"],
     images: [weatherType, weatherSuccess, weatherError],
+    hasLiveLink: false,
+    liveLink: "",
   },
   {
     title: "Simple To-Do List",
@@ -326,6 +334,8 @@ export const featuredProjects = [
     link: "https://github.com/khector24/simple-to-do-list",
     tags: ["node", "ejs", "express", "todo"],
     images: [placeholder],
+    hasLiveLink: false,
+    liveLink: "",
   },
   {
     title: "Simon Says Game",
@@ -335,5 +345,7 @@ export const featuredProjects = [
     link: "https://github.com/khector24/simon-says-game",
     tags: ["javascript", "game", "html", "css"],
     images: [placeholder],
+    hasLiveLink: false,
+    liveLink: "",
   },
 ];
