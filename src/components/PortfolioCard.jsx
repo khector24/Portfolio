@@ -6,9 +6,15 @@ export default function PortfolioCard({
   description,
   link,
   tags,
+  images,
 }) {
   return (
     <div className="portfolio-card">
+      <img
+        src={images?.[0] || "/assets/portfolio-pics/black.png"}
+        alt={title}
+        className="project-img"
+      />
       <h3>{title}</h3>
       <p className="description">{description}</p>
       <p className="tech">{tech}</p>
