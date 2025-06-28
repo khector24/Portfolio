@@ -12,6 +12,12 @@
   margin-bottom: 1rem;
 }
 
+.portfolio p {
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
