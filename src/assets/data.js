@@ -270,10 +270,17 @@ import splashFAQ from "../assets/portfolio-pics/Splash-Zone-Pics/faq.png";
 import splashNewsletter from "../assets/portfolio-pics/Splash-Zone-Pics/newsletter.png";
 import splashModal from "../assets/portfolio-pics/Splash-Zone-Pics/contact-modal.png";
 import splashReceive from "../assets/portfolio-pics/Splash-Zone-Pics/students-receive.png";
+
 import weatherType from "../assets/portfolio-pics/WeatherAppPics/type-city.png";
 import weatherSuccess from "../assets/portfolio-pics/WeatherAppPics/success.png";
 import weatherError from "../assets/portfolio-pics/WeatherAppPics/error.png";
+
 import placeholder from "../assets/portfolio-pics/black.jpg";
+
+import SimonSaysGame from "../assets/portfolio-pics/Simon-Says-Pics/start-page.png";
+import SimonLevel1 from "../assets/portfolio-pics/Simon-Says-Pics/level-1.png";
+import SimonLevel2 from "../assets/portfolio-pics/Simon-Says-Pics/level-2.png";
+import SimonLevel3 from "../assets/portfolio-pics/Simon-Says-Pics/level-3.png";
 
 export const featuredProjects = [
   {
@@ -343,8 +350,8 @@ export const featuredProjects = [
     description:
       "Interactive memory game built from scratch with custom sounds and animations. Fun demonstration of game logic.",
     link: "https://github.com/khector24/simon-says-game",
-    tags: ["javascript", "game", "html", "css"],
-    images: [placeholder],
+    tags: ["javascript", "game", "html", "css", "j-query"],
+    images: [SimonSaysGame, SimonLevel1, SimonLevel2, SimonLevel3],
     hasLiveLink: false,
     liveLink: "",
   },
