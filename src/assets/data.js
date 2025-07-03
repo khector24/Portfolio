@@ -275,7 +275,7 @@ import weatherType from "../assets/portfolio-pics/WeatherAppPics/type-city.png";
 import weatherSuccess from "../assets/portfolio-pics/WeatherAppPics/success.png";
 import weatherError from "../assets/portfolio-pics/WeatherAppPics/error.png";
 
-import placeholder from "../assets/portfolio-pics/black.jpg";
+import placeholder from "../assets/portfolio-pics/placeholder.jpg";
 
 import SimonSaysGame from "../assets/portfolio-pics/Simon-Says-Pics/start-page.png";
 import SimonLevel1 from "../assets/portfolio-pics/Simon-Says-Pics/level-1.png";
