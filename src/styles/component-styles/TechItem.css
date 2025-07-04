@@ -52,15 +52,15 @@
 
 @media (max-width: 760px) {
   .tech-card {
-    padding: 0.75rem;
+    padding: 0.5rem;
   }
 
   .tech-card img {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
   }
 
   .tech-card span {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
