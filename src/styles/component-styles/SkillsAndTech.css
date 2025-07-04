@@ -269,6 +269,12 @@
   }
 }
 
+@media (max-width: 625px) and (min-width: 590px) {
+  .tech-container .container-subtitle {
+    display: block !important;
+  }
+}
+
 @media (max-width: 625px) {
   .skills-tech-section {
     padding: 3rem 2rem;
