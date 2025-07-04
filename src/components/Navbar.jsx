@@ -5,6 +5,7 @@ import MenuBar from "../assets/icons/menu-bar.svg";
 import ResumeIcon from "../assets/icons/resume-icon.svg";
 import EmailIcon from "../assets/icons/email-icon.svg";
 import GitHubIcon from "../assets/icons/github-icon.svg";
+import resumePDF from "../assets/documents/resume.pdf";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -50,7 +51,12 @@ export default function Navbar() {
             <a href="mailto:kennyhector24@gmail.com">
               <img src={EmailIcon} alt="Email" />
             </a>
-            <a href="" className="nav-link">
+            <a
+              href={resumePDF}
+              target="_blank"
+              rel="noreferrer"
+              className="nav-link"
+            >
               <img src={ResumeIcon} alt="Resume" />
             </a>
             <a
