@@ -1,14 +1,14 @@
 import "../styles/component-styles/SkillsAndTech.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import TechItem from "./TechItem";
 import { leadershipPoints, techItems } from "../assets/data";
 
 import CheckIcon from "../assets/icons/check.svg?react";
 
-// Decorative SVGs as components
+// Decorative SVGs
 import PlusIcon from "../assets/illustrations/plus.svg?react";
 import TriangleIcon from "../assets/illustrations/triangle.svg?react";
 import Blob2Icon from "../assets/illustrations/blob2.svg?react";
@@ -20,8 +20,19 @@ import HorizontalDotsIcon3 from "../assets/illustrations/vertical-dots.svg?react
 import HorizontalDotsIcon4 from "../assets/illustrations/vertical-dots.svg?react";
 
 export default function SkillsAndTech() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
   useEffect(() => {
     AOS.init({ once: true });
+
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 760);
+    };
+
+    handleResize(); // check on load
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -62,8 +73,10 @@ export default function SkillsAndTech() {
             <li
               key={i}
               className="skill-list-item"
-              data-aos="fade-up"
-              data-aos-delay={i * 100}
+              {...(!isSmallScreen && {
+                "data-aos": "fade-up",
+                "data-aos-delay": i * 100,
+              })}
             >
               <CheckIcon className="check-icon" />
               {text}

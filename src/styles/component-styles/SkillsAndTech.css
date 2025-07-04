@@ -254,6 +254,7 @@
 
   .skill-list {
     gap: 0.75rem;
+    margin: 0 1.5rem 0.25rem;
   }
 
   .skill-list-item {
