@@ -51,12 +51,7 @@ export default function Navbar() {
             <a href="mailto:kennyhector24@gmail.com">
               <img src={EmailIcon} alt="Email" />
             </a>
-            <a
-              href={resumePDF}
-              target="_blank"
-              rel="noreferrer"
-              className="nav-link"
-            >
+            <a href={resumePDF} target="_blank" rel="noreferrer">
               <img src={ResumeIcon} alt="Resume" />
             </a>
             <a
