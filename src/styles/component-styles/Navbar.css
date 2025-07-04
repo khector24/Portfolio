@@ -20,6 +20,11 @@ nav {
   text-decoration: none;
 }
 
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
 /* === Menu Bar Icon === */
 .menu-bar {
   width: 2rem;
