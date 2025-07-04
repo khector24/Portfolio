@@ -39,6 +39,17 @@
   }
 }
 
+@media (max-width: 840px) and (min-width: 761px) {
+  .tech-card img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .tech-card span {
+    font-size: 0.82rem;
+  }
+}
+
 @media (max-width: 760px) {
   .tech-card {
     padding: 0.75rem;
