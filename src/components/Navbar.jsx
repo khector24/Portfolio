@@ -47,16 +47,32 @@ export default function Navbar() {
 
         {showMenu && (
           <div className="nav-right">
-            <Link to="/" className="nav-link">
+            <Link
+              to="/"
+              className="nav-link"
+              onClick={() => setShowMenu(false)}
+            >
               Home
             </Link>
-            <Link to="/career" className="nav-link">
+            <Link
+              to="/career"
+              className="nav-link"
+              onClick={() => setShowMenu(false)}
+            >
               Career
             </Link>
-            <Link to="/portfolio" className="nav-link">
+            <Link
+              to="/portfolio"
+              className="nav-link"
+              onClick={() => setShowMenu(false)}
+            >
               Portfolio
             </Link>
-            <Link to="/contact" className="nav-link">
+            <Link
+              to="/contact"
+              className="nav-link"
+              onClick={() => setShowMenu(false)}
+            >
               Contact
             </Link>
             <hr />
