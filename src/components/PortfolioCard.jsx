@@ -30,11 +30,22 @@ export default function PortfolioCard({
         <button className="arrow left" onClick={handlePrev}>
           &#8249;
         </button>
-        <img
-          src={currentImg}
-          alt={`${title}-${currentIndex}`}
-          className="project-img"
-        />
+
+        <div className="image-container">
+          <img
+            src={currentImg}
+            alt={`${title}-${currentIndex}`}
+            className="project-img"
+          />
+          {images.length === 1 && currentImg.includes("placeholder") && (
+            <p className="placeholder-note">
+              Internal project – screenshots unavailable.
+              <br />
+              Images will be added when possible.
+            </p>
+          )}
+        </div>
+
         <button className="arrow right" onClick={handleNext}>
           &#8250;
         </button>

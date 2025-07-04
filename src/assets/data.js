@@ -304,6 +304,7 @@ export const featuredProjects = [
     ],
     hasLiveLink: true,
     liveLink: "https://splashzoneaquatics.com/",
+    showPlaceholderNote: false,
   },
   {
     title: "Theft Tracker Application",
@@ -315,6 +316,7 @@ export const featuredProjects = [
     images: [placeholder],
     hasLiveLink: false,
     liveLink: "",
+    showPlaceholderNote: true,
   },
   {
     title: "Delivery Management App",
@@ -326,6 +328,7 @@ export const featuredProjects = [
     images: [placeholder],
     hasLiveLink: false,
     liveLink: "",
+    showPlaceholderNote: true,
   },
   {
     title: "Weather Project",
@@ -337,6 +340,7 @@ export const featuredProjects = [
     images: [weatherType, weatherSuccess, weatherError],
     hasLiveLink: false,
     liveLink: "",
+    showPlaceholderNote: false,
   },
   {
     title: "Simple To-Do List",
@@ -348,6 +352,7 @@ export const featuredProjects = [
     images: [TodoListMain, TodoListAdd, TodoListPostAdd, TodoListEdit],
     hasLiveLink: false,
     liveLink: "",
+    showPlaceholderNote: false,
   },
   {
     title: "Simon Says Game",
@@ -359,5 +364,6 @@ export const featuredProjects = [
     images: [SimonSaysGame, SimonLevel1, SimonLevel2, SimonLevel3],
     hasLiveLink: false,
     liveLink: "",
+    showPlaceholderNote: false,
   },
 ];
