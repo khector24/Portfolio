@@ -77,24 +77,17 @@ hr {
   margin: 0 auto 5rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .footer {
-    padding: 5rem 2rem;
+    height: 75vh;
+    padding: 3rem 5rem;
   }
+}
 
-  .footer-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-right {
-    text-align: left;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+@media (max-width: 600px) {
+  .footer {
+    height: 65vh;
+    padding: 2rem 3rem;
+    font-size: 1rem;
   }
 }
