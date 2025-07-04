@@ -237,10 +237,7 @@
   }
 
   .container-subtitle {
-    font-size: 0.85rem;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    line-height: 1.4;
+    display: none; /* Hide subtitle on small screens */
   }
 
   .tech-container,
