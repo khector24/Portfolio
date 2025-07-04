@@ -282,6 +282,11 @@ import SimonLevel1 from "../assets/portfolio-pics/Simon-Says-Pics/level-1.png";
 import SimonLevel2 from "../assets/portfolio-pics/Simon-Says-Pics/level-2.png";
 import SimonLevel3 from "../assets/portfolio-pics/Simon-Says-Pics/level-3.png";
 
+import TodoListMain from "../assets/portfolio-pics/Todo-List-Pics/main-page.png";
+import TodoListAdd from "../assets/portfolio-pics/Todo-List-Pics/add-task.png";
+import TodoListPostAdd from "../assets/portfolio-pics/Todo-List-Pics/post-add-task.png";
+import TodoListEdit from "../assets/portfolio-pics/Todo-List-Pics/edit-task.png";
+
 export const featuredProjects = [
   {
     title: "Splash Zone Aquatics Website",
@@ -340,7 +345,7 @@ export const featuredProjects = [
       "Clean and interactive to-do list app using EJS templates and route-based task management.",
     link: "https://github.com/khector24/simple-to-do-list",
     tags: ["node", "ejs", "express", "todo"],
-    images: [placeholder],
+    images: [TodoListMain, TodoListAdd, TodoListPostAdd, TodoListEdit],
     hasLiveLink: false,
     liveLink: "",
   },
