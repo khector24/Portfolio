@@ -116,3 +116,114 @@
 .cta-button:hover {
   background-color: var(--accent-hover);
 }
+
+@media (max-width: 1084px) {
+  .hero {
+    padding: 2.5rem;
+    max-width: 95%;
+    gap: 2.5rem;
+  }
+
+  .profile-pic {
+    height: 220px;
+    width: 220px;
+  }
+
+  .name-heading {
+    font-size: 2.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .contact-links {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 994px) {
+  .hero {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .profile-pic {
+    height: 200px;
+    width: 200px;
+  }
+
+  .name-heading {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-links {
+    font-size: 0.85rem;
+  }
+
+  .cta-button {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+    min-width: 110px;
+  }
+}
+
+@media (max-width: 897px) {
+  .hero {
+    padding: 1.75rem;
+    gap: 1.5rem;
+  }
+
+  .profile-pic {
+    height: 180px;
+    width: 180px;
+  }
+
+  .name-heading {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .contact-links {
+    font-size: 0.8rem;
+  }
+
+  .cta-button {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.85rem;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 833px) {
+  .name-heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 618px) {
+  .header-content {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 525px) {
+  .cta-button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
