@@ -202,6 +202,18 @@ export const techItems = [
 
 export const resumeData = [
   {
+    title: "Full-Stack Developer (Contract)",
+    company: "Splash Zone Aquatics Website",
+    location: "Remote",
+    dateRange: "Oct 2024 – May 2025",
+    bullets: [
+      "Built a responsive site with React and Material UI.",
+      "Integrated newsletter flow and automated emails via AWS Lambda + Resend.",
+      "Improved UX with a styled FAQ section and navigation components.",
+    ],
+    tech: ["React", "AWS", "Resend API"],
+  },
+  {
     title: "Assistant Manager / Technical Analyst",
     company: "Rainbow Ace Hardware",
     location: "Suffern, NY",
@@ -213,18 +225,6 @@ export const resumeData = [
       "Provided tech support and upgraded register systems.",
     ],
     tech: ["Java", "JavaFX", "MySQL"],
-  },
-  {
-    title: "Full-Stack Developer (Contract)",
-    company: "Splash Zone Aquatics Website",
-    location: "Remote",
-    dateRange: "Oct 2024 – May 2025",
-    bullets: [
-      "Built a responsive site with React and Material UI.",
-      "Integrated newsletter flow and automated emails via AWS Lambda + Resend.",
-      "Improved UX with a styled FAQ section and navigation components.",
-    ],
-    tech: ["React", "AWS", "Resend API"],
   },
   {
     title: "Developer",
@@ -260,7 +260,15 @@ export const resumeData = [
       "Focused on software development, algorithms, and data structures.",
       "Completed projects in Java, SQL, and C#.",
     ],
-    tech: ["C#", "Java", "SQL"],
+    tech: [
+      "C#",
+      "Java",
+      "SQL",
+      "HTML",
+      "Data Structures",
+      "Algorithms",
+      "Software Development",
+    ],
   },
 ];
 

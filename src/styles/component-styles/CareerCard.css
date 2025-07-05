@@ -82,3 +82,63 @@
   text-transform: uppercase;
   transition: 0.3s ease;
 }
+
+@media (max-width: 840px) {
+  .career-card {
+    margin: 0 1rem;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+  }
+
+  .career-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .date-range {
+    font-size: 0.85rem;
+  }
+
+  .location {
+    font-size: 0.85rem;
+  }
+
+  .bullet-points li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.65rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .career-card {
+    margin: 0;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+  }
+
+  .career-card h3 {
+    font-size: 1rem;
+  }
+
+  .date-range {
+    font-size: 0.8rem;
+  }
+
+  .location {
+    font-size: 0.8rem;
+  }
+
+  .bullet-points li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

@@ -10,7 +10,7 @@
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: var(--text-link);
+  color: var(--text-muted);
 }
 
 .career-list {
@@ -18,4 +18,42 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
+}
+
+@media (max-width: 940px) {
+  .career-container h1 {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .career-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .career-container h1 {
+    font-size: 2rem;
+    margin: 3rem 0 1.5rem;
+  }
+
+  .career-list {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .career-container {
+    padding: 2rem 1rem;
+  }
+
+  .career-container h1 {
+    font-size: 1.75rem;
+    margin: 4.5rem 0 1.25rem;
+  }
+
+  .career-list {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
 }
