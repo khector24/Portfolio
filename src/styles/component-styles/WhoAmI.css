@@ -43,11 +43,15 @@
   animation: fadeIn 0.8s ease-in;
 }
 
+.i-am .section-heading {
+  text-align: center;
+}
+
 .i-am p {
   margin-bottom: 1.2rem;
-  font-size: 1rem; /* reduced from 1.2rem */
+  font-size: 1rem;
   line-height: 1.6;
-  color: var(--text-primary); /* optional: for theme consistency */
+  color: var(--text-primary);
 }
 
 .who-am-i-image {
@@ -62,25 +66,58 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-  .who-am-i-wrapper {
-    flex-direction: column;
-    padding: 2rem 1rem;
+@media (max-width: 1200px) {
+  .i-am,
+  .who-am-i-image {
+    max-width: 100%;
+    width: 100%;
   }
 
-  .blob-image.top-left {
-    top: -40px;
-    left: -60px;
-    width: 200px;
-  }
-
-  .blob-image.bottom-right {
-    bottom: -60px;
-    right: -80px;
+  .blob-image {
     width: 200px;
   }
 
   .i-am p {
-    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .i-am .section-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .blob-image {
+    width: 150px;
+  }
+
+  .i-am p {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .i-am p {
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media (max-width: 908px) {
+  .who-am-i-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .who-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1rem;
+  }
+
+  .i-am p {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
   }
 }
