@@ -9,7 +9,7 @@ export default function WhatIDo() {
           Scalable systems, portfolio sites, internal dashboards, and real-time
           tools that solve real-world problems.
         </p>
-        <a href="/portfolio" className="sub-cta">
+        <a href="https://github.com/khector24" className="sub-cta">
           See Examples →
         </a>
       </div>
