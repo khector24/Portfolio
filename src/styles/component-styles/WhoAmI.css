@@ -105,19 +105,45 @@
 
 @media (max-width: 908px) {
   .who-am-i-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse; /* This puts image on top */
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .who-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     margin-top: 1rem;
   }
 
+  .i-am {
+    text-align: center;
+  }
+
+  .i-am .section-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
   .i-am p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     margin-bottom: 0.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .who-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .who-image {
+    width: 100%;
+    max-width: 280px;
+    margin-top: 0.8rem;
   }
 }
