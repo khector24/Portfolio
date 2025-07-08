@@ -14,9 +14,13 @@
 }
 
 .portfolio p {
-  color: var(--text-link);
+  color: var(--text-muted);
   font-size: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.portfolio .sub-heading {
+  color: var(--text-link);
 }
 
 .projects {
