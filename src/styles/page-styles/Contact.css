@@ -1,6 +1,6 @@
 /* === Contact Page Container === */
 .contact {
-  padding: 4rem 1.5rem;
+  padding: 5rem 1.5rem;
   background-color: var(--bg-light);
   display: flex;
   flex-direction: column;
