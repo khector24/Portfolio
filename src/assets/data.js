@@ -272,28 +272,37 @@ export const resumeData = [
   },
 ];
 
-// Portfolio Imports
-import splashHome from "../assets/portfolio-pics/Splash-Zone-Pics/Home.png";
-import splashFAQ from "../assets/portfolio-pics/Splash-Zone-Pics/faq.png";
-import splashNewsletter from "../assets/portfolio-pics/Splash-Zone-Pics/newsletter.png";
-import splashModal from "../assets/portfolio-pics/Splash-Zone-Pics/contact-modal.png";
-import splashReceive from "../assets/portfolio-pics/Splash-Zone-Pics/students-receive.png";
+// Portfolio Imports renamed to featured-projects
+import splashHome from "../assets/featured-projects/Splash-Zone-Pics/Home.png";
+import splashFAQ from "../assets/featured-projects/Splash-Zone-Pics/faq.png";
+import splashNewsletter from "../assets/featured-projects/Splash-Zone-Pics/newsletter.png";
+import splashModal from "../assets/featured-projects/Splash-Zone-Pics/contact-modal.png";
+import splashReceive from "../assets/featured-projects/Splash-Zone-Pics/students-receive.png";
 
-import weatherType from "../assets/portfolio-pics/WeatherAppPics/type-city.png";
-import weatherSuccess from "../assets/portfolio-pics/WeatherAppPics/success.png";
-import weatherError from "../assets/portfolio-pics/WeatherAppPics/error.png";
+import weatherType from "../assets/featured-projects/WeatherAppPics/type-city.png";
+import weatherSuccess from "../assets/featured-projects/WeatherAppPics/success.png";
+import weatherError from "../assets/featured-projects/WeatherAppPics/error.png";
 
-import placeholder from "../assets/portfolio-pics/placeholder.jpg";
+import placeholder from "../assets/featured-projects/placeholder.jpg";
 
-import SimonSaysGame from "../assets/portfolio-pics/Simon-Says-Pics/start-page.png";
-import SimonLevel1 from "../assets/portfolio-pics/Simon-Says-Pics/level-1.png";
-import SimonLevel2 from "../assets/portfolio-pics/Simon-Says-Pics/level-2.png";
-import SimonLevel3 from "../assets/portfolio-pics/Simon-Says-Pics/level-3.png";
+import SimonSaysGame from "../assets/featured-projects/Simon-Says-Pics/start-page.png";
+import SimonLevel1 from "../assets/featured-projects/Simon-Says-Pics/level-1.png";
+import SimonLevel2 from "../assets/featured-projects/Simon-Says-Pics/level-2.png";
+import SimonLevel3 from "../assets/featured-projects/Simon-Says-Pics/level-3.png";
 
-import TodoListMain from "../assets/portfolio-pics/Todo-List-Pics/main-page.png";
-import TodoListAdd from "../assets/portfolio-pics/Todo-List-Pics/add-task.png";
-import TodoListPostAdd from "../assets/portfolio-pics/Todo-List-Pics/post-add-task.png";
-import TodoListEdit from "../assets/portfolio-pics/Todo-List-Pics/edit-task.png";
+import TodoListMain from "../assets/featured-projects/Todo-List-Pics/main-page.png";
+import TodoListAdd from "../assets/featured-projects/Todo-List-Pics/add-task.png";
+import TodoListPostAdd from "../assets/featured-projects/Todo-List-Pics/post-add-task.png";
+import TodoListEdit from "../assets/featured-projects/Todo-List-Pics/edit-task.png";
+
+import hero from "../assets/featured-projects/portfolio-website-pics/Hero.png";
+import whatIDo from "../assets/featured-projects/portfolio-website-pics/what-i-do.png";
+import howIWork from "../assets/featured-projects/portfolio-website-pics/how-i-work.png";
+import whoIAm from "../assets/featured-projects/portfolio-website-pics/who-i-am.png";
+import career from "../assets/featured-projects/portfolio-website-pics/career.png";
+import portfolio from "../assets/featured-projects/portfolio-website-pics/portfolio.png";
+import techSkills from "../assets/featured-projects/portfolio-website-pics/tech-skills.png";
+import contact from "../assets/featured-projects/portfolio-website-pics/contact.png";
 
 export const featuredProjects = [
   {
@@ -372,6 +381,27 @@ export const featuredProjects = [
     images: [SimonSaysGame, SimonLevel1, SimonLevel2, SimonLevel3],
     hasLiveLink: false,
     liveLink: "",
+    showPlaceholderNote: false,
+  },
+  {
+    title: "Personal Portfolio Website",
+    tech: "React, AWS S3, Route 53, Framer Motion, CSS",
+    description:
+      "My own responsive portfolio site featuring animations, dark/light mode, and a polished design showcasing my projects and skills.",
+    link: "https://github.com/khector24/portfolio",
+    tags: ["react", "aws", "s3", "route53", "framer-motion", "css"],
+    images: [
+      hero,
+      whatIDo,
+      howIWork,
+      whoIAm,
+      career,
+      portfolio,
+      techSkills,
+      contact,
+    ],
+    hasLiveLink: true,
+    liveLink: "https://kennyhector.com",
     showPlaceholderNote: false,
   },
 ];
