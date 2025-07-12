@@ -8,9 +8,9 @@ export default function Hero() {
     <section className="hero-content">
       <div className="hero" data-aos="fade-up">
         <img
-          src="/src/assets/images/profile-pic.jpeg"
+          src="/src/assets/images/hero-pic.jpeg"
           alt="Kenny Hector"
-          className="profile-pic"
+          className="hero-pic"
           data-aos="zoom-in"
         />
         <div className="header-content">

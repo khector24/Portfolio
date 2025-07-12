@@ -38,7 +38,7 @@
 }
 
 /* === Profile Image === */
-.profile-pic {
+.hero-pic {
   height: 260px;
   width: 260px;
   border-radius: 50%;
@@ -48,7 +48,7 @@
   transition: transform 0.3s ease;
 }
 
-.profile-pic:hover {
+.hero-pic:hover {
   transform: scale(1.03);
 }
 
