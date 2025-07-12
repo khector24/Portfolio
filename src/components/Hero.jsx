@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="hero-content">
       <div className="hero" data-aos="fade-up">
         <img
-          src="/src/assets/images/hero-pic.jpeg"
+          src="/images/hero-pic.jpeg"
           alt="Kenny Hector"
           className="hero-pic"
           data-aos="zoom-in"
