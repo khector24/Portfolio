@@ -355,8 +355,9 @@ export const featuredProjects = [
     link: "https://github.com/khector24/weather-project",
     tags: ["node", "ejs", "express", "api"],
     images: [weatherType, weatherSuccess, weatherError],
-    hasLiveLink: false,
-    liveLink: "",
+    hasLiveLink: true,
+    // liveLink: "https://weather-project-868n.onrender.com/",
+    liveLink: "https://weather-app.kennyhector.com/",
     showPlaceholderNote: false,
   },
   {
@@ -367,8 +368,9 @@ export const featuredProjects = [
     link: "https://github.com/khector24/simple-to-do-list",
     tags: ["node", "ejs", "express", "todo"],
     images: [TodoListMain, TodoListAdd, TodoListPostAdd, TodoListEdit],
-    hasLiveLink: false,
-    liveLink: "",
+    hasLiveLink: true,
+    // liveLink: "https://simple-to-do-list-mat0.onrender.com/",
+    liveLink: "https://todo.kennyhector.com/",
     showPlaceholderNote: false,
   },
   {
