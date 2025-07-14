@@ -379,8 +379,8 @@ export const featuredProjects = [
     link: "https://github.com/khector24/simon-says-game",
     tags: ["javascript", "game", "html", "css", "j-query"],
     images: [SimonSaysGame, SimonLevel1, SimonLevel2, SimonLevel3],
-    hasLiveLink: false,
-    liveLink: "",
+    hasLiveLink: true,
+    liveLink: "https://simongame.kennyhector.com/",
     showPlaceholderNote: false,
   },
   {
