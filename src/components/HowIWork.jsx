@@ -1,6 +1,6 @@
 import "../styles/component-styles/HowIWork.css";
-import plus from "/src/assets/illustrations/plus.svg";
-import triangle from "/src/assets/illustrations/triangle.svg";
+// import plus from "/src/assets/illustrations/plus.svg";
+// import triangle from "/src/assets/illustrations/triangle.svg";
 
 export default function HowIWork() {
   return (
@@ -13,36 +13,41 @@ export default function HowIWork() {
           className="svg-decor lightning"
         />
         <img
-          src="/src/assets/illustrations/five-circles.svg"
+          src="/illustrations/five-circles.svg"
           alt=""
           className="svg-decor circles"
         />
-        <img src={plus} alt="" className="svg-decor plus" />
-        <img src={triangle} alt="" className="svg-decor triangle" />
+        <img src="/illustrations/plus.svg" alt="" className="svg-decor plus" />
         <img
-          src="/src/assets/illustrations/blob2.svg"
+          src="/illustrations/triangle.svg"
+          alt=""
+          className="svg-decor triangle"
+        />
+
+        <img
+          src="/illustrations/blob2.svg"
           alt=""
           className="svg-decor big-blob"
         />
         <img
-          src="/src/assets/illustrations/vertical-dots.svg"
+          src="/illustrations/vertical-dots.svg"
           alt=""
           className="svg-decor vertical-dots"
         />
         <img
-          src="/src/assets/illustrations/vertical-dots.svg"
+          src="/illustrations/vertical-dots.svg"
           alt=""
           className="svg-decor horizontal-dots1"
         />
         <img
-          src="/src/assets/illustrations/vertical-dots.svg"
+          src="/illustrations/vertical-dots.svg"
           alt=""
           className="svg-decor horizontal-dots2"
         />
 
         <div className="how-i-work-image" data-aos="zoom-in">
           <img
-            src="/src/assets/illustrations/undraw_programming_65t2.svg"
+            src="/illustrations/undraw_programming_65t2.svg"
             alt="Person coding illustration"
             className="how-image"
           />

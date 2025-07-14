@@ -5,12 +5,12 @@ export default function WhoAmI() {
     <section className="who-am-i-section section-full-height bg-light">
       <div className="who-am-i-wrapper">
         <img
-          src="/src/assets/illustrations/blob1.svg"
+          src="/illustrations/blob1.svg"
           alt="decorative blob"
           className="blob-image top-left"
         />
         <img
-          src="/src/assets/illustrations/blob2.svg"
+          src="/illustrations/blob2.svg"
           alt="decorative blob"
           className="blob-image bottom-right"
         />
@@ -49,7 +49,7 @@ export default function WhoAmI() {
 
         <div className="who-am-i-image" data-aos="fade-up-left">
           <img
-            src="/src/assets/illustrations/undraw_static-website_x3tn.svg"
+            src="/illustrations/undraw_static-website_x3tn.svg"
             alt="Developer working on static website"
             className="who-image"
           />
