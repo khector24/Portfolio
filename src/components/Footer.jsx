@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="footer-right">
           <Link to="/">Home</Link>
           <Link to="/portfolio">Projects</Link>
-          <Link to="/about">About</Link>
+          {/* <Link to="/about">About</Link> */}
           <Link to="/contact">Contact</Link>
         </div>
       </div>
