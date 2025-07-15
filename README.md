@@ -70,11 +70,3 @@ npm run dev
 Email: kennyhector24@gmail.com
 GitHub: @khector24
 ```
-
-### 🔥 Key improvements:
-
-```bash
-- Added **`EJS`** since your portfolio includes backend EJS apps (To-Do, Weather)
-- Highlighted **deployment expertise (AWS Route 53, Render, HTTPS, custom domains)**
-- Clarified that **all apps showcased are deployed live and production-ready**
-```
