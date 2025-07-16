@@ -1,50 +1,61 @@
-/* === Contact Page Container === */
-.contact {
-  padding: 5rem 2rem;
+/* === Page wrapper to center === */
+.contact-wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 2rem;
+  justify-content: center;
+  min-height: 100vh;
   background-color: var(--bg-light);
+  padding: 2rem;
+}
+
+/* === Bounded container === */
+.contact-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border: 2px solid var(--text-link);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 /* === Headings === */
-.contact h2 {
+.contact-container h2 {
   font-size: 2.2rem;
   color: var(--text-link);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.contact h3 {
+.contact-container h3 {
   font-size: 1.2rem;
   color: var(--text-link);
   margin-bottom: 0.5rem;
 }
 
 /* === Paragraphs === */
-.contact p {
-  max-width: 600px;
+.contact-container p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--text-secondary);
+  margin-bottom: 1rem;
 }
 
-/* === Contact Cards === */
+/* === Cards layout === */
 .contact-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .contact-card {
-  background-color: var(--bg-muted);
+  background-color: var(--light-bg);
   border-radius: 8px;
   padding: 1.5rem;
   width: 240px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -53,32 +64,31 @@
 }
 
 .contact-card a {
-  color: var(--text-primary);
+  color: var(--text-link);
   text-decoration: underline;
 }
 
 .contact-card a:hover {
-  color: var(--accent-color);
+  color: var(--accent);
 }
 
 .contact-note {
   font-style: italic;
   font-size: 1rem;
   color: var(--text-secondary);
-  margin-top: 2rem;
 }
 
-/* === Media Queries === */
+/* === Media queries === */
 @media (max-width: 768px) {
-  .contact h2 {
+  .contact-container h2 {
     font-size: 1.8rem;
   }
 
-  .contact h3 {
+  .contact-container h3 {
     font-size: 1.1rem;
   }
 
-  .contact p,
+  .contact-container p,
   .contact-note {
     font-size: 1rem;
   }
