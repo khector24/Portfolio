@@ -1,22 +1,28 @@
 /* === Contact Page Container === */
 .contact {
-  padding: 5rem 1.5rem;
-  background-color: var(--bg-light);
+  padding: 5rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 2rem;
+  background-color: var(--bg-light);
 }
 
-/* === Contact Page Heading === */
+/* === Headings === */
 .contact h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--text-link);
   margin-bottom: 0.5rem;
 }
 
-/* === Contact Page Description Paragraph === */
+.contact h3 {
+  font-size: 1.2rem;
+  color: var(--text-link);
+  margin-bottom: 0.5rem;
+}
+
+/* === Paragraphs === */
 .contact p {
   max-width: 600px;
   font-size: 1.1rem;
@@ -24,18 +30,61 @@
   color: var(--text-secondary);
 }
 
+/* === Contact Cards === */
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background-color: var(--bg-muted);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 240px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card a {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+.contact-card a:hover {
+  color: var(--accent-color);
+}
+
+.contact-note {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 2rem;
+}
+
 /* === Media Queries === */
 @media (max-width: 768px) {
-  .contact {
-    padding: 6rem 2rem;
-  }
-
   .contact h2 {
     font-size: 1.8rem;
   }
 
-  .contact p {
+  .contact h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact p,
+  .contact-note {
     font-size: 1rem;
-    max-width: 100%;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 300px;
   }
 }
