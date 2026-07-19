@@ -1,70 +1,9 @@
 // data.js
 
-export const faqs = [
-  {
-    question: "What technologies do you specialize in?",
-    answer:
-      "I specialize in React, Node.js, AWS (Lambda, DynamoDB, S3), REST APIs, and responsive front-end design.",
-  },
-  {
-    question: "Can you build full-stack applications?",
-    answer:
-      "Yes — I’ve built end-to-end systems using front-end frameworks like React and back-end services with Express and AWS.",
-  },
-  {
-    question: "Do you have experience with real clients?",
-    answer:
-      "Absolutely — I’ve deployed commercial sites like Splash Zone Aquatics and built internal tools for retail operations.",
-  },
-  {
-    question: "What results have your projects achieved?",
-    answer:
-      "My projects led to tangible improvements, including a 47% faster checkout system, 13 client signups before launch, and a 33% faster reporting process.",
-  },
-  {
-    question: "Do you use AWS in your work?",
-    answer:
-      "Yes — I’m AWS Certified and use services like Lambda, S3, and DynamoDB to build scalable, secure, cloud-first applications.",
-  },
-  {
-    question: "How do you handle secure file uploads?",
-    answer:
-      "For projects like Theft Tracker, I used AWS S3 pre-signed URLs to securely handle media uploads without exposing credentials.",
-  },
-  {
-    question: "What kind of businesses have you supported?",
-    answer:
-      "I’ve supported both small businesses and retail operations—creating internal systems and customer-facing websites to boost efficiency and engagement.",
-  },
-  {
-    question: "Can you integrate with third-party APIs?",
-    answer:
-      "Yes — I’ve integrated APIs like Resend for transactional emails and Mailchimp for newsletter sign-ups using Node.js and Express.",
-  },
-  {
-    question: "Do you have team leadership experience?",
-    answer:
-      "Yes — I led a team of over 25 staff members at Rainbow Ace Hardware while also building technical solutions to improve store performance.",
-  },
-  {
-    question: "Do you build mobile-friendly applications?",
-    answer:
-      "Absolutely — I prioritize responsive design using CSS Grid, Flexbox, and component-based UIs to ensure usability across all devices.",
-  },
-];
+// ======================================================
+// IMPORTS: TECHNOLOGY LOGOS
+// ======================================================
 
-export const leadershipPoints = [
-  "Led a 25+ person team while overseeing day-to-day store operations",
-  "Delivered hands-on mentorship and onboarding for new hires",
-  "Provided excellent customer support and issue resolution",
-  "Identified operational inefficiencies and built internal apps",
-  "Collaborated on custom software solutions",
-  "Balanced tech execution with retail management",
-  "Launched internal tools and client-facing apps",
-  "Promoted a culture of innovation and customer-first service",
-];
-
-// 🧩 Logo Imports
 import reactLogo from "../assets/logos/react.svg";
 import nodeLogo from "../assets/logos/nodejs.svg";
 import expressLogo from "../assets/logos/express-js.svg";
@@ -78,21 +17,84 @@ import postmanLogo from "../assets/logos/postman.svg";
 import visualStudioLogo from "../assets/logos/visual-studio-code.svg";
 import bootstrapLogo from "../assets/logos/bootstrap.svg";
 
-// 🛠️ Tech Items Array
-export const techItems = [
-  { logo: reactLogo, title: "React" },
-  { logo: nodeLogo, title: "Node.js" },
-  { logo: expressLogo, title: "Express" },
-  { logo: awsLogo, title: "AWS" },
-  { logo: javaLogo, title: "Java" },
-  { logo: mysqlLogo, title: "MySQL" },
-  { logo: htmlLogo, title: "HTML5" },
-  { logo: cssLogo, title: "CSS3" },
-  { logo: gitLogo, title: "Git" },
-  { logo: postmanLogo, title: "Postman" },
-  { logo: visualStudioLogo, title: "VS Code" },
-  { logo: bootstrapLogo, title: "Bootstrap" },
-];
+// ======================================================
+// IMPORTS: REGIONLORE PROJECT IMAGES
+// ======================================================
+
+import regionHomeTop from "../assets/featured-projects/RegionLore-Pics/home-top.png";
+import regionHomeBottom from "../assets/featured-projects/RegionLore-Pics/home-bottom.png";
+
+import regionStates from "../assets/featured-projects/RegionLore-Pics/states.png";
+import regionStateDetailTop from "../assets/featured-projects/RegionLore-Pics/state-detail-top.png";
+import regionStateDetailMid from "../assets/featured-projects/RegionLore-Pics/state-detail-mid.png";
+import regionStateDetailMid2 from "../assets/featured-projects/RegionLore-Pics/state-detail-mid-2.png";
+
+import regionMetros from "../assets/featured-projects/RegionLore-Pics/metros.png";
+import regionMetroDetailTop from "../assets/featured-projects/RegionLore-Pics/metro-detail-top.png";
+import regionMetroDetailMid from "../assets/featured-projects/RegionLore-Pics/metro-detail-mid.png";
+
+import regionDashboardTop from "../assets/featured-projects/RegionLore-Pics/dashboard-top.png";
+import regionDashboardMid from "../assets/featured-projects/RegionLore-Pics/dashboard-mid.png";
+import regionDashboardBottom from "../assets/featured-projects/RegionLore-Pics/dashboard-bottom.png";
+
+// ======================================================
+// IMPORTS: SPLASH ZONE PROJECT IMAGES
+// ======================================================
+
+import splashHome from "../assets/featured-projects/Splash-Zone-Pics/Home.png";
+import splashFAQ from "../assets/featured-projects/Splash-Zone-Pics/faq.png";
+import splashNewsletter from "../assets/featured-projects/Splash-Zone-Pics/newsletter.png";
+import splashModal from "../assets/featured-projects/Splash-Zone-Pics/contact-modal.png";
+import splashReceive from "../assets/featured-projects/Splash-Zone-Pics/students-receive.png";
+
+// ======================================================
+// IMPORTS: WEATHER PROJECT IMAGES
+// ======================================================
+
+import weatherType from "../assets/featured-projects/WeatherAppPics/type-city.png";
+import weatherSuccess from "../assets/featured-projects/WeatherAppPics/success.png";
+import weatherError from "../assets/featured-projects/WeatherAppPics/error.png";
+
+// ======================================================
+// IMPORTS: SIMON SAYS PROJECT IMAGES
+// ======================================================
+
+import SimonSaysGame from "../assets/featured-projects/Simon-Says-Pics/start-page.png";
+import SimonLevel1 from "../assets/featured-projects/Simon-Says-Pics/level-1.png";
+import SimonLevel2 from "../assets/featured-projects/Simon-Says-Pics/level-2.png";
+import SimonLevel3 from "../assets/featured-projects/Simon-Says-Pics/level-3.png";
+
+// ======================================================
+// IMPORTS: TO-DO LIST PROJECT IMAGES
+// ======================================================
+
+import TodoListMain from "../assets/featured-projects/Todo-List-Pics/main-page.png";
+import TodoListAdd from "../assets/featured-projects/Todo-List-Pics/add-task.png";
+import TodoListPostAdd from "../assets/featured-projects/Todo-List-Pics/post-add-task.png";
+import TodoListEdit from "../assets/featured-projects/Todo-List-Pics/edit-task.png";
+
+// ======================================================
+// IMPORTS: PORTFOLIO WEBSITE IMAGES
+// ======================================================
+
+import hero from "../assets/featured-projects/portfolio-website-pics/Hero.png";
+import whatIDo from "../assets/featured-projects/portfolio-website-pics/what-i-do.png";
+import howIWork from "../assets/featured-projects/portfolio-website-pics/how-i-work.png";
+import whoIAm from "../assets/featured-projects/portfolio-website-pics/who-i-am.png";
+import career from "../assets/featured-projects/portfolio-website-pics/career.png";
+import portfolio from "../assets/featured-projects/portfolio-website-pics/portfolio.png";
+import techSkills from "../assets/featured-projects/portfolio-website-pics/tech-skills.png";
+import contact from "../assets/featured-projects/portfolio-website-pics/contact.png";
+
+// ======================================================
+// IMPORTS: SHARED PROJECT ASSETS
+// ======================================================
+
+import placeholder from "../assets/featured-projects/placeholder.jpg";
+
+// ======================================================
+// CAREER DATA: PROFESSIONAL EXPERIENCE
+// ======================================================
 
 export const experienceData = [
   {
@@ -121,6 +123,10 @@ export const experienceData = [
   },
 ];
 
+// ======================================================
+// CAREER DATA: ENGINEERING PROJECTS
+// ======================================================
+
 export const engineeringProjectsData = [
   {
     title: "Full-Stack Data Analytics Platform",
@@ -128,9 +134,9 @@ export const engineeringProjectsData = [
     location: "Independent Project",
     dateRange: "Mar 2026 – Present",
     bullets: [
-      "Building a full-stack analytics platform for exploring demographic, economic, migration, education, and housing data across all 50 states and major U.S. metropolitan areas.",
+      "Building a full-stack analytics platform for exploring demographic, economic, migration, education, housing, and labor-market data across U.S. states and metropolitan areas.",
       "Developing ETL pipelines that transform Census, ACS, IRS migration, and NAEP datasets into optimized application-ready data.",
-      "Creating Express REST APIs and interactive React dashboards with search, filtering, maps, and regional comparisons.",
+      "Creating Express REST APIs and interactive React dashboards with search, filtering, maps, charts, and regional comparisons.",
     ],
     tech: ["React", "Node.js", "Express", "REST APIs", "ETL", "AWS"],
   },
@@ -152,13 +158,17 @@ export const engineeringProjectsData = [
     location: "Independent Project",
     dateRange: "2025",
     bullets: [
-      "Built an incident reporting application with searchable archived reports and secure media uploads.",
-      "Used AWS S3 pre-signed URLs, Lambda, and DynamoDB to support file storage and report management.",
-      "Reduced police report preparation time by approximately 33%.",
+      "Built an incident-reporting application with searchable archived reports and secure media uploads.",
+      "Used AWS S3 pre-signed URLs, Lambda, and DynamoDB to support evidence storage and report management.",
+      "Reduced police-report preparation time by approximately 33%.",
     ],
     tech: ["React", "AWS S3", "Lambda", "DynamoDB"],
   },
 ];
+
+// ======================================================
+// CAREER DATA: EDUCATION
+// ======================================================
 
 export const educationData = [
   {
@@ -186,6 +196,10 @@ export const educationData = [
   },
 ];
 
+// ======================================================
+// CAREER DATA: CERTIFICATIONS
+// ======================================================
+
 export const certificationData = [
   {
     type: "education",
@@ -200,46 +214,178 @@ export const certificationData = [
   },
 ];
 
-// Portfolio Imports renamed to featured-projects
-import splashHome from "../assets/featured-projects/Splash-Zone-Pics/Home.png";
-import splashFAQ from "../assets/featured-projects/Splash-Zone-Pics/faq.png";
-import splashNewsletter from "../assets/featured-projects/Splash-Zone-Pics/newsletter.png";
-import splashModal from "../assets/featured-projects/Splash-Zone-Pics/contact-modal.png";
-import splashReceive from "../assets/featured-projects/Splash-Zone-Pics/students-receive.png";
+// ======================================================
+// HOME DATA: TECHNOLOGIES
+// ======================================================
 
-import weatherType from "../assets/featured-projects/WeatherAppPics/type-city.png";
-import weatherSuccess from "../assets/featured-projects/WeatherAppPics/success.png";
-import weatherError from "../assets/featured-projects/WeatherAppPics/error.png";
+export const techItems = [
+  {
+    logo: reactLogo,
+    title: "React",
+  },
+  {
+    logo: nodeLogo,
+    title: "Node.js",
+  },
+  {
+    logo: expressLogo,
+    title: "Express",
+  },
+  {
+    logo: awsLogo,
+    title: "AWS",
+  },
+  {
+    logo: javaLogo,
+    title: "Java",
+  },
+  {
+    logo: mysqlLogo,
+    title: "MySQL",
+  },
+  {
+    logo: htmlLogo,
+    title: "HTML5",
+  },
+  {
+    logo: cssLogo,
+    title: "CSS3",
+  },
+  {
+    logo: gitLogo,
+    title: "Git",
+  },
+  {
+    logo: postmanLogo,
+    title: "Postman",
+  },
+  {
+    logo: visualStudioLogo,
+    title: "VS Code",
+  },
+  {
+    logo: bootstrapLogo,
+    title: "Bootstrap",
+  },
+];
 
-import placeholder from "../assets/featured-projects/placeholder.jpg";
+// ======================================================
+// ABOUT DATA: LEADERSHIP
+// ======================================================
 
-import SimonSaysGame from "../assets/featured-projects/Simon-Says-Pics/start-page.png";
-import SimonLevel1 from "../assets/featured-projects/Simon-Says-Pics/level-1.png";
-import SimonLevel2 from "../assets/featured-projects/Simon-Says-Pics/level-2.png";
-import SimonLevel3 from "../assets/featured-projects/Simon-Says-Pics/level-3.png";
+export const leadershipPoints = [
+  "Led a team of more than 25 staff members while overseeing daily store operations",
+  "Provided hands-on mentorship, training, and onboarding for new employees",
+  "Identified operational inefficiencies and developed internal software tools",
+  "Combined technical problem-solving with retail and team leadership",
+  "Built applications that improved delivery, checkout, and reporting workflows",
+  "Collaborated with employees and stakeholders to develop practical solutions",
+  "Supported customers while resolving technical and operational issues",
+  "Promoted a culture of innovation, accountability, and customer service",
+];
 
-import TodoListMain from "../assets/featured-projects/Todo-List-Pics/main-page.png";
-import TodoListAdd from "../assets/featured-projects/Todo-List-Pics/add-task.png";
-import TodoListPostAdd from "../assets/featured-projects/Todo-List-Pics/post-add-task.png";
-import TodoListEdit from "../assets/featured-projects/Todo-List-Pics/edit-task.png";
+// ======================================================
+// ABOUT DATA: FREQUENTLY ASKED QUESTIONS
+// ======================================================
 
-import hero from "../assets/featured-projects/portfolio-website-pics/Hero.png";
-import whatIDo from "../assets/featured-projects/portfolio-website-pics/what-i-do.png";
-import howIWork from "../assets/featured-projects/portfolio-website-pics/how-i-work.png";
-import whoIAm from "../assets/featured-projects/portfolio-website-pics/who-i-am.png";
-import career from "../assets/featured-projects/portfolio-website-pics/career.png";
-import portfolio from "../assets/featured-projects/portfolio-website-pics/portfolio.png";
-import techSkills from "../assets/featured-projects/portfolio-website-pics/tech-skills.png";
-import contact from "../assets/featured-projects/portfolio-website-pics/contact.png";
+export const faqs = [
+  {
+    question: "What technologies do you specialize in?",
+    answer:
+      "I specialize in React, Node.js, Express, Java, AWS services, REST APIs, database development, and responsive front-end design.",
+  },
+  {
+    question: "Can you build full-stack applications?",
+    answer:
+      "Yes. I build end-to-end applications using React on the front end and technologies such as Node.js, Express, Java, DynamoDB, MySQL, and AWS services on the back end.",
+  },
+  {
+    question: "Do you have experience working with real clients?",
+    answer:
+      "Yes. I designed and deployed the production website and email infrastructure for Splash Zone Aquatics and have also built internal software tools for retail operations.",
+  },
+  {
+    question: "What results have your applications achieved?",
+    answer:
+      "My work has contributed to approximately 50% of seasonal registrations before a business launch, reduced checkout time by 47%, and reduced police-report preparation time by approximately 33%.",
+  },
+  {
+    question: "Do you use AWS in your work?",
+    answer:
+      "Yes. I am AWS Certified and have worked with services including Lambda, S3, DynamoDB, API Gateway, CloudFront, Route 53, and Secrets Manager.",
+  },
+  {
+    question: "How do you handle secure file uploads?",
+    answer:
+      "For applications such as Theft Tracker, I use AWS S3 pre-signed URLs so files can be uploaded securely without exposing cloud credentials to the browser.",
+  },
+  {
+    question: "What kinds of organizations have you supported?",
+    answer:
+      "I have supported small businesses, customer-facing service organizations, and retail operations by building websites, cloud workflows, and internal productivity tools.",
+  },
+  {
+    question: "Can you integrate third-party APIs?",
+    answer:
+      "Yes. I have integrated services and public data sources including Resend, Mailchimp, OpenWeatherMap, Census data, IRS migration data, and other external APIs and datasets.",
+  },
+  {
+    question: "Do you have team leadership experience?",
+    answer:
+      "Yes. I led and supervised more than 25 staff members at Rainbow Ace Hardware while also developing technical solutions to improve store operations.",
+  },
+  {
+    question: "Do you build mobile-friendly applications?",
+    answer:
+      "Yes. I use responsive layouts, CSS Grid, Flexbox, component-based interfaces, and mobile breakpoints to create applications that work across screen sizes.",
+  },
+];
+
+// ======================================================
+// PORTFOLIO DATA: FEATURED PROJECTS
+// ======================================================
 
 export const featuredProjects = [
   {
-    title: "Splash Zone Aquatics Website",
-    tech: "React, Material UI, AWS S3, Lambda, DynamoDB",
+    title: "RegionLore",
+    tech: "React, Node.js, Express, REST APIs, ETL Pipelines, AWS",
     description:
-      "Responsive, customer-focused site featuring instructor profiles, FAQs, and AWS-powered newsletter automation. Drove 13+ early signups before launch.",
+      "Full-stack analytics platform for exploring demographic, economic, migration, education, housing, and labor-market data across U.S. states and metropolitan areas. RegionLore transforms large public datasets into searchable dashboards, maps, charts, rankings, and regional comparisons.",
+    link: "https://github.com/khector24/regionlore",
+    tags: [
+      "react",
+      "node",
+      "express",
+      "aws",
+      "rest-api",
+      "etl",
+      "data-visualization",
+    ],
+    images: [
+      regionHomeTop,
+      regionHomeBottom,
+      regionStates,
+      regionStateDetailTop,
+      regionStateDetailMid,
+      regionStateDetailMid2,
+      regionMetros,
+      regionMetroDetailTop,
+      regionMetroDetailMid,
+      regionDashboardTop,
+      regionDashboardMid,
+      regionDashboardBottom,
+    ],
+    hasLiveLink: true,
+    liveLink: "https://regionlore.com/",
+    showPlaceholderNote: false,
+  },
+  {
+    title: "Splash Zone Aquatics Website",
+    tech: "React, Material UI, AWS S3, Lambda, DynamoDB, Resend",
+    description:
+      "Production website and cloud email platform developed for a swim school. The responsive customer experience, program information, contact workflows, and automated email features improved the company's online visibility and contributed to approximately 50% of seasonal registrations before the summer launch.",
     link: "https://github.com/khector24/swim-aquatics",
-    tags: ["react", "aws", "lambda", "dynamodb", "material-ui"],
+    tags: ["react", "aws", "lambda", "dynamodb", "resend", "material-ui"],
     images: [
       splashHome,
       splashFAQ,
@@ -252,72 +398,42 @@ export const featuredProjects = [
     showPlaceholderNote: false,
   },
   {
+    title: "Delivery Management App",
+    tech: "React, Node.js, Express, DynamoDB, JWT Authentication",
+    description:
+      "Full-stack delivery scheduling and operations platform with manager authentication, driver management, secure CRUD APIs, permission-based workflows, and delivery-status tracking. The application streamlined delivery creation and helped reduce fulfillment errors.",
+    link: "https://github.com/khector24/delivery-manager",
+    tags: ["react", "node", "express", "dynamodb", "jwt", "authentication"],
+    images: [placeholder],
+    hasLiveLink: false,
+    liveLink: "",
+    showPlaceholderNote: true,
+  },
+  {
     title: "Theft Tracker Application",
     tech: "React, Material UI, AWS S3, Lambda, DynamoDB",
     description:
-      "Incident reporting system with media uploads and DynamoDB logging. Used in-store to reduce police reporting time by 33%.",
+      "Cloud-based incident-reporting system with searchable archived reports, structured evidence records, and secure media uploads through AWS S3 pre-signed URLs. The application improved in-store documentation and reduced police-report preparation time by approximately 33%.",
     link: "https://github.com/khector24/theft-tracker",
-    tags: ["react", "aws", "lambda", "file-upload", "material-ui"],
+    tags: [
+      "react",
+      "aws",
+      "s3",
+      "lambda",
+      "dynamodb",
+      "file-upload",
+      "material-ui",
+    ],
     images: [placeholder],
     hasLiveLink: false,
     liveLink: "",
     showPlaceholderNote: true,
-  },
-  {
-    title: "Delivery Management App",
-    tech: "React, Node.js, Express, DynamoDB",
-    description:
-      "Internal delivery scheduling platform with real-time tracking, custom permissions, and SMS notifications. Helped reduce delivery errors to near-zero.",
-    link: "https://github.com/khector24/delivery-manager",
-    tags: ["react", "node", "express", "dynamodb", "auth"],
-    images: [placeholder],
-    hasLiveLink: false,
-    liveLink: "",
-    showPlaceholderNote: true,
-  },
-  {
-    title: "Weather Project",
-    tech: "Node.js, Express, EJS, CSS",
-    description:
-      "Simple weather app using OpenWeatherMap API. Accepts city input and displays live weather data using EJS templating.",
-    link: "https://github.com/khector24/weather-project",
-    tags: ["node", "ejs", "express", "api"],
-    images: [weatherType, weatherSuccess, weatherError],
-    hasLiveLink: true,
-    // liveLink: "https://weather-project-868n.onrender.com/",
-    liveLink: "https://weather-app.kennyhector.com/",
-    showPlaceholderNote: false,
-  },
-  {
-    title: "Simple To-Do List",
-    tech: "Node.js, EJS, CSS, JavaScript",
-    description:
-      "Clean and interactive to-do list app using EJS templates and route-based task management.",
-    link: "https://github.com/khector24/simple-to-do-list",
-    tags: ["node", "ejs", "express", "todo"],
-    images: [TodoListMain, TodoListAdd, TodoListPostAdd, TodoListEdit],
-    hasLiveLink: true,
-    // liveLink: "https://simple-to-do-list-mat0.onrender.com/",
-    liveLink: "https://todo.kennyhector.com/",
-    showPlaceholderNote: false,
-  },
-  {
-    title: "Simon Says Game",
-    tech: "JavaScript, HTML, CSS",
-    description:
-      "Interactive memory game built from scratch with custom sounds and animations. Fun demonstration of game logic.",
-    link: "https://github.com/khector24/simon-says-game",
-    tags: ["javascript", "game", "html", "css", "j-query"],
-    images: [SimonSaysGame, SimonLevel1, SimonLevel2, SimonLevel3],
-    hasLiveLink: true,
-    liveLink: "https://simongame.kennyhector.com/",
-    showPlaceholderNote: false,
   },
   {
     title: "Personal Portfolio Website",
     tech: "React, AWS S3, Route 53, Framer Motion, CSS",
     description:
-      "My own responsive portfolio site featuring animations, dark/light mode, and a polished design showcasing my projects and skills.",
+      "Responsive portfolio website designed and developed to present my professional experience, engineering projects, technical skills, and contact information. The site includes animated transitions, reusable React components, project galleries, responsive layouts, and light and dark themes.",
     link: "https://github.com/khector24/portfolio",
     tags: ["react", "aws", "s3", "route53", "framer-motion", "css"],
     images: [
@@ -332,6 +448,42 @@ export const featuredProjects = [
     ],
     hasLiveLink: true,
     liveLink: "https://kennyhector.com",
+    showPlaceholderNote: false,
+  },
+  {
+    title: "Weather Project",
+    tech: "Node.js, Express, EJS, CSS, OpenWeatherMap API",
+    description:
+      "Server-rendered weather application that accepts a city from the user, requests current conditions from the OpenWeatherMap API, and presents the results through dynamic EJS templates with validation and error handling.",
+    link: "https://github.com/khector24/weather-project",
+    tags: ["node", "express", "ejs", "api", "css"],
+    images: [weatherType, weatherSuccess, weatherError],
+    hasLiveLink: true,
+    liveLink: "https://weather-app.kennyhector.com/",
+    showPlaceholderNote: false,
+  },
+  {
+    title: "Simple To-Do List",
+    tech: "Node.js, Express, EJS, CSS, JavaScript",
+    description:
+      "Interactive task-management application built with Node.js, Express, and EJS. Users can create, edit, and manage tasks through server-rendered views and route-based application logic.",
+    link: "https://github.com/khector24/simple-to-do-list",
+    tags: ["node", "express", "ejs", "javascript", "todo"],
+    images: [TodoListMain, TodoListAdd, TodoListPostAdd, TodoListEdit],
+    hasLiveLink: true,
+    liveLink: "https://todo.kennyhector.com/",
+    showPlaceholderNote: false,
+  },
+  {
+    title: "Simon Says Game",
+    tech: "JavaScript, jQuery, HTML, CSS",
+    description:
+      "Browser-based recreation of the classic Simon memory game featuring randomized sequences, level progression, sound effects, animations, and game-state logic.",
+    link: "https://github.com/khector24/simon-says-game",
+    tags: ["javascript", "jquery", "game", "html", "css"],
+    images: [SimonSaysGame, SimonLevel1, SimonLevel2, SimonLevel3],
+    hasLiveLink: true,
+    liveLink: "https://simongame.kennyhector.com/",
     showPlaceholderNote: false,
   },
 ];
