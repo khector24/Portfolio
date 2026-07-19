@@ -348,9 +348,9 @@ export const faqs = [
 export const featuredProjects = [
   {
     title: "RegionLore",
-    tech: "React, Node.js, Express, REST APIs, ETL Pipelines, AWS",
+    tech: "React, Node.js, Express, REST APIs, ETL Pipelines, Data Analytics, Interactive Mapping",
     description:
-      "Full-stack analytics platform for exploring demographic, economic, migration, education, housing, and labor-market data across U.S. states and metropolitan areas. RegionLore transforms large public datasets into searchable dashboards, maps, charts, rankings, and regional comparisons.",
+      "Comprehensive full-stack platform for researching and comparing U.S. states and metropolitan areas using demographic, migration, education, housing, labor-market, and economic data. RegionLore combines large public datasets into interactive maps, rankings, dashboards, and in-depth regional insights that help people better understand places.",
     link: "https://github.com/khector24/regionlore",
     tags: [
       "react",
