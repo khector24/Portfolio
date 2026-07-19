@@ -1,5 +1,5 @@
 import "../styles/page-styles/Portfolio.css";
-import { featuredProjects } from "../data/data";
+import { featuredProjects } from "../data/portfolioData";
 import PortfolioCard from "../components/portfolio/PortfolioCard";
 
 export default function Portfolio() {

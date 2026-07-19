@@ -4,7 +4,7 @@ import {
   engineeringProjectsData,
   educationData,
   certificationData,
-} from "../data/data";
+} from "../data/careerData";
 import CareerCard from "../components/career/CareerCard";
 
 export default function Career() {
