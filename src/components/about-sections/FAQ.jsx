@@ -1,5 +1,5 @@
 import Accordion from "../Accordion.jsx";
-import { faqs } from "../../assets/data.js";
+import { faqs } from "../../data/data.js";
 
 export default function FAQ() {
   return (

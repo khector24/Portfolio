@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 
 import TechItem from "./TechItem";
-import { leadershipPoints, techItems } from "../assets/data";
+import { leadershipPoints, techItems } from "../data/data";
 
 import CheckIcon from "../assets/icons/check.svg?react";
 

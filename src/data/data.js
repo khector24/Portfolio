@@ -136,29 +136,6 @@ export const faqs = [
   },
 ];
 
-export const testimonials = [
-  {
-    text: "Kenny's work is top-notch. Fast, reliable, and clean code!",
-    author: "– Former Client A",
-  },
-  {
-    text: "The project exceeded our expectations. Very happy!",
-    author: "– Client B",
-  },
-  {
-    text: "Delivered a fully functional app ahead of schedule. Highly recommend.",
-    author: "– Startup Founder",
-  },
-  {
-    text: "From planning to deployment, Kenny handled everything like a pro.",
-    author: "– Technical Lead, E-commerce",
-  },
-  {
-    text: "My site now loads faster and looks modern. Huge boost for my business.",
-    author: "– Local Business Owner",
-  },
-];
-
 export const leadershipPoints = [
   "Led a 25+ person team while overseeing day-to-day store operations",
   "Delivered hands-on mentorship and onboarding for new hires",

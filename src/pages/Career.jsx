@@ -1,5 +1,5 @@
 import "../styles/page-styles/Career.css";
-import { resumeData } from "../assets/data";
+import { resumeData } from "../data/data";
 import CareerCard from "../components/CareerCard";
 
 export default function Career() {
