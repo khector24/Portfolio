@@ -1,88 +1,5 @@
 // data.js
 
-export const projects = [
-  {
-    title: "Splash Zone Aquatics Website",
-    tech: "React, Material UI, AWS S3, Lambda, DynamoDB",
-    description:
-      "Responsive, customer-centric website with dynamic sections and AWS backend. Resulted in 13 early signups.",
-    link: "https://github.com/khector24/swim-aquatics",
-    tags: ["react", "aws", "dynamodb", "lambda", "material-ui"],
-  },
-  {
-    title: "Theft Tracker Application",
-    tech: "React, Material UI, AWS S3, Lambda, DynamoDB",
-    description:
-      "Dynamic theft reporting with file upload, AWS integration, and real-time updates. 33% faster police reporting.",
-    link: "https://github.com/khector24/theft-tracker",
-    tags: ["react", "aws", "file-upload", "lambda", "material-ui"],
-  },
-  {
-    title: "Delivery Management App",
-    tech: "React, Node.js, Express, DynamoDB",
-    description:
-      "Full-stack delivery platform with auth, real-time tracking, and alerts. Reduced delivery errors to near-zero.",
-    link: "https://github.com/khector24/delivery-manager",
-    tags: ["react", "node", "express", "dynamodb", "authentication"],
-  },
-  {
-    title: "Weather Project",
-    tech: "Node.js, Express, EJS, CSS",
-    description:
-      "Weather app that fetches real-time data via OpenWeatherMap API based on user-inputted city.",
-    link: "https://github.com/khector24/weather-project",
-    tags: ["node", "express", "ejs", "api", "css"],
-  },
-  {
-    title: "Band Name Generator",
-    tech: "Express.js, EJS, JavaScript",
-    description:
-      "Generates random band names using Express and EJS templates. Great for creative project showcases.",
-    link: "https://github.com/khector24/Band-Name-Generator",
-    tags: ["node", "express", "ejs", "random-generator"],
-  },
-  {
-    title: "Simple To-Do List",
-    tech: "Node.js, EJS, CSS, JavaScript",
-    description:
-      "Basic to-do app using EJS templates. Shows route handling and dynamic list rendering.",
-    link: "https://github.com/khector24/simple-to-do-list",
-    tags: ["node", "ejs", "todo", "express"],
-  },
-  {
-    title: "Simon Says Game",
-    tech: "JavaScript, HTML, CSS",
-    description:
-      "Classic memory game rebuilt with custom sound, animations, and game logic.",
-    link: "https://github.com/khector24/simon-says-game",
-    tags: ["javascript", "game", "css", "html"],
-  },
-  {
-    title: "Dice Challenge",
-    tech: "JavaScript, HTML, CSS",
-    description:
-      "Interactive dice game that uses random logic to simulate a player vs. player dice roll.",
-    link: "https://github.com/khector24/dice-challenge",
-    tags: ["javascript", "game", "html", "css"],
-  },
-  {
-    title: "My Site CSS",
-    tech: "HTML, CSS",
-    description:
-      "Personal static site showcasing layout skills and responsiveness using only HTML and CSS.",
-    link: "https://github.com/khector24/my-site-css",
-    tags: ["css", "html", "responsive-design"],
-  },
-  {
-    title: "Newsletter Signup Example",
-    tech: "HTML, CSS, JavaScript, Node.js, Mailchimp API",
-    description:
-      "Signup form project that integrates with the Mailchimp API to store user emails.",
-    link: "https://github.com/khector24/newsletter-signup-eg",
-    tags: ["html", "css", "javascript", "node", "api", "mailchimp"],
-  },
-];
-
 export const faqs = [
   {
     question: "What technologies do you specialize in?",
@@ -177,55 +94,84 @@ export const techItems = [
   { logo: bootstrapLogo, title: "Bootstrap" },
 ];
 
-export const resumeData = [
+export const experienceData = [
   {
-    title: "Full-Stack Developer (Contract)",
-    company: "Splash Zone Aquatics Website",
-    location: "Remote",
-    dateRange: "Oct 2024 – May 2025",
+    title: "Full-Stack Developer",
+    company: "Splash Zone Aquatics",
+    location: "Contract · Remote",
+    dateRange: "Sep 2024 – May 2025",
     bullets: [
-      "Built a responsive site with React and Material UI.",
-      "Integrated newsletter flow and automated emails via AWS Lambda + Resend.",
-      "Improved UX with a styled FAQ section and navigation components.",
+      "Designed, developed, and deployed a production website for a swim school using React, Material UI, and AWS.",
+      "Boosted online visibility, contributing to approximately 50% of seasonal registrations before the summer launch.",
+      "Integrated AWS Lambda, DynamoDB, and the Resend API to automate email workflows with secure one-click unsubscribe functionality.",
     ],
-    tech: ["React", "AWS", "Resend API"],
+    tech: ["React", "Material UI", "AWS", "DynamoDB", "Resend"],
   },
   {
     title: "Assistant Manager / Technical Analyst",
     company: "Rainbow Ace Hardware",
     location: "Suffern, NY",
-    dateRange: "May 2021 – Sep 2024",
+    dateRange: "Apr 2016 – Jul 2024",
     bullets: [
-      "Led and supervised a team of 25+ employees to ensure smooth daily operations.",
-      "Built a custom delivery tracking system reducing order errors.",
-      "Integrated image/code saving into the POS, improving checkout speed by 47%.",
-      "Provided tech support and upgraded register systems.",
+      "Led and supervised more than 25 staff members, improving daily operations and communication across departments.",
+      "Built an in-house delivery tracking system that reduced order errors and streamlined logistics.",
+      "Enhanced the POS system with an image and code module, reducing checkout time by 47%.",
     ],
-    tech: ["Java", "JavaFX", "MySQL"],
+    tech: ["Java", "JavaFX", "MySQL", "Operations"],
+  },
+];
+
+export const engineeringProjectsData = [
+  {
+    title: "Full-Stack Data Analytics Platform",
+    company: "RegionLore",
+    location: "Independent Project",
+    dateRange: "Mar 2026 – Present",
+    bullets: [
+      "Building a full-stack analytics platform for exploring demographic, economic, migration, education, and housing data across all 50 states and major U.S. metropolitan areas.",
+      "Developing ETL pipelines that transform Census, ACS, IRS migration, and NAEP datasets into optimized application-ready data.",
+      "Creating Express REST APIs and interactive React dashboards with search, filtering, maps, and regional comparisons.",
+    ],
+    tech: ["React", "Node.js", "Express", "REST APIs", "ETL", "AWS"],
   },
   {
-    title: "Developer",
-    company: "Theft Tracker App",
-    location: "Remote",
-    dateRange: "Jan 2025 – Present",
+    title: "Full-Stack Developer",
+    company: "Delivery Management App",
+    location: "Independent Project",
+    dateRange: "2025",
     bullets: [
-      "Built a theft reporting app with file uploads via pre-signed S3 URLs.",
-      "Used React hooks for conditional dynamic form sections.",
-      "Enabled report viewing with async fetch & modular components.",
+      "Built a delivery scheduling platform with manager authentication, driver views, and secure CRUD APIs.",
+      "Implemented JWT-based authentication and DynamoDB-backed data storage.",
+      "Reduced delivery creation time by approximately 38% and improved order tracking.",
+    ],
+    tech: ["React", "Node.js", "Express", "DynamoDB", "JWT"],
+  },
+  {
+    title: "Full-Stack Developer",
+    company: "Theft Tracker Application",
+    location: "Independent Project",
+    dateRange: "2025",
+    bullets: [
+      "Built an incident reporting application with searchable archived reports and secure media uploads.",
+      "Used AWS S3 pre-signed URLs, Lambda, and DynamoDB to support file storage and report management.",
+      "Reduced police report preparation time by approximately 33%.",
     ],
     tech: ["React", "AWS S3", "Lambda", "DynamoDB"],
   },
+];
+
+export const educationData = [
   {
-    title: "Developer",
-    company: "Delivery Management App",
-    location: "Remote",
-    dateRange: "Jan 2025 – Present",
+    type: "education",
+    title: "Master of Science in Computer Science",
+    company: "University of Colorado Boulder",
+    location: "Boulder, CO",
+    dateRange: "Oct 2025 – Expected Mar 2027",
     bullets: [
-      "Created a delivery tracker with real-time updates & driver views.",
-      "Implemented JWT login + secure CRUD APIs.",
-      "Reduced delivery creation time by ~38% and automated alerts.",
+      "Currently pursuing a graduate degree in computer science.",
+      "Maintaining a 4.0 GPA.",
     ],
-    tech: ["React", "Node.js", "Express", "DynamoDB"],
+    tech: ["Computer Science", "Software Architecture", "Data Systems"],
   },
   {
     type: "education",
@@ -234,18 +180,23 @@ export const resumeData = [
     location: "Sparkill, NY",
     dateRange: "2016 – 2020",
     bullets: [
-      "Focused on software development, algorithms, and data structures.",
-      "Completed projects in Java, SQL, and C#.",
+      "Completed coursework in software development, algorithms, data structures, databases, and computer systems.",
     ],
-    tech: [
-      "C#",
-      "Java",
-      "SQL",
-      "HTML",
-      "Data Structures",
-      "Algorithms",
-      "Software Development",
+    tech: ["Java", "SQL", "Algorithms", "Data Structures"],
+  },
+];
+
+export const certificationData = [
+  {
+    type: "education",
+    title: "AWS Certified Solutions Architect – Associate",
+    company: "Amazon Web Services",
+    location: "Professional Certification",
+    dateRange: "May 2024 – May 2027",
+    bullets: [
+      "Validated knowledge of designing secure, resilient, high-performing, and cost-optimized AWS architectures.",
     ],
+    tech: ["AWS", "Cloud Architecture"],
   },
 ];
 
