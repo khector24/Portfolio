@@ -1,4 +1,4 @@
-import "../styles/component-styles/TechItem.css";
+import "../../styles/component-styles/home/TechItem.css";
 
 export default function TechItem({ logo, title }) {
   return (

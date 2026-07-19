@@ -1,6 +1,4 @@
-import "../styles/component-styles/HowIWork.css";
-// import plus from "/src/assets/illustrations/plus.svg";
-// import triangle from "/src/assets/illustrations/triangle.svg";
+import "../../styles/component-styles/home/HowIWork.css";
 
 export default function HowIWork() {
   return (

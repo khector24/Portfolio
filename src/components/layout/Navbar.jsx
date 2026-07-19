@@ -1,11 +1,12 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../styles/component-styles/Navbar.css";
-import MenuBar from "../assets/icons/menu-bar.svg";
-import ResumeIcon from "../assets/icons/resume-icon.svg";
-import EmailIcon from "../assets/icons/email-icon.svg";
-import GitHubIcon from "../assets/icons/github-icon.svg";
-import resumePDF from "../assets/documents/resume.pdf";
+// import "../styles/component-styles/layout/Navbar.css";
+import "../../styles/component-styles/layout/Navbar.css";
+import MenuBar from "../../assets/icons/menu-bar.svg";
+import ResumeIcon from "../../assets/icons/resume-icon.svg";
+import EmailIcon from "../../assets/icons/email-icon.svg";
+import GitHubIcon from "../../assets/icons/github-icon.svg";
+import resumePDF from "../../assets/documents/resume.pdf";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);

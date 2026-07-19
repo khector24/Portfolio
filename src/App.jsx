@@ -3,8 +3,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+//import Navbar from "./components/layout/Navbar";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+//import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";

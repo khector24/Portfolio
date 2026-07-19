@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/component-styles/PortfolioCard.css";
+import "../../styles/component-styles/portfolio/PortfolioCard.css";
 
 export default function PortfolioCard({
   title,

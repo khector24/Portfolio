@@ -1,4 +1,4 @@
-import "../styles/component-styles/WhoAmI.css";
+import "../../styles/component-styles/home/WhoAmI.css";
 
 export default function WhoAmI() {
   return (

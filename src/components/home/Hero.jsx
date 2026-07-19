@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import resumePDF from "../assets/documents/resume.pdf";
-import "../styles/component-styles/Hero.css";
+import resumePDF from "../../assets/documents/resume.pdf";
+import "../../styles/component-styles/home/Hero.css";
 
 export default function Hero() {
   return (

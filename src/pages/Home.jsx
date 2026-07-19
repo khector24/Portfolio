@@ -1,9 +1,9 @@
 import "../styles/page-styles/Home.css";
-import Hero from "../components/Hero";
-import WhoAmI from "../components/WhoAmI";
-import WhatIDo from "../components/WhatIDo";
-import HowIWork from "../components/HowIWork";
-import SkillsAndTech from "../components/SkillsAndTech";
+import Hero from "../components/home/Hero";
+import WhoAmI from "../components/home/WhoAmI";
+import WhatIDo from "../components/home/WhatIDo";
+import HowIWork from "../components/home/HowIWork";
+import SkillsAndTech from "../components/home/SkillsAndTech";
 
 export default function Home() {
   return (

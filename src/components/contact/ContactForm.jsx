@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/component-styles/ContactForm.css";
+import "../../styles/component-styles/contact/ContactForm.css";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -20,7 +20,7 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(
-      `Sudmitted ${formData.name} ${formData.email} ${formData.message}`
+      `Sudmitted ${formData.name} ${formData.email} ${formData.message}`,
     );
   };
 

@@ -1,4 +1,4 @@
-import "../styles/component-styles/WhatIDo.css";
+import "../../styles/component-styles/home/WhatIDo.css";
 
 export default function WhatIDo() {
   return (

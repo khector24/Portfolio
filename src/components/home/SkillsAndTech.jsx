@@ -1,23 +1,23 @@
-import "../styles/component-styles/SkillsAndTech.css";
+import "../../styles/component-styles/home/SkillsAndTech.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 
-import TechItem from "./TechItem";
-import { leadershipPoints, techItems } from "../data/data";
+import TechItem from "./TechItem.jsx";
+import { leadershipPoints, techItems } from "../../data/data.js";
 
-import CheckIcon from "../assets/icons/check.svg?react";
+import CheckIcon from "../../assets/icons/check.svg?react";
 
 // Decorative SVGs
-import PlusIcon from "../assets/illustrations/plus.svg?react";
-import TriangleIcon from "../assets/illustrations/triangle.svg?react";
-import Blob2Icon from "../assets/illustrations/blob2.svg?react";
-import VerticalDotsIcon from "../assets/illustrations/vertical-dots.svg?react";
-import VerticalDotsIcon1 from "../assets/illustrations/vertical-dots.svg?react";
-import LightningIcon from "../assets/illustrations/lightning-svgrepo-com.svg?react";
-import HorizontalDotsIcon2 from "../assets/illustrations/vertical-dots.svg?react";
-import HorizontalDotsIcon3 from "../assets/illustrations/vertical-dots.svg?react";
-import HorizontalDotsIcon4 from "../assets/illustrations/vertical-dots.svg?react";
+import PlusIcon from "../../assets/illustrations/plus.svg?react";
+import TriangleIcon from "../../assets/illustrations/triangle.svg?react";
+import Blob2Icon from "../../assets/illustrations/blob2.svg?react";
+import VerticalDotsIcon from "../../assets/illustrations/vertical-dots.svg?react";
+import VerticalDotsIcon1 from "../../assets/illustrations/vertical-dots.svg?react";
+import LightningIcon from "../../assets/illustrations/lightning-svgrepo-com.svg?react";
+import HorizontalDotsIcon2 from "../../assets/illustrations/vertical-dots.svg?react";
+import HorizontalDotsIcon3 from "../../assets/illustrations/vertical-dots.svg?react";
+import HorizontalDotsIcon4 from "../../assets/illustrations/vertical-dots.svg?react";
 
 export default function SkillsAndTech() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);

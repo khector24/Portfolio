@@ -1,4 +1,4 @@
-import "../styles/component-styles/CareerCard.css";
+import "../../styles/component-styles/career/CareerCard.css";
 
 export default function CareerCard({
   title,

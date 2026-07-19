@@ -5,7 +5,7 @@ import {
   educationData,
   certificationData,
 } from "../data/data";
-import CareerCard from "../components/CareerCard";
+import CareerCard from "../components/career/CareerCard";
 
 export default function Career() {
   return (
