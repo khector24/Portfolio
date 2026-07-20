@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
 import { featuredProjects } from "../../data/portfolioData";
 import "../../styles/component-styles/home/FeaturedProjects.css";
+
 import GithubIcon from "../../assets/icons/github-icon.svg?react";
+
+// Decorative SVGs
+import PlusIcon from "../../assets/illustrations/plus.svg?react";
+import TriangleIcon from "../../assets/illustrations/triangle.svg?react";
+import BlobIcon from "../../assets/illustrations/blob2.svg?react";
+import LightningIcon from "../../assets/illustrations/lightning-svgrepo-com.svg?react";
+import VerticalDotsIcon from "../../assets/illustrations/vertical-dots.svg?react";
+import FiveCirclesIcon from "../../assets/illustrations/five-circles.svg?react";
 
 export default function FeaturedProjects() {
   const homepageProjects = featuredProjects.slice(0, 2);
@@ -26,6 +35,42 @@ export default function FeaturedProjects() {
 
   return (
     <section className="featured-projects-section bg-dark">
+      {/* Decorative SVGs */}
+      <PlusIcon
+        className="featured-projects-decor featured-projects-plus"
+        aria-hidden="true"
+      />
+
+      <TriangleIcon
+        className="featured-projects-decor featured-projects-triangle"
+        aria-hidden="true"
+      />
+
+      <BlobIcon
+        className="featured-projects-decor featured-projects-blob"
+        aria-hidden="true"
+      />
+
+      <LightningIcon
+        className="featured-projects-decor featured-projects-lightning"
+        aria-hidden="true"
+      />
+
+      <VerticalDotsIcon
+        className="featured-projects-decor featured-projects-dots-left"
+        aria-hidden="true"
+      />
+
+      <VerticalDotsIcon
+        className="featured-projects-decor featured-projects-dots-right"
+        aria-hidden="true"
+      />
+
+      <FiveCirclesIcon
+        className="featured-projects-decor featured-projects-circles"
+        aria-hidden="true"
+      />
+
       <div className="featured-projects-wrapper">
         <header className="featured-projects-header" data-aos="fade-up">
           <p className="featured-projects-eyebrow">Featured Work</p>

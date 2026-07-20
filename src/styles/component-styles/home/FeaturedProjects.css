@@ -60,6 +60,78 @@
 }
 
 /* =========================================
+   DECORATIVE SVGs
+========================================= */
+
+.featured-projects-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.featured-projects-decor {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  color: var(--accent);
+  fill: currentColor;
+  stroke: currentColor;
+  opacity: 0.1;
+}
+
+.featured-projects-plus {
+  top: 90px;
+  left: 45px;
+  width: 38px;
+  transform: rotate(12deg);
+  opacity: 0.14;
+}
+
+.featured-projects-triangle {
+  right: 55px;
+  bottom: 65px;
+  width: 34px;
+  transform: rotate(-12deg);
+  opacity: 0.15;
+}
+
+.featured-projects-blob {
+  right: -145px;
+  bottom: -180px;
+  width: 390px;
+  opacity: 0.045;
+}
+
+.featured-projects-lightning {
+  left: 65px;
+  bottom: 80px;
+  width: 105px;
+  transform: rotate(-125deg);
+  opacity: 0.08;
+}
+
+.featured-projects-dots-left {
+  top: 250px;
+  left: -15px;
+  width: 85px;
+  opacity: 0.055;
+}
+
+.featured-projects-dots-right {
+  top: 145px;
+  right: 20px;
+  width: 75px;
+  transform: rotate(90deg);
+  opacity: 0.055;
+}
+
+.featured-projects-circles {
+  top: -45px;
+  right: -50px;
+  width: 185px;
+  opacity: 0.07;
+}
+
+/* =========================================
    PROJECT LIST
 ========================================= */
 
@@ -360,6 +432,24 @@
   .featured-project-content {
     padding: 1.75rem;
   }
+
+  .featured-projects-plus {
+    top: 70px;
+    left: 20px;
+  }
+
+  .featured-projects-circles {
+    right: -80px;
+    width: 160px;
+  }
+
+  .featured-projects-dots-right {
+    display: none;
+  }
+
+  .featured-projects-blob {
+    right: -190px;
+  }
 }
 
 /* =========================================
@@ -411,6 +501,40 @@
   .featured-projects-view-all-button {
     grid-column: 1 / -1;
     width: 100%;
+  }
+
+  .featured-projects-decor {
+    opacity: 0.06;
+  }
+
+  .featured-projects-plus {
+    top: 35px;
+    left: 12px;
+    width: 28px;
+  }
+
+  .featured-projects-triangle {
+    right: 18px;
+    bottom: 30px;
+    width: 24px;
+  }
+
+  .featured-projects-circles {
+    top: -55px;
+    right: -90px;
+    width: 145px;
+  }
+
+  .featured-projects-dots-left,
+  .featured-projects-dots-right,
+  .featured-projects-lightning {
+    display: none;
+  }
+
+  .featured-projects-blob {
+    right: -170px;
+    bottom: -130px;
+    width: 300px;
   }
 }
 
