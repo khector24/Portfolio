@@ -1,11 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import "../styles/component-styles/layout/Navbar.css";
 import "../../styles/component-styles/layout/Navbar.css";
 import MenuBar from "../../assets/icons/menu-bar.svg";
-import ResumeIcon from "../../assets/icons/resume-icon.svg";
-import EmailIcon from "../../assets/icons/email-icon.svg";
-import GitHubIcon from "../../assets/icons/github-icon.svg";
+import ResumeIcon from "../../assets/icons/resume-icon.svg?react";
+import EmailIcon from "../../assets/icons/email-icon.svg?react";
+import GitHubIcon from "../../assets/icons/github-icon.svg?react";
 import resumePDF from "../../assets/documents/resume.pdf";
 
 export default function Navbar() {
@@ -78,18 +77,26 @@ export default function Navbar() {
             </Link>
             <hr />
             <div className="nav-icons">
-              <a href="mailto:kennyhector24@gmail.com">
-                <img src={EmailIcon} alt="Email" />
+              <a href="mailto:kennyhector24@gmail.com" aria-label="Email">
+                <EmailIcon className="nav-social-icon" aria-hidden="true" />
               </a>
-              <a href={resumePDF} target="_blank" rel="noreferrer">
-                <img src={ResumeIcon} alt="Resume" />
+
+              <a
+                href={resumePDF}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Resume"
+              >
+                <ResumeIcon className="nav-social-icon" aria-hidden="true" />
               </a>
+
               <a
                 href="https://github.com/khector24"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="GitHub"
               >
-                <img src={GitHubIcon} alt="GitHub" />
+                <GitHubIcon className="nav-social-icon" aria-hidden="true" />
               </a>
             </div>
           </div>

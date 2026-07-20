@@ -86,14 +86,13 @@ hr {
   gap: 1rem;
 }
 
-.nav-icons img {
+.nav-social-icon {
   width: 20px;
   height: 20px;
-  object-fit: contain;
-  filter: brightness(1.2);
+  color: var(--text-link);
   transition: transform 0.2s ease;
 }
 
-.nav-icons img:hover {
+.nav-icons a:hover .nav-social-icon {
   transform: scale(1.1);
 }
