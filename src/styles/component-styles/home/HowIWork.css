@@ -1,229 +1,325 @@
+/* === How I Work Section === */
+
 .how-i-work {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 2rem;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
   overflow: hidden;
 }
 
 .how-i-work-wrapper {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
   width: 100%;
-  gap: 3rem;
-  position: relative;
-  z-index: 1;
+  max-width: 1200px;
+  gap: 4rem;
 }
 
+/* === Illustration === */
+
 .how-i-work-image {
-  flex: 1;
+  flex: 0 1 46%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
 }
 
 .how-image {
+  display: block;
   width: 100%;
+  max-width: 520px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-.how-i-work-text {
-  flex: 1;
-  padding: 1rem;
-  text-align: left;
+/* === Workflow Content === */
+
+.how-i-work-content {
+  position: relative;
   z-index: 2;
+  flex: 0 1 54%;
+  width: 100%;
 }
 
-.how-i-work-text .section-heading {
+.how-i-work-heading {
+  margin-bottom: 2rem;
+}
+
+.how-i-work-content .section-heading {
+  margin-bottom: 0.75rem;
   text-align: center;
 }
 
-.how-i-work-text p {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  margin-bottom: 1rem;
+.how-i-work-intro {
+  max-width: 620px;
+  margin: 0 auto;
   color: var(--bg-primary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: center;
 }
 
-/* Decorative SVG styles */
-/* Extra SVG Decor */
-.svg-decor {
+/* === Workflow Steps === */
+
+.workflow-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.workflow-step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid rgba(108, 92, 231, 0.2);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.workflow-step:hover {
+  border-color: var(--accent);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.workflow-number {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: var(--bg-primary);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.workflow-step-content {
+  flex: 1;
+}
+
+.workflow-step-content h3 {
+  margin: 0 0 0.35rem;
+  color: var(--bg-primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.workflow-step-content p {
+  margin: 0;
+  color: var(--bg-primary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.82;
+}
+
+/* === Decorative SVGs === */
+
+.how-work-decor {
   position: absolute;
-  opacity: 0.15;
   z-index: 0;
   pointer-events: none;
-  fill: var(--accent);
+  color: var(--accent);
+  fill: currentColor;
+  stroke: currentColor;
 }
 
-.svg-decor.lightning {
+.how-work-lightning {
+  bottom: -65px;
+  left: 70px;
   width: 100px;
+  opacity: 0.1;
   transform: rotate(-135deg);
-  bottom: -80px;
-  left: 80px;
 }
 
-.svg-decor.circles {
-  width: 180px;
+.how-work-circles {
   top: -60px;
   right: -50px;
+  width: 180px;
+  opacity: 0.1;
 }
 
-.svg-decor.plus {
+.how-work-plus {
+  top: 35px;
+  left: 30px;
   width: 40px;
-  top: 20px;
-  left: 20px;
-  opacity: 0.2;
+  opacity: 0.18;
 }
 
-.svg-decor.triangle {
-  width: 30px;
-  bottom: 40px;
+.how-work-triangle {
   right: 60px;
-  opacity: 0.2;
+  bottom: 45px;
+  width: 30px;
+  opacity: 0.18;
+  transform: rotate(-12deg);
 }
 
-.svg-decor.big-blob {
-  bottom: -200px;
+.how-work-blob {
+  right: 80px;
+  bottom: -190px;
   width: 350px;
-  right: 100px;
-  opacity: 0.08;
-  z-index: 0;
+  opacity: 0.06;
 }
 
-.svg-decor.vertical-dots {
+.how-work-vertical-dots {
+  right: 100px;
+  bottom: -145px;
   width: 100px;
-  bottom: -150px;
-  right: 100px;
-  opacity: 0.08;
-  z-index: 0;
+  opacity: 0.07;
 }
 
-.svg-decor.horizontal-dots1 {
-  width: 90px;
-  top: -100px;
+.how-work-horizontal-dots-one {
+  top: -90px;
   left: 100px;
-  opacity: 0.08;
-  z-index: 0;
-  transform: rotate(90deg);
-}
-
-.svg-decor.horizontal-dots2 {
   width: 90px;
-  top: -70px;
-  left: 125px;
-  opacity: 0.08;
-  z-index: 0;
+  opacity: 0.07;
   transform: rotate(90deg);
 }
 
-/* Responsive layout */
-@media (max-width: 1100px) {
-  .how-i-work-wrapper {
-    gap: 2rem;
-    padding: 0 1rem;
-  }
-
-  .how-i-work-text {
-    text-align: center;
-  }
-
-  .how-i-work-text p {
-    font-size: 1.05rem;
-  }
+.how-work-horizontal-dots-two {
+  top: -60px;
+  left: 125px;
+  width: 90px;
+  opacity: 0.07;
+  transform: rotate(90deg);
 }
 
-@media (max-width: 940px) {
-  .how-i-work-text {
-    padding: 0;
-    text-align: center;
-  }
+/* === Responsive Styles === */
 
-  .how-i-work-text .section-heading {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .how-i-work-text p {
-    font-size: 1.05rem;
-    margin-bottom: 0.5rem;
+@media (max-width: 1050px) {
+  .how-i-work-wrapper {
+    gap: 2.5rem;
   }
 
   .how-i-work-image {
-    max-width: 500px;
-    margin: 0 auto;
+    flex-basis: 42%;
+  }
+
+  .how-i-work-content {
+    flex-basis: 58%;
+  }
+
+  .workflow-step {
+    padding: 1.2rem;
+  }
+
+  .workflow-number {
+    width: 44px;
+    height: 44px;
   }
 }
 
-@media (max-width: 880px) {
-  .how-i-work-text .section-heading {
-    margin-bottom: 0;
+@media (max-width: 850px) {
+  .how-i-work {
+    min-height: 100vh;
+    height: auto;
+    padding: 5rem 2rem;
   }
 
-  .how-i-work-text .section-heading {
-    font-size: 1.75rem;
-  }
-
-  .how-i-work-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-}
-
-@media (max-width: 768px) {
   .how-i-work-wrapper {
     flex-direction: column;
+    max-width: 700px;
     gap: 2.5rem;
   }
 
   .how-i-work-image,
-  .how-i-work-text {
+  .how-i-work-content {
     flex: unset;
     width: 100%;
-    padding: 0.5rem;
-    text-align: center;
-  }
-
-  .how-i-work-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .section-heading {
-    font-size: 1.75rem;
   }
 
   .how-image {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 430px;
+  }
+
+  .how-i-work-intro {
+    max-width: 570px;
+  }
+
+  .how-work-lightning,
+  .how-work-vertical-dots,
+  .how-work-horizontal-dots-one,
+  .how-work-horizontal-dots-two {
+    display: none;
   }
 }
 
 @media (max-width: 600px) {
   .how-i-work {
-    padding: 3rem 1.5rem;
+    padding: 4rem 1.25rem;
   }
 
   .how-i-work-wrapper {
     gap: 2rem;
   }
 
-  .how-i-work-text p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  .section-heading {
-    font-size: 1.5rem;
+  .how-i-work-image {
+    padding: 0;
   }
 
   .how-image {
     max-width: 90%;
   }
 
-  .svg-decor {
+  .how-i-work-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .how-i-work-content .section-heading {
+    font-size: 1.75rem;
+  }
+
+  .how-i-work-intro {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .workflow-step {
+    gap: 1rem;
+    padding: 1.1rem;
+  }
+
+  .workflow-number {
+    width: 40px;
+    height: 40px;
+    font-size: 0.75rem;
+  }
+
+  .workflow-step-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .workflow-step-content p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .how-work-decor {
     display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .workflow-step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
