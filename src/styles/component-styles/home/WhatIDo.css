@@ -1,143 +1,261 @@
+/* === What I Do Section === */
+
 .what-i-do-section {
+  position: relative;
   display: flex;
-  padding: 50px 6rem;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  overflow: hidden;
+}
+
+.what-i-do-wrapper {
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* === Section Heading === */
+
+.what-i-do-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.what-i-do-header h2 {
+  position: relative;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.what-i-do-header h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 0.6rem auto 0;
+  border-radius: 999px;
+  background-color: var(--accent);
+}
+
+/* === Split Layout === */
+
+.what-i-do-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid rgba(153, 128, 250, 0.24);
+  background-color: #30336b;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
 }
 
 .do-card {
-  flex: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin: 6rem 0;
-  padding: 3rem;
-  background: #30336b;
+  min-height: 470px;
+  padding: 3.5rem;
+  overflow: hidden;
+  background-color: #30336b;
 }
 
-.do-card h3 {
-  font-size: 4rem;
-  color: var(--accent);
-  margin-bottom: 0.5rem;
-}
-
-.do-card p {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: var(--text-muted);
-}
-
-.left-card::after,
-.right-card::before {
-  content: "";
-  position: absolute;
-  top: 15%;
-  height: 70%;
-  width: 1px;
-  background-color: var(--accent);
-  opacity: 0.4;
-}
-
-.left-card::after {
-  right: 0;
-}
-
-.right-card::before {
-  left: 0;
-}
-
-.left-card,
-.left-card h3 {
+.do-card-left {
   text-align: left;
 }
 
-.right-card {
+.do-card-right {
+  align-items: flex-end;
   text-align: right;
-  justify-content: flex-end;
 }
 
-.right-card .sub-cta {
-  align-self: flex-end;
+/* === Divider === */
+
+.do-card-left::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 0;
+  width: 1px;
+  height: 70%;
+  background-color: var(--accent);
+  opacity: 0.45;
 }
+
+/* === Decorative Background Shapes === */
+
+.do-card::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  opacity: 0.035;
+  pointer-events: none;
+}
+
+.do-card-left::before {
+  top: -130px;
+  right: -90px;
+}
+
+.do-card-right::before {
+  bottom: -140px;
+  left: -90px;
+}
+
+/* === Card Content === */
+
+.do-card h3 {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  line-height: 1;
+}
+
+.do-card p {
+  position: relative;
+  z-index: 1;
+  max-width: 430px;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Push the right-side content lower */
+
+.do-card-right h3 {
+  margin-top: auto;
+}
+
+.do-card-right p {
+  margin-left: auto;
+}
+
+/* === Links === */
 
 .sub-cta {
-  margin-top: 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--accent);
-  text-decoration: none;
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  opacity: 0.9;
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  gap: 0.45rem;
+  padding-top: 1rem;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Keep the Design link attached to its content */
+
+.do-card-right .sub-cta {
+  margin-top: 0;
 }
 
 .sub-cta::after {
   content: "→";
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   transition: transform 0.25s ease;
 }
 
 .sub-cta:hover {
-  opacity: 1;
-  text-decoration: underline;
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .sub-cta:hover::after {
-  transform: translateX(4px);
+  transform: translateX(5px);
 }
 
-@media (max-width: 1000px) {
-  .do-card h3 {
-    font-size: 3rem;
-  }
+/* === Responsive Styles === */
 
-  .do-card p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 840px) {
+@media (max-width: 950px) {
   .what-i-do-section {
-    padding: 50px 2rem;
+    min-height: auto;
+    height: auto;
+    padding: 5rem 2rem;
+  }
+
+  .do-card {
+    min-height: 420px;
+    padding: 2.75rem;
   }
 
   .do-card h3 {
-    font-size: 2.5rem;
+    font-size: 3.35rem;
   }
 
   .do-card p {
-    font-size: 1rem;
+    max-width: 360px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .what-i-do-split {
+    grid-template-columns: 1fr;
+  }
+
+  .do-card {
+    min-height: 340px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .do-card-left::after {
+    top: auto;
+    right: 10%;
+    bottom: 0;
+    width: 80%;
+    height: 1px;
+  }
+
+  .do-card-right h3 {
+    margin-top: 0;
+  }
+
+  .do-card-right p {
+    margin-left: 0;
+  }
+
+  .do-card-right .sub-cta {
+    align-self: flex-start;
   }
 }
 
 @media (max-width: 600px) {
   .what-i-do-section {
-    padding: 50px 1rem;
+    padding: 4rem 1.25rem;
   }
 
-  .do-card h3 {
-    font-size: 2rem;
+  .what-i-do-header {
+    margin-bottom: 1.5rem;
   }
 
-  .do-card p {
-    font-size: 0.9rem;
+  .what-i-do-header h2 {
+    font-size: 1.75rem;
   }
-}
 
-@media (max-width: 500px) {
   .do-card {
-    padding: 2.5rem;
+    min-height: 320px;
+    padding: 2.25rem 1.5rem;
   }
 
   .do-card h3 {
-    font-size: 1.7rem;
+    font-size: 2.75rem;
   }
 
   .do-card p {
-    font-size: 0.75rem;
-  }
-
-  .do-card a {
-    font-size: 0.8rem;
+    max-width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.65;
   }
 }
