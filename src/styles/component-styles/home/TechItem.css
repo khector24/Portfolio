@@ -1,77 +1,61 @@
 .tech-card {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.03);
-  padding: 1rem;
-  border-radius: 12px;
+  justify-content: center;
+  min-width: 0;
+  padding: 0.3rem 0.15rem;
+  border-radius: 6px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .tech-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  background-color: rgba(108, 92, 231, 0.1);
+  transform: translateY(-3px) scale(1.03);
+}
+
+.tech-card-icon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.18rem;
 }
 
 .tech-card img {
-  width: 32px;
-  height: 32px;
-  margin-bottom: 0.5rem;
+  display: block;
+  max-width: 27px;
+  max-height: 27px;
+  object-fit: contain;
 }
 
-.tech-card span {
-  font-size: 0.9rem;
+.tech-card-title {
+  width: 100%;
   color: var(--text-muted);
+  font-size: 0.64rem;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
 }
 
-@media (max-width: 1270px) and (min-width: 1101px) {
-  .tech-card img {
-    width: 30px;
-    height: 30px;
+@media (max-width: 520px) {
+  .tech-card {
+    padding: 0.35rem 0.1rem;
   }
 
-  .tech-card span {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 1100px) {
-  .tech-card img {
+  .tech-card-icon {
     width: 28px;
     height: 28px;
   }
 
-  .tech-card span {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 840px) and (min-width: 761px) {
   .tech-card img {
-    width: 26px;
-    height: 26px;
+    max-width: 25px;
+    max-height: 25px;
   }
 
-  .tech-card span {
-    font-size: 0.82rem;
-  }
-}
-
-@media (max-width: 760px) {
-  .tech-card {
-    padding: 0.5rem;
-  }
-
-  .tech-card img {
-    width: 22px;
-    height: 22px;
-  }
-
-  .tech-card span {
-    font-size: 0.75rem;
+  .tech-card-title {
+    font-size: 0.62rem;
   }
 }

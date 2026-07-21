@@ -1,89 +1,120 @@
 import "../../styles/component-styles/home/SkillsAndTech.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+
+import { leadershipPoints } from "../../data/aboutData";
+import { techGroups } from "../../data/homeData";
 
 import TechItem from "./TechItem.jsx";
-import { leadershipPoints } from "../../data/aboutData";
-import { techItems } from "../../data/homeData";
 
 import CheckIcon from "../../assets/icons/check.svg?react";
+import CodeIcon from "../../assets/icons/code.svg?react";
+import LeadershipIcon from "../../assets/icons/leadership.svg?react";
 
-// Decorative SVGs
 import PlusIcon from "../../assets/illustrations/plus.svg?react";
 import TriangleIcon from "../../assets/illustrations/triangle.svg?react";
 import Blob2Icon from "../../assets/illustrations/blob2.svg?react";
 import VerticalDotsIcon from "../../assets/illustrations/vertical-dots.svg?react";
-import VerticalDotsIcon1 from "../../assets/illustrations/vertical-dots.svg?react";
 import LightningIcon from "../../assets/illustrations/lightning-svgrepo-com.svg?react";
-import HorizontalDotsIcon2 from "../../assets/illustrations/vertical-dots.svg?react";
-import HorizontalDotsIcon3 from "../../assets/illustrations/vertical-dots.svg?react";
-import HorizontalDotsIcon4 from "../../assets/illustrations/vertical-dots.svg?react";
 
 export default function SkillsAndTech() {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  useEffect(() => {
-    AOS.init({ once: true });
-
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 760);
-    };
-
-    handleResize(); // check on load
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
-    <section className="skills-tech-section section-full-height bg-dark">
-      {/* Decorative SVGs */}
-      <PlusIcon className="svg-decor plus" />
-      <TriangleIcon className="svg-decor triangle" />
-      <Blob2Icon className="svg-decor big-blob" />
-      <VerticalDotsIcon className="svg-decor vertical-dots" />
-      <VerticalDotsIcon1 className="svg-decor vertical-dots1" />
-      <LightningIcon className="svg-decor lightning" />
-      <HorizontalDotsIcon2 className="svg-decor horizontal-dots1" />
-      <HorizontalDotsIcon3 className="svg-decor horizontal-dots2" />
-      <HorizontalDotsIcon4 className="svg-decor horizontal-dots3" />
+    <section className="skills-tech-section bg-dark">
+      <PlusIcon className="skills-decor skills-decor-plus" />
+      <TriangleIcon className="skills-decor skills-decor-triangle" />
+      <Blob2Icon className="skills-decor skills-decor-blob" />
+      <LightningIcon className="skills-decor skills-decor-lightning" />
 
-      <div className="tech-container" data-aos="fade-right">
-        <h2 className="section-sub-heading">Technologies</h2>
-        <p className="container-subtitle">
-          From frontend to backend, here's what I use to build responsive,
-          scalable, and impactful applications.
-        </p>
-        <div className="logo-grid">
-          {techItems.map(({ logo, title }) => (
-            <TechItem key={title} logo={logo} title={title} />
-          ))}
+      <VerticalDotsIcon className="skills-decor skills-decor-dots-top" />
+      <VerticalDotsIcon className="skills-decor skills-decor-dots-bottom" />
+
+      <div className="skills-tech-wrapper">
+        <header className="skills-tech-header" data-aos="fade-up">
+          <span className="skills-tech-eyebrow">Skills &amp; Experience</span>
+
+          <h2>The tools I use. The impact I make.</h2>
+
+          <div className="skills-tech-heading-line" />
+
+          <p>
+            I combine modern technologies with strong leadership to build
+            products, improve workflows, and help teams solve meaningful
+            problems.
+          </p>
+        </header>
+
+        <div className="skills-tech-grid">
+          <article
+            className="skills-tech-panel technologies-panel"
+            data-aos="fade-right"
+          >
+            <div className="panel-header">
+              <div className="panel-icon">
+                <CodeIcon />
+              </div>
+
+              <div>
+                <h3>Technologies</h3>
+                <p>
+                  The technologies and tools I use to build scalable, reliable
+                  applications.
+                </p>
+              </div>
+            </div>
+
+            <div className="tech-groups">
+              {techGroups.map((group) => (
+                <section className="tech-group" key={group.title}>
+                  <h4>{group.title}</h4>
+
+                  <div className="tech-group-grid">
+                    {group.items.map((item) => (
+                      <TechItem
+                        key={item.title}
+                        logo={item.logo}
+                        title={item.title}
+                      />
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
+          </article>
+
+          <article
+            className="skills-tech-panel leadership-panel"
+            data-aos="fade-left"
+          >
+            <div className="panel-header">
+              <div className="panel-icon">
+                <LeadershipIcon />
+              </div>
+
+              <div>
+                <h3>Leadership &amp; Collaboration</h3>
+                <p>
+                  How I lead, collaborate, and create impact beyond writing
+                  code.
+                </p>
+              </div>
+            </div>
+
+            <ul className="leadership-list">
+              {leadershipPoints.map((point, index) => (
+                <li
+                  className="leadership-item"
+                  key={point}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 60}
+                >
+                  <span className="leadership-check">
+                    <CheckIcon />
+                  </span>
+
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
         </div>
-      </div>
-
-      <div className="skills-container" data-aos="fade-left">
-        <h2 className="section-sub-heading">Leadership & Collaboration</h2>
-        <p className="container-subtitle">
-          Beyond the code, I lead teams, mentor talent, and build solutions that
-          align people, process, and product.
-        </p>
-
-        <ul className="skill-list">
-          {leadershipPoints.map((text, i) => (
-            <li
-              key={i}
-              className="skill-list-item"
-              {...(!isSmallScreen && {
-                "data-aos": "fade-up",
-                "data-aos-delay": i * 100,
-              })}
-            >
-              <CheckIcon className="check-icon" />
-              {text}
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );
