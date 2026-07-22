@@ -1,37 +1,336 @@
-.portfolio {
-  background: var(--bg-primary);
-  padding: 4rem 2rem;
-  color: var(--text-primary);
+/* ======================================================
+   PORTFOLIO PAGE
+   ====================================================== */
+
+.portfolio-page {
+  position: relative;
   min-height: 100vh;
+  padding: 4.5rem 2rem 5rem;
+  color: var(--text-primary);
+  background:
+    radial-gradient(
+      circle at 8% 12%,
+      rgba(108, 92, 231, 0.1),
+      transparent 24rem
+    ),
+    radial-gradient(
+      circle at 90% 35%,
+      rgba(108, 92, 231, 0.07),
+      transparent 26rem
+    ),
+    var(--bg-primary);
+  overflow: hidden;
+}
+
+.portfolio-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* ======================================================
+   PAGE HEADER
+   ====================================================== */
+
+.portfolio-header {
+  max-width: 760px;
+  margin: 0 auto 3.5rem;
   text-align: center;
 }
 
-.portfolio h1 {
-  text-align: center;
-  font-size: 2.5rem;
+.portfolio-eyebrow {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.portfolio-header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.6rem, 5vw, 4.25rem);
+  line-height: 1;
+}
+
+.portfolio-heading-line {
+  width: 58px;
+  height: 3px;
+  margin: 1rem auto 1.1rem;
+  border-radius: 999px;
+  background-color: var(--accent);
+}
+
+.portfolio-header p {
+  max-width: 650px;
+  margin: 0 auto;
   color: var(--text-muted);
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
-.portfolio p {
-  color: var(--text-muted);
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+/* ======================================================
+   SECTIONS
+   ====================================================== */
+
+.portfolio-section {
+  margin-bottom: 4.5rem;
 }
 
-.portfolio .sub-heading {
-  color: var(--text-link);
-}
-
-.projects {
+.portfolio-section-heading {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.25rem;
 }
 
-@media (max-width: 768px) {
-  .portfolio {
-    padding-top: 8rem;
+.portfolio-section-heading h2 {
+  margin: 0 0 0.15rem;
+  color: #fff;
+  font-size: 1.45rem;
+}
+
+.portfolio-section-heading p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.portfolio-section-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: var(--accent);
+  font-size: 1.9rem;
+}
+
+/* ======================================================
+   FEATURED PROJECTS
+   ====================================================== */
+
+.featured-project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ======================================================
+   MORE PROJECTS
+   ====================================================== */
+
+.more-projects-section {
+  margin-bottom: 3rem;
+}
+
+.more-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.portfolio-grid-icon {
+  display: grid;
+  grid-template-columns: repeat(2, 8px);
+  grid-template-rows: repeat(2, 8px);
+  gap: 4px;
+}
+
+.portfolio-grid-icon span {
+  display: block;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+}
+
+/* ======================================================
+   CONTACT CTA
+   ====================================================== */
+
+.portfolio-contact-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid rgba(153, 128, 250, 0.32);
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(108, 92, 231, 0.1),
+    rgba(255, 255, 255, 0.015)
+  );
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
+}
+
+.portfolio-contact-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.portfolio-contact-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: var(--accent);
+  font-size: 1.35rem;
+}
+
+.portfolio-contact-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.portfolio-contact-content h2 {
+  margin: 0 0 0.25rem;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.portfolio-contact-content p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.portfolio-contact-button {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-width: 135px;
+  padding: 0.75rem 1.15rem;
+  border-radius: 8px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(108, 92, 231, 0.25);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.portfolio-contact-button:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(108, 92, 231, 0.35);
+}
+
+/* ======================================================
+   DECORATIONS
+   ====================================================== */
+
+.portfolio-decor {
+  position: absolute;
+  color: var(--accent);
+  fill: currentColor;
+  stroke: currentColor;
+  pointer-events: none;
+}
+
+.portfolio-decor-plus {
+  top: 3rem;
+  left: 8%;
+  width: 42px;
+  opacity: 0.18;
+}
+
+.portfolio-decor-triangle {
+  top: 8.5rem;
+  right: 8%;
+  width: 38px;
+  opacity: 0.16;
+}
+
+.portfolio-decor-lightning {
+  top: 2.5rem;
+  right: 11%;
+  width: 78px;
+  opacity: 0.09;
+  transform: rotate(-14deg);
+}
+
+.portfolio-decor-dots {
+  top: 8rem;
+  left: 10%;
+  width: 62px;
+  opacity: 0.08;
+}
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+
+@media (max-width: 1100px) {
+  .more-projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .portfolio-page {
+    padding: 7rem 1.25rem 4rem;
+  }
+
+  .portfolio-header {
+    margin-bottom: 2.75rem;
+  }
+
+  .portfolio-section {
+    margin-bottom: 3.5rem;
+  }
+
+  .portfolio-contact-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .portfolio-contact-button {
+    width: 100%;
+  }
+
+  .portfolio-decor-lightning,
+  .portfolio-decor-dots {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .portfolio-page {
+    padding-right: 0.85rem;
+    padding-left: 0.85rem;
+  }
+
+  .portfolio-header h1 {
+    font-size: 2.6rem;
+  }
+
+  .portfolio-header p {
+    font-size: 0.9rem;
+  }
+
+  .more-projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-section-heading {
+    align-items: flex-start;
+  }
+
+  .portfolio-contact-content {
+    align-items: flex-start;
   }
 }

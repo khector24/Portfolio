@@ -1,85 +1,191 @@
 import { useState } from "react";
+
 import "../../styles/component-styles/portfolio/PortfolioCard.css";
+
+import GitHubIcon from "../../assets/icons/github-icon.svg?react";
+import ExternalLinkIcon from "../../assets/icons/external-link.svg?react";
 
 export default function PortfolioCard({
   title,
-  tech,
   description,
   link,
-  tags,
-  images,
+  tags = [],
+  images = [],
   hasLiveLink,
   liveLink,
+  featured = false,
+  reverse = false,
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  const projectImages = images ?? [];
+  const hasMultipleImages = projectImages.length > 1;
+
+  const currentImage =
+    projectImages[currentIndex] ?? "/assets/portfolio-pics/black.png";
+
+  const isPlaceholder =
+    projectImages.length === 1 &&
+    currentImage.toLowerCase().includes("placeholder");
+
+  const handlePrevious = () => {
+    if (!hasMultipleImages) {
+      return;
+    }
+
+    setCurrentIndex((previousIndex) => {
+      if (previousIndex === 0) {
+        return projectImages.length - 1;
+      }
+
+      return previousIndex - 1;
+    });
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    if (!hasMultipleImages) {
+      return;
+    }
+
+    setCurrentIndex((previousIndex) => {
+      if (previousIndex === projectImages.length - 1) {
+        return 0;
+      }
+
+      return previousIndex + 1;
+    });
   };
 
-  const currentImg =
-    images?.[currentIndex] || "/assets/portfolio-pics/black.png";
+  const cardClassName = [
+    "project-card",
+    featured ? "project-card-featured" : "project-card-compact",
+    reverse ? "project-card-reverse" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
-    <div className="portfolio-card">
-      <div className="carousel-wrapper">
-        <button className="arrow left" onClick={handlePrev}>
-          &#8249;
-        </button>
+    <article className={cardClassName} data-aos="fade-up">
+      <ProjectImage
+        title={title}
+        currentImage={currentImage}
+        currentIndex={currentIndex}
+        hasMultipleImages={hasMultipleImages}
+        isPlaceholder={isPlaceholder}
+        handlePrevious={handlePrevious}
+        handleNext={handleNext}
+        featured={featured}
+      />
 
-        <div className="image-container">
+      <div className="project-card-content">
+        {featured && (
+          <span className="project-type-label">Full-Stack Web App</span>
+        )}
+
+        <h3>{title}</h3>
+
+        <p className="project-description">{description}</p>
+
+        <div className="project-tags" aria-label={`${title} technologies`}>
+          {tags.map((tag) => (
+            <span key={tag} className="project-tag">
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <div className="project-links">
+          {hasLiveLink && liveLink && (
+            <a
+              className="project-button project-button-primary"
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ExternalLinkIcon className="project-button-icon" />
+              <span>Live Demo</span>
+            </a>
+          )}
+
+          {link && (
+            <a
+              className="project-button project-button-secondary"
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon className="project-button-icon" />
+              <span>View Code</span>
+            </a>
+          )}
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function ProjectImage({
+  title,
+  currentImage,
+  currentIndex,
+  hasMultipleImages,
+  isPlaceholder,
+  handlePrevious,
+  handleNext,
+  featured,
+}) {
+  return (
+    <div
+      className={
+        featured
+          ? "project-media project-media-featured"
+          : "project-media project-media-compact"
+      }
+    >
+      <div className="browser-frame">
+        <div className="browser-frame-bar" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </div>
+
+        <div className="project-image-container">
           <img
-            src={currentImg}
-            alt={`${title}-${currentIndex}`}
-            className="project-img"
+            className="project-image"
+            src={currentImage}
+            alt={`${title} screenshot ${currentIndex + 1}`}
           />
-          {images.length === 1 && currentImg.includes("placeholder") && (
-            <p className="placeholder-note">
-              Internal project – screenshots unavailable.
+
+          {isPlaceholder && (
+            <p className="project-placeholder-note">
+              Internal project — screenshots unavailable.
               <br />
               Images will be added when possible.
             </p>
           )}
+
+          {hasMultipleImages && (
+            <>
+              <button
+                className="carousel-button carousel-button-left"
+                type="button"
+                onClick={handlePrevious}
+                aria-label={`Show previous ${title} screenshot`}
+              >
+                ‹
+              </button>
+
+              <button
+                className="carousel-button carousel-button-right"
+                type="button"
+                onClick={handleNext}
+                aria-label={`Show next ${title} screenshot`}
+              >
+                ›
+              </button>
+            </>
+          )}
         </div>
-
-        <button className="arrow right" onClick={handleNext}>
-          &#8250;
-        </button>
-      </div>
-
-      <h3>{title}</h3>
-      <p className="description">{description}</p>
-      <p className="tech">{tech}</p>
-      <div className="tags">
-        {tags.map((tag, idx) => (
-          <span key={idx} className="tag">
-            {tag}
-          </span>
-        ))}
-      </div>
-      <div className="links">
-        <a
-          href={link}
-          className="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Code
-        </a>
-        {hasLiveLink && (
-          <a
-            className="btn"
-            href={liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Link
-          </a>
-        )}
       </div>
     </div>
   );
