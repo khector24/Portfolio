@@ -10,7 +10,7 @@ export const experienceData = [
     dateRange: "Sep 2024 – May 2025",
     bullets: [
       "Designed, developed, and deployed a production website for a swim school using React, Material UI, and AWS.",
-      "Boosted online visibility, contributing to approximately 50% of seasonal registrations before the summer launch.",
+      "Boosted company visibility, contributing to approximately 50% of seasonal registrations before the summer launch.",
       "Integrated AWS Lambda, DynamoDB, and the Resend API to automate email workflows with secure one-click unsubscribe functionality.",
     ],
     tech: ["React", "Material UI", "AWS", "DynamoDB", "Resend"],
@@ -40,21 +40,30 @@ export const engineeringProjectsData = [
     location: "Independent Project",
     dateRange: "Mar 2026 – Present",
     bullets: [
-      "Building a full-stack analytics platform for exploring demographic, economic, migration, education, housing, and labor-market data across U.S. states and metropolitan areas.",
-      "Developing ETL pipelines that transform Census, ACS, IRS migration, and NAEP datasets into optimized application-ready data.",
-      "Creating Express REST APIs and interactive React dashboards with search, filtering, maps, charts, and regional comparisons.",
+      "Built a full-stack analytics platform for exploring population, migration, education, housing, transportation, labor-market, and economic trends across all 50 states and the 100 largest metropolitan areas.",
+      "Designed ETL pipelines that transform Census, ACS, IRS migration, and NAEP datasets into optimized REST APIs and application-ready datasets.",
+      "Developed Express APIs and interactive React dashboards with geographic visualizations, search, filtering, rankings, and state and metro comparisons.",
+      "Deployed the platform on AWS using S3, CloudFront, Route 53, and ACM.",
     ],
-    tech: ["React", "Node.js", "Express", "REST APIs", "ETL", "AWS"],
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "REST APIs",
+      "ETL",
+      "AWS",
+      "CloudFront",
+    ],
   },
   {
-    title: "Full-Stack Developer",
-    company: "Delivery Management App",
+    title: "Full-Stack Delivery Platform",
+    company: "Delivery Scheduler",
     location: "Independent Project",
     dateRange: "2025",
     bullets: [
-      "Built a delivery scheduling platform with manager authentication, driver views, and secure CRUD APIs.",
-      "Implemented JWT-based authentication and DynamoDB-backed data storage.",
-      "Reduced delivery creation time by approximately 38% and improved order tracking.",
+      "Developed a full-stack delivery platform for scheduling, real-time tracking, delivery updates, and driver management.",
+      "Implemented manager authentication, secure CRUD APIs, JWT authorization, and DynamoDB-backed storage.",
+      "Automated customer alerts, reducing delivery errors and missed notifications to near-zero.",
     ],
     tech: ["React", "Node.js", "Express", "DynamoDB", "JWT"],
   },
@@ -64,11 +73,23 @@ export const engineeringProjectsData = [
     location: "Independent Project",
     dateRange: "2025",
     bullets: [
-      "Built an incident-reporting application with searchable archived reports and secure media uploads.",
-      "Used AWS S3 pre-signed URLs, Lambda, and DynamoDB to support evidence storage and report management.",
-      "Reduced police-report preparation time by approximately 33%.",
+      "Built a theft-reporting platform with dynamic forms, searchable archived reports, and structured evidence records.",
+      "Implemented secure media uploads using AWS S3 pre-signed URLs, Lambda, and DynamoDB.",
+      "Reduced police-report preparation time by approximately 33% and improved suspect recognition using archived reports.",
     ],
-    tech: ["React", "AWS S3", "Lambda", "DynamoDB"],
+    tech: ["React", "Material UI", "AWS S3", "Lambda", "DynamoDB"],
+  },
+  {
+    title: "Portfolio Website",
+    company: "KennyHector.com",
+    location: "Independent Project",
+    dateRange: "2025 – Present",
+    bullets: [
+      "Designed and developed a responsive portfolio website showcasing professional experience, engineering projects, and technical skills.",
+      "Built reusable React components, animated page sections, responsive project galleries, and consistent page-level design systems.",
+      "Deployed the application using AWS S3, CloudFront, and Route 53.",
+    ],
+    tech: ["React", "CSS", "AWS S3", "CloudFront", "Route 53"],
   },
 ];
 
@@ -108,7 +129,7 @@ export const educationData = [
 
 export const certificationData = [
   {
-    type: "education",
+    type: "certification",
     title: "AWS Certified Solutions Architect – Associate",
     company: "Amazon Web Services",
     location: "Professional Certification",
