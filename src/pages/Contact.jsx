@@ -47,7 +47,7 @@ export default function Contact() {
 
           <p>
             I&apos;d love to connect! Whether you have a project in mind, want
-            to collaborate, or just say hello — feel free to reach out.
+            to collaborate, or just say hello! Feel free to reach out.
           </p>
         </header>
 
