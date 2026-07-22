@@ -3,6 +3,7 @@ import { featuredProjects } from "../../data/portfolioData";
 import "../../styles/component-styles/home/FeaturedProjects.css";
 
 import GithubIcon from "../../assets/icons/github-icon.svg?react";
+import ExternalLinkIcon from "../../assets/icons/external-link.svg?react";
 
 // Decorative SVGs
 import PlusIcon from "../../assets/illustrations/plus.svg?react";
@@ -21,7 +22,7 @@ export default function FeaturedProjects() {
       displayTitle: "RegionLore",
       description:
         "A full-stack analytics platform for exploring demographic, migration, education, housing, labor-market, and economic data across U.S. states and metropolitan areas. Built with ETL pipelines, REST APIs, maps, charts, rankings, and regional comparisons.",
-      liveButtonText: "Live Demo",
+      liveButtonText: "Visit Website",
     },
 
     "Splash Zone Aquatics Website": {
@@ -93,7 +94,7 @@ export default function FeaturedProjects() {
               label: "Featured Project",
               displayTitle: project.title,
               description: project.description,
-              liveButtonText: "View Project",
+              liveButtonText: "View Website",
             };
 
             return (
@@ -136,25 +137,28 @@ export default function FeaturedProjects() {
                       <a
                         href={project.liveLink}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="featured-project-button featured-project-button-primary"
                       >
-                        <span aria-hidden="true">↗</span>
-                        {details.liveButtonText}
+                        <ExternalLinkIcon
+                          className="featured-project-button-icon"
+                          aria-hidden="true"
+                        />
+                        <span>{details.liveButtonText}</span>
                       </a>
                     )}
 
                     <a
                       href={project.link}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="featured-project-button featured-project-button-secondary"
                     >
                       <GithubIcon
                         className="featured-project-button-icon"
                         aria-hidden="true"
                       />
-                      GitHub
+                      <span>GitHub</span>
                     </a>
                   </div>
                 </div>

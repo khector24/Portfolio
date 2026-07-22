@@ -103,7 +103,7 @@ export default function PortfolioCard({
               rel="noopener noreferrer"
             >
               <ExternalLinkIcon className="project-button-icon" />
-              <span>Live Demo</span>
+              <span>Visit Website</span>
             </a>
           )}
 

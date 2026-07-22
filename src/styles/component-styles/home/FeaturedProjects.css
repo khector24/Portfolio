@@ -297,9 +297,10 @@
 }
 
 .featured-project-button-icon {
+  flex-shrink: 0;
   width: 18px;
   height: 18px;
-  flex-shrink: 0;
+  color: currentColor;
 }
 
 /* =========================================
