@@ -5,11 +5,15 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
   }, [pathname]);
 
   return null;
 }
-// This component listens for changes in the URL path and scrolls to the top of the page whenever the path changes.
-// It uses the `useLocation` hook from `react-router-dom` to get the current pathname and the `useEffect` hook to trigger the scroll action.
-// The `window.scrollTo`
+
+// Resets the window to the top whenever the route changes.
+// The scroll happens instantly so navigation does not visibly animate upward.
