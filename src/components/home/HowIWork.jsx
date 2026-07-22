@@ -1,5 +1,7 @@
 import "../../styles/component-styles/home/HowIWork.css";
 
+import ProgrammingIllustration from "../../assets/illustrations/undraw_programming_65t2.svg";
+
 // Decorative SVGs
 import LightningIcon from "../../assets/illustrations/lightning-svgrepo-com.svg?react";
 import FiveCirclesIcon from "../../assets/illustrations/five-circles.svg?react";
@@ -70,7 +72,7 @@ export default function HowIWork() {
       <div className="how-i-work-wrapper">
         <div className="how-i-work-image" data-aos="zoom-in">
           <img
-            src="/illustrations/undraw_programming_65t2.svg"
+            src={ProgrammingIllustration}
             alt="Developer working at a computer"
             className="how-image"
           />

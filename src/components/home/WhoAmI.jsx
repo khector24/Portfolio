@@ -1,16 +1,20 @@
 import "../../styles/component-styles/home/WhoAmI.css";
 
+import Blob1 from "../../assets/illustrations/blob1.svg";
+import Blob2 from "../../assets/illustrations/blob2.svg";
+import StaticWebsiteIllustration from "../../assets/illustrations/undraw_static-website_x3tn.svg";
+
 export default function WhoAmI() {
   return (
     <section className="who-am-i-section section-full-height bg-light">
       <div className="who-am-i-wrapper">
         <img
-          src="/illustrations/blob1.svg"
+          src={Blob1}
           alt="decorative blob"
           className="blob-image top-left"
         />
         <img
-          src="/illustrations/blob2.svg"
+          src={Blob2}
           alt="decorative blob"
           className="blob-image bottom-right"
         />
@@ -51,7 +55,7 @@ export default function WhoAmI() {
         </div>
         <div className="who-am-i-image" data-aos="fade-up-left">
           <img
-            src="/illustrations/undraw_static-website_x3tn.svg"
+            src={StaticWebsiteIllustration}
             alt="Developer working on static website"
             className="who-image"
           />
