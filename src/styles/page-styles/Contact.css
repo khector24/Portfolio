@@ -1,100 +1,276 @@
-/* === Page wrapper to center === */
-.contact-wrapper {
+/* ======================================================
+   CONTACT PAGE
+   ====================================================== */
+
+.contact-page {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
-  background-color: var(--bg-light);
-  padding: 2rem;
+  padding: 6rem 2rem 4rem;
+  color: var(--text-muted);
+  background-color: var(--bg-primary);
+  overflow: hidden;
 }
 
-/* === Bounded container === */
-.contact-container {
-  max-width: 800px;
+.contact-wrapper {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  padding: 3rem 2rem;
-  background-color: #fff;
-  border: 2px solid var(--text-link);
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ======================================================
+   HEADER
+   ====================================================== */
+
+.contact-header {
+  max-width: 700px;
+  margin: 0 auto 2.25rem;
   text-align: center;
 }
 
-/* === Headings === */
-.contact-container h2 {
-  font-size: 2.2rem;
-  color: var(--text-link);
-  margin-bottom: 1rem;
+.contact-eyebrow {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
-.contact-container h3 {
-  font-size: 1.2rem;
-  color: var(--text-link);
-  margin-bottom: 0.5rem;
+.contact-header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
 }
 
-/* === Paragraphs === */
-.contact-container p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: var(--text-secondary);
-  margin-bottom: 1rem;
+.contact-heading-line {
+  width: 58px;
+  height: 3px;
+  margin: 1rem auto 1.1rem;
+  border-radius: 999px;
+  background-color: var(--accent);
 }
 
-/* === Cards layout === */
+.contact-header p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* ======================================================
+   CONTACT CARDS
+   ====================================================== */
+
 .contact-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
 }
 
 .contact-card {
-  background-color: var(--light-bg);
-  border-radius: 8px;
-  padding: 1.5rem;
-  width: 240px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+  padding: 1.35rem 1.4rem;
+  border: 1px solid rgba(153, 128, 250, 0.3);
+  border-radius: 12px;
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0.025);
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .contact-card:hover {
-  transform: translateY(-5px);
+  color: inherit;
+  border-color: rgba(153, 128, 250, 0.55);
+  background-color: rgba(108, 92, 231, 0.08);
+  transform: translateY(-4px);
 }
 
-.contact-card a {
-  color: var(--text-link);
-  text-decoration: underline;
+.contact-card-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(153, 128, 250, 0.3);
+  border-radius: 50%;
+  color: var(--accent);
+  background-color: rgba(108, 92, 231, 0.1);
 }
 
-.contact-card a:hover {
+.contact-card-icon svg {
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+}
+
+.contact-card-content {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.contact-card-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.contact-card-value {
+  color: var(--accent);
+  font-size: 0.88rem;
+  overflow-wrap: anywhere;
+}
+
+.contact-card-arrow {
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
   color: var(--accent);
 }
 
+/* ======================================================
+   CLOSING NOTE
+   ====================================================== */
+
 .contact-note {
+  margin: 2rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
   font-style: italic;
-  font-size: 1rem;
-  color: var(--text-secondary);
+  text-align: center;
+  opacity: 0.85;
 }
 
-/* === Media queries === */
-@media (max-width: 768px) {
-  .contact-container h2 {
-    font-size: 1.8rem;
+/* ======================================================
+   DECORATIONS
+   ====================================================== */
+
+.contact-decor {
+  position: absolute;
+  z-index: 0;
+  color: var(--accent);
+  fill: currentColor;
+  stroke: currentColor;
+  pointer-events: none;
+}
+
+.contact-decor-plus {
+  top: 18%;
+  left: 13%;
+  width: 36px;
+  opacity: 0.12;
+  transform: rotate(8deg);
+}
+
+.contact-decor-triangle {
+  top: 26%;
+  right: 10%;
+  width: 34px;
+  opacity: 0.1;
+  transform: rotate(-12deg);
+}
+
+.contact-decor-blob-left {
+  top: 16%;
+  left: -170px;
+  width: 310px;
+  opacity: 0.035;
+}
+
+.contact-decor-blob-right {
+  right: -170px;
+  bottom: -80px;
+  width: 320px;
+  opacity: 0.035;
+  transform: rotate(180deg);
+}
+
+.contact-decor-dots {
+  bottom: 12%;
+  left: 7%;
+  width: 65px;
+  opacity: 0.06;
+}
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+
+@media (max-width: 760px) {
+  .contact-page {
+    min-height: 100vh;
+    padding: 7rem 1.25rem 4rem;
   }
 
-  .contact-container h3 {
-    font-size: 1.1rem;
+  .contact-cards {
+    grid-template-columns: 1fr;
   }
 
-  .contact-container p,
-  .contact-note {
-    font-size: 1rem;
+  .contact-header {
+    margin-bottom: 1.75rem;
+  }
+
+  .contact-decor-triangle {
+    right: 4%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding-right: 0.85rem;
+    padding-left: 0.85rem;
+  }
+
+  .contact-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-header p {
+    font-size: 0.9rem;
   }
 
   .contact-card {
-    width: 100%;
-    max-width: 300px;
+    gap: 0.8rem;
+    padding: 1.15rem;
+  }
+
+  .contact-card-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .contact-card-icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .contact-card-title {
+    font-size: 1rem;
+  }
+
+  .contact-card-value {
+    font-size: 0.8rem;
+  }
+
+  .contact-decor-plus,
+  .contact-decor-triangle,
+  .contact-decor-dots {
+    display: none;
   }
 }
