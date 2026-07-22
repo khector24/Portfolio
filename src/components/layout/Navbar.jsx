@@ -1,7 +1,9 @@
-import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
+
 import "../../styles/component-styles/layout/Navbar.css";
-import MenuBar from "../../assets/icons/menu-bar.svg";
+
+import MenuBar from "../../assets/icons/menu-bar.svg?react";
 import ResumeIcon from "../../assets/icons/resume-icon.svg?react";
 import EmailIcon from "../../assets/icons/email-icon.svg?react";
 import GitHubIcon from "../../assets/icons/github-icon.svg?react";
@@ -9,7 +11,7 @@ import resumePDF from "../../assets/documents/resume.pdf";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
-  const menuRef = useRef();
+  const menuRef = useRef(null);
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -18,90 +20,125 @@ export default function Navbar() {
       }
     }
 
+    function handleEscape(event) {
+      if (event.key === "Escape") {
+        setShowMenu(false);
+      }
+    }
+
     if (showMenu) {
       document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleEscape);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
     };
   }, [showMenu]);
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
+  const closeMenu = () => {
+    setShowMenu(false);
   };
 
   return (
-    <nav>
-      <div className="nav-left">
-        <span>Kenny H.</span>
-      </div>
+    <nav className="navbar">
+      <NavLink
+        to="/"
+        className="navbar-brand"
+        aria-label="Go to homepage"
+        onClick={closeMenu}
+      >
+        Kenny H.
+      </NavLink>
 
-      <div className="menu-container" ref={menuRef}>
-        <img
-          src={MenuBar}
-          alt="Menu Bar"
-          className={`menu-bar ${showMenu ? "" : "rotate"}`}
-          onClick={toggleMenu}
-        />
+      <div className="navbar-menu-container" ref={menuRef}>
+        <button
+          type="button"
+          className={`navbar-menu-button ${showMenu ? "is-open" : ""}`}
+          onClick={() => setShowMenu((currentValue) => !currentValue)}
+          aria-label={
+            showMenu ? "Close navigation menu" : "Open navigation menu"
+          }
+          aria-expanded={showMenu}
+          aria-controls="navbar-dropdown"
+        >
+          <MenuBar className="navbar-menu-icon" aria-hidden="true" />
+        </button>
 
         {showMenu && (
-          <div className="nav-right">
-            <Link
-              to="/"
-              className="nav-link"
-              onClick={() => setShowMenu(false)}
-            >
-              Home
-            </Link>
-            <Link
-              to="/career"
-              className="nav-link"
-              onClick={() => setShowMenu(false)}
-            >
-              Career
-            </Link>
-            <Link
-              to="/portfolio"
-              className="nav-link"
-              onClick={() => setShowMenu(false)}
-            >
-              Portfolio
-            </Link>
-            <Link
-              to="/contact"
-              className="nav-link"
-              onClick={() => setShowMenu(false)}
-            >
-              Contact
-            </Link>
-            <hr />
-            <div className="nav-icons">
-              <a href="mailto:kennyhector24@gmail.com" aria-label="Email">
-                <EmailIcon className="nav-social-icon" aria-hidden="true" />
+          <div
+            id="navbar-dropdown"
+            className="navbar-dropdown"
+            aria-label="Main navigation"
+          >
+            <div className="navbar-links">
+              <NavItem to="/" onClick={closeMenu}>
+                Home
+              </NavItem>
+
+              <NavItem to="/career" onClick={closeMenu}>
+                Career
+              </NavItem>
+
+              <NavItem to="/portfolio" onClick={closeMenu}>
+                Portfolio
+              </NavItem>
+
+              <NavItem to="/contact" onClick={closeMenu}>
+                Contact
+              </NavItem>
+            </div>
+
+            <div className="navbar-divider" />
+
+            <div className="navbar-social-links">
+              <a
+                href="mailto:kennyhector24@gmail.com"
+                className="navbar-social-link"
+                aria-label="Email Kenny"
+              >
+                <EmailIcon aria-hidden="true" />
               </a>
 
               <a
                 href={resumePDF}
                 target="_blank"
-                rel="noreferrer"
-                aria-label="Resume"
+                rel="noopener noreferrer"
+                className="navbar-social-link"
+                aria-label="View Kenny's resume"
               >
-                <ResumeIcon className="nav-social-icon" aria-hidden="true" />
+                <ResumeIcon aria-hidden="true" />
               </a>
 
               <a
                 href="https://github.com/khector24"
                 target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
+                rel="noopener noreferrer"
+                className="navbar-social-link"
+                aria-label="Visit Kenny's GitHub profile"
               >
-                <GitHubIcon className="nav-social-icon" aria-hidden="true" />
+                <GitHubIcon aria-hidden="true" />
               </a>
             </div>
           </div>
         )}
       </div>
     </nav>
+  );
+}
+
+function NavItem({ to, onClick, children }) {
+  return (
+    <NavLink
+      to={to}
+      end={to === "/"}
+      onClick={onClick}
+      className={({ isActive }) =>
+        `navbar-link ${isActive ? "navbar-link-active" : ""}`
+      }
+    >
+      <span>{children}</span>
+    </NavLink>
   );
 }
